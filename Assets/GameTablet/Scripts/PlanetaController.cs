@@ -7,8 +7,8 @@ public class PlanetaController : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-        GameObject.FindGameObjectWithTag("Planeta").GetComponent<Image>().sprite = Resources.Load<Sprite>("Planetas/Planeta1");
-        GameObject.FindGameObjectWithTag("Planeta").GetComponent<Image>().sprite = Resources.Load<Sprite>("Planetas/Planeta2");
+        GameObject.FindGameObjectWithTag("Planeta").GetComponent<Image>().sprite = Resources.Load<Sprite>("Sprites/Planetas/Planeta1");
+        GameObject.FindGameObjectWithTag("Planeta").GetComponent<Image>().sprite = Resources.Load<Sprite>("Sprites/Planetas/Planeta2");
     }
 	
 	// Update is called once per frame

@@ -143,13 +143,13 @@ public class MenuController : MonoBehaviour {
                     
                     if (estado==0)
                     {
-                        GameObject.FindGameObjectWithTag(name).GetComponent<Image>().sprite = Resources.Load<Sprite>("Planetas/"+name+"Gris");
+                        GameObject.FindGameObjectWithTag(name).GetComponent<Image>().sprite = Resources.Load<Sprite>("Sprites/Planetas/"+name+"Gris");
                         GameObject.FindWithTag(name).GetComponent<Button>().interactable = false;
                     }
 
                     else
                     {
-                        GameObject.FindGameObjectWithTag(name).GetComponent<Image>().sprite = Resources.Load<Sprite>("Planetas/" + name);
+                        GameObject.FindGameObjectWithTag(name).GetComponent<Image>().sprite = Resources.Load<Sprite>("Sprites/Planetas/" + name);
                         GameObject.FindWithTag(name).GetComponent<Button>().interactable = true;
                     }
                     

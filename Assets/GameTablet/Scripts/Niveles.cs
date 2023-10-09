@@ -14,9 +14,9 @@ abstract public class Niveles : MonoBehaviour, ConfigurationLevels
     public static bool gameOver;
     public void init()
     {
-        prefabNumerosLetras = Resources.Load("prefabNumLetras") as GameObject;
-        prefabAdivinar = Resources.Load("prefabAdivinar") as GameObject;
-        spritesNumerosLetras = Resources.LoadAll<Sprite>("LetrasNumeros");
+        prefabNumerosLetras = Resources.Load("Prefabs/prefabNumLetras") as GameObject;
+        prefabAdivinar = Resources.Load("Prefabs/prefabAdivinar") as GameObject;
+        spritesNumerosLetras = Resources.LoadAll<Sprite>("Sprites/LetrasNumeros");
         letraRandom = Random.Range(0, 27);
         numeroRandom = Random.Range(28, 37);
         valorAdivinar();
