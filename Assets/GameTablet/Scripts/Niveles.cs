@@ -8,10 +8,17 @@ abstract public class Niveles : MonoBehaviour, ConfigurationLevels
     public GameObject prefabAdivinar;
     public Sprite[] spritesNumerosLetras;
     public float spwanLetrasNumros = 1;
-    public int letraRandomAdivinar;
-    public int letraRandom;
-    public int numeroRandomAdivinar;
-    public int numeroRandom;
+
+        public int letraRandomAdivinar;
+        public int letraMinRandomAdivinar;
+        public int numeroRandomAdivinar;
+        public int caracterRandomAdivinar;
+        public int letraRandom;
+        public int letraMinRandom;
+        public int numeroRandom;
+        public int caracterRandom;
+
+
     public static string tagAdivinar;
     public static bool gameOver;
     public void init()
@@ -19,8 +26,18 @@ abstract public class Niveles : MonoBehaviour, ConfigurationLevels
         prefabNumerosLetras = Resources.Load("Prefabs/prefabNumLetras") as GameObject;
         prefabAdivinar = Resources.Load("Prefabs/prefabAdivinar") as GameObject;
         spritesNumerosLetras = Resources.LoadAll<Sprite>("Sprites/LetrasNumeros");
-        letraRandomAdivinar = Random.Range(0, 27);
-        numeroRandomAdivinar = Random.Range(28, 37);
+
+        letraRandomAdivinar = Random.Range(0, 25);
+        letraMinRandomAdivinar = Random.Range(26, 51);
+        numeroRandomAdivinar = Random.Range(52, 61);
+        caracterRandomAdivinar = Random.Range(62, 88);
+
+        letraRandom = Random.Range(0, 25);
+        letraMinRandom = Random.Range(26, 51);
+        numeroRandom = Random.Range(52, 61);
+        caracterRandom = Random.Range(62, 88);
+
+       
         valorAdivinar();
         gameOver = false;
         Settings.gamePause = false;
