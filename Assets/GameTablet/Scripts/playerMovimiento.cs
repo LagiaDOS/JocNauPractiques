@@ -10,8 +10,7 @@ public class playerMovimiento : MonoBehaviour {
     private float ScreenWidth;
 
     // Arreglar renders dels sprites
-    public Sprite spriteRight;
-    public Sprite spriteLeft;
+    // public Sprite spriteRight, spriteLeft,spriteNeutral;
 
     // Use this for initialization
     void Start()
@@ -31,17 +30,21 @@ public class playerMovimiento : MonoBehaviour {
                 //loop over every touch found
                 while (i < Input.touchCount)
                 {
-                    if (Input.GetTouch(i).position.x > ScreenWidth / 2)
+                    if (Input.GetTouch(i).position.x > ScreenWidth / 2 /*|| Input.GetKeyDown(KeyCode.D) || Input.GetKeyDown(KeyCode.RightArrow)*/)
                     {
                         //move right
                         RunCharacter(0.5f);
-                        character.GetComponent<SpriteRenderer>().sprite = spriteRight;
+                        // character.GetComponent<SpriteRenderer>().sprite = spriteRight;
                     }
-                    if (Input.GetTouch(i).position.x < ScreenWidth / 2)
+                    else if (Input.GetTouch(i).position.x < ScreenWidth / 2 /*|| Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.LeftArrow)*/)
                     {
                         //move left
                         RunCharacter(-0.5f);
-                        character.GetComponent<SpriteRenderer>().sprite = spriteLeft;
+                        //character.GetComponent<SpriteRenderer>().sprite = spriteLeft;
+                    }
+                    else
+                    {
+                        //character.GetComponent<SpriteRenderer>().sprite = spriteNeutral;
                     }
                     ++i;
                 }
