@@ -19,11 +19,11 @@ public class changeSprite : MonoBehaviour {
             //move left
             GetComponent<SpriteRenderer>().sprite = spriteLeft;
         }
-        /*else if ()
+        else if (Input.GetKeyUp(KeyCode.A) || Input.GetKeyUp(KeyCode.LeftArrow) || Input.GetKeyUp(KeyCode.D) || Input.GetKeyUp(KeyCode.RightArrow))
         {
             //no move
             GetComponent<SpriteRenderer>().sprite = spriteNeutral;
-        }*/
-
+        }
+   
     }
 }
