@@ -11,8 +11,11 @@ abstract public class Niveles : MonoBehaviour, ConfigurationLevels
 
         public int letraRandomAdivinar;
         public int letraMinRandomAdivinar;
+        public int[] vocals = { 0, 4, 8, 14, 20 };
+        public int vocalRandomAdivinar;
         public int numeroRandomAdivinar;
         public int caracterRandomAdivinar;
+        public int vocalRandom;
         public int letraRandom;
         public int letraMinRandom;
         public int numeroRandom;
@@ -32,6 +35,7 @@ abstract public class Niveles : MonoBehaviour, ConfigurationLevels
 
         letraRandomAdivinar = Random.Range(0, 25);
         letraMinRandomAdivinar = Random.Range(26, 51);
+        vocalRandomAdivinar = vocals[Random.Range(0, vocals.Length)];
         numeroRandomAdivinar = Random.Range(52, 61);
         caracterRandomAdivinar = Random.Range(62, 88);
 
