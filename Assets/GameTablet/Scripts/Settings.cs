@@ -38,4 +38,12 @@ public class Settings : MonoBehaviour {
         ScoreScript.scoreValue = 0;
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
+
+    public void nextLevel()
+    {
+        /* switch ()
+        {
+
+        } */
+    }
 }

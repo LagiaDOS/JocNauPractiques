@@ -6,27 +6,38 @@ public class changeSprite : MonoBehaviour {
 
     public Sprite spriteRight, spriteLeft, spriteNeutral;
 
-    private void Update () {
-
-        //activa si esta la lletra D o flecha dreta
-        if (Input.GetKeyDown(KeyCode.D) || Input.GetKeyDown(KeyCode.RightArrow))
+    private void Update()
+    {
+        //move right
+        if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow))
         {
-            //move right
-            
-            GetComponent<SpriteRenderer>().sprite = spriteRight;
+            // inputs for right and left
+            if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow))
+            {
+                GetComponent<SpriteRenderer>().sprite = spriteNeutral;
+            }
+            else {
+                GetComponent<SpriteRenderer>().sprite = spriteRight;
+            }
         }
-        //activa si esta la lletra A o flecha esquerra
-        else if (Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.LeftArrow))
+        //move left
+        else if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow))
         {
-            //move left
-            GetComponent<SpriteRenderer>().sprite = spriteLeft;
+            // inputs for left and right
+            if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow))
+            {
+                GetComponent<SpriteRenderer>().sprite = spriteNeutral;
+            }
+            else
+            {
+                GetComponent<SpriteRenderer>().sprite = spriteLeft;
+            }
         }
-        //activa si no estas amb ninguna lletra
+        // no input
         else if (Input.GetKeyUp(KeyCode.A) || Input.GetKeyUp(KeyCode.LeftArrow) || Input.GetKeyUp(KeyCode.D) || Input.GetKeyUp(KeyCode.RightArrow))
         {
-            //no move
             GetComponent<SpriteRenderer>().sprite = spriteNeutral;
         }
-   
+
     }
 }
