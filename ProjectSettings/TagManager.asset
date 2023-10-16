@@ -4,52 +4,102 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - abecedario_0
-  - abecedario_1
-  - abecedario_2
-  - abecedario_3
-  - abecedario_4
-  - abecedario_5
-  - abecedario_6
-  - abecedario_7
-  - abecedario_8
-  - abecedario_9
-  - abecedario_10
-  - abecedario_11
-  - abecedario_12
-  - abecedario_13
-  - abecedario_14
-  - abecedario_15
-  - abecedario_16
-  - abecedario_17
-  - abecedario_18
-  - abecedario_19
-  - abecedario_20
-  - abecedario_21
-  - abecedario_22
-  - abecedario_23
-  - abecedario_24
-  - abecedario_25
-  - abecedario_26
-  - abecedario_27
-  - abecedario_28
   - Speed
   - Slow
-  - numeros_0
-  - numeros_1
-  - numeros_2
-  - numeros_3
-  - numeros_4
-  - numeros_5
-  - numeros_6
-  - numeros_7
-  - numeros_8
-  - numeros_9
   - Planeta2
   - Planeta3
   - Planeta4
   - Planeta1
   - Planeta
+  - Fuente_0
+  - Fuente_1
+  - Fuente_2
+  - Fuente_3
+  - Fuente_4
+  - Fuente_5
+  - Fuente_6
+  - Fuente_7
+  - Fuente_8
+  - Fuente_9
+  - Fuente_10
+  - Fuente_11
+  - Fuente_12
+  - Fuente_13
+  - Fuente_14
+  - Fuente_15
+  - Fuente_16
+  - Fuente_17
+  - Fuente_18
+  - Fuente_19
+  - Fuente_20
+  - Fuente_21
+  - Fuente_22
+  - Fuente_23
+  - Fuente_24
+  - Fuente_25
+  - Fuente_26
+  - Fuente_27
+  - Fuente_28
+  - Fuente_29
+  - Fuente_30
+  - Fuente_31
+  - Fuente_32
+  - Fuente_33
+  - Fuente_34
+  - Fuente_35
+  - Fuente_36
+  - Fuente_37
+  - Fuente_38
+  - Fuente_39
+  - Fuente_40
+  - Fuente_41
+  - Fuente_42
+  - Fuente_43
+  - Fuente_44
+  - Fuente_45
+  - Fuente_46
+  - Fuente_47
+  - Fuente_48
+  - Fuente_49
+  - Fuente_50
+  - Fuente_51
+  - Fuente_52
+  - Fuente_53
+  - Fuente_54
+  - Fuente_55
+  - Fuente_56
+  - Fuente_57
+  - Fuente_58
+  - Fuente_59
+  - Fuente_60
+  - Fuente_61
+  - Fuente_62
+  - Fuente_63
+  - Fuente_64
+  - Fuente_65
+  - Fuente_66
+  - Fuente_67
+  - Fuente_68
+  - Fuente_69
+  - Fuente_70
+  - Fuente_71
+  - Fuente_72
+  - Fuente_73
+  - Fuente_74
+  - Fuente_75
+  - Fuente_76
+  - Fuente_77
+  - Fuente_78
+  - Fuente_79
+  - Fuente_80
+  - Fuente_81
+  - Fuente_82
+  - Fuente_83
+  - Fuente_84
+  - Fuente_85
+  - Fuente_86
+  - Fuente_87
+  - Fuente_88
   layers:
   - Default
   - TransparentFX

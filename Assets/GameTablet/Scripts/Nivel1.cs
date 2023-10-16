@@ -7,30 +7,40 @@ public class Nivel1 : Niveles
 {
     private int probLletra;
 
+    private void Start()
+    {
+        Niveles.speed = 2.0f;
+        
+    }
+
     void Update()
     {
         
-        if (gameOver==false)
+        if (gameOver==false && !Settings.gamePause)
         {
-            if (!Settings.gamePause)
-            {
-                spwanLetrasNumros -= Time.deltaTime;
+
+                spawnLetrasNumros -= Time.deltaTime;
                 probLletra = Random.Range(0, 4);
                 // Debug.Log(probLletra,gameObject);
 
-                if (spwanLetrasNumros <= 0.0f)
+                if (spawnLetrasNumros <= 0.0f)
                 {
                     spawn();
-                    spwanLetrasNumros = 1f;
+                spawnLetrasNumros = 1f;
                 }
-            }
+            
+                if (time <= 40.0f) {
+                Debug.Log(time, gameObject);
+                }
+
         }
         
     }
     public override void configuration()
     {
-        
+        Niveles.time = 60.0f;
     }
+
     public override void spawn()
     {
         GameObject p = Instantiate(prefabNumerosLetras, new Vector3(Random.Range(-3.0f, 2.0f), 5, 0), Quaternion.identity) as GameObject;

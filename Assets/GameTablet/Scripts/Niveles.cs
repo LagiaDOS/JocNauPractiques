@@ -7,7 +7,7 @@ abstract public class Niveles : MonoBehaviour, ConfigurationLevels
     public GameObject prefabNumerosLetras;
     public GameObject prefabAdivinar;
     public Sprite[] spritesNumerosLetras;
-    public float spwanLetrasNumros = 1;
+    public float spawnLetrasNumros = 1;
 
         public int letraRandomAdivinar;
         public int letraMinRandomAdivinar;
@@ -18,9 +18,12 @@ abstract public class Niveles : MonoBehaviour, ConfigurationLevels
         public int numeroRandom;
         public int caracterRandom;
 
+    public static float time;
+    public static float speed;
 
     public static string tagAdivinar;
     public static bool gameOver;
+
     public void init()
     {
         prefabNumerosLetras = Resources.Load("Prefabs/prefabNumLetras") as GameObject;
@@ -37,6 +40,8 @@ abstract public class Niveles : MonoBehaviour, ConfigurationLevels
         numeroRandom = Random.Range(52, 61);
         caracterRandom = Random.Range(62, 88);
 
+        speed = 0.0f;
+        time = 999.0f;
        
         valorAdivinar();
         gameOver = false;

@@ -4,9 +4,10 @@ using UnityEngine;
 
 public class movimientoPreFabNumLetras : MonoBehaviour {
     public AudioClip _audioSource;
+    public float speed;
     // Use this for initialization
     void Start () {
-		
+        speed = Niveles.speed;
 	}
 	
 	// Update is called once per frame
@@ -15,7 +16,7 @@ public class movimientoPreFabNumLetras : MonoBehaviour {
         {
             if (!Settings.gamePause)
             {
-                transform.Translate(Vector3.down * 2.0f * Time.deltaTime);
+                transform.Translate(Vector3.down * speed * Time.deltaTime);
 
                 //Si el objeto supera el valor de la y, lo destruimos
                 if (transform.position.y < -6.0f)

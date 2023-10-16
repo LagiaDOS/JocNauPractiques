@@ -11,27 +11,36 @@ public class myTime : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-        meTime = 60.0f;
+        //meTime = 60.0f;
+        switch (PlayerPrefs.GetString("Nivel"))
+        {
+            case "Nivel1":
+                meTime = 60f;
+                break;
+            case "Nivel2":
+                meTime = Niveles.time; 
+                break;
+            case "Nivel3":
+                meTime = Niveles.time;
+                break;
+        }
         timerText = GetComponent<Text>();
-        
     }
 	
 	// Update is called once per frame
 	void Update ()
     {
-        if (!Niveles.gameOver)
+        if (!Niveles.gameOver && !Settings.gamePause)
         {
-            if (!Settings.gamePause)
-            {
                 meTime -= Time.deltaTime;
+                Niveles.time = meTime;
+
                 timerText.text = meTime.ToString("f0");
                 if (meTime <= 0)
                 {
                     gameOver.gameObject.SetActive(true);
                     Niveles.gameOver = true;
                 }
-
-            }
         }  
 	}
 }
