@@ -12,6 +12,8 @@ public class myTime : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         //meTime = 60.0f;
+
+        //depenent el nivell en el que estem, el temps disponible cambia
         switch (PlayerPrefs.GetString("Nivel"))
         {
             case "Nivel1":
@@ -32,9 +34,11 @@ public class myTime : MonoBehaviour {
     {
         if (!Niveles.gameOver && !Settings.gamePause)
         {
+            //redueix el temps en 1 cada 1 segon
                 meTime -= Time.deltaTime;
                 Niveles.time = meTime;
 
+            //si el temps arriba a 0, acaba la partida
                 timerText.text = meTime.ToString("f0");
                 if (meTime <= 0)
                 {

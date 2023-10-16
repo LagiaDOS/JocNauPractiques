@@ -12,22 +12,21 @@ public class movimientoPreFabNumLetras : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        if (!Niveles.gameOver)
+        if (!Niveles.gameOver && !Settings.gamePause)
         {
-            if (!Settings.gamePause)
+            //fa queel objecte baixi a X velocitat
+            transform.Translate(Vector3.down * speed * Time.deltaTime);
+            //Si el objeto supera el valor de la y, lo destruimos
+            if (transform.position.y < -6.0f)
             {
-                transform.Translate(Vector3.down * speed * Time.deltaTime);
-
-                //Si el objeto supera el valor de la y, lo destruimos
-                if (transform.position.y < -6.0f)
-                {
-                    Destroy(this.gameObject);
-                }
+               Destroy(this.gameObject);
             }
+            
         }
             
         
     }
+
     private void OnTriggerEnter2D(Collider2D other)
     {
         //Si los objetos que bajan, han colisionado con el jugador accedemos al if

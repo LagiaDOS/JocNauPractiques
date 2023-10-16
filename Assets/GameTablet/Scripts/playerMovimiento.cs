@@ -22,10 +22,9 @@ public class playerMovimiento : MonoBehaviour {
     // Update is called once per frame
     void Update()
     {
-        if (!Niveles.gameOver)
+        if (!Niveles.gameOver && !Settings.gamePause)
         {
-            if (!Settings.gamePause)
-            {
+           
                 int i = 0;
                 //loop over every touch found
                 while (i < Input.touchCount)
@@ -48,7 +47,7 @@ public class playerMovimiento : MonoBehaviour {
                     }
                     ++i;
                 }
-            }
+            
         }
         
     }
@@ -59,6 +58,7 @@ public class playerMovimiento : MonoBehaviour {
         RunCharacter(Input.GetAxis("Horizontal"));
 #endif
     }
+
     private void RunCharacter(float horizontalInput)
     {
         Vector3 posaux = characterBody.transform.position;

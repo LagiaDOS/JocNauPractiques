@@ -8,6 +8,7 @@ public class GameController : MonoBehaviour {
     public static GameController instance;
     
 
+    //posa la instancia en el nivell actual. Si per algun motiu hi ha una creada, la elimina.
     void Awake()
     {
         if (instance == null)
@@ -23,15 +24,17 @@ public class GameController : MonoBehaviour {
     // Use this for initialization
     void Start () {
         
+        //agafa el string de Nivel de PlayerPrefs, i despres carrega el scrip del nivell corresponent.
         switch (PlayerPrefs.GetString("Nivel"))
         {
             case "Nivel1":
                 instance.cgl = instance.gameObject.AddComponent<Nivel1>();
-
                 break;
+
             case "Nivel2":
                 instance.cgl = instance.gameObject.AddComponent<Nivel2>();
                 break;
+
             case "Nivel3":
                 //gameObject.AddComponent<Nivel3>();
                 break;

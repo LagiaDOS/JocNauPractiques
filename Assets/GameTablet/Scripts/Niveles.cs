@@ -9,14 +9,14 @@ abstract public class Niveles : MonoBehaviour, ConfigurationLevels
     public Sprite[] spritesNumerosLetras;
     public float spawnLetrasNumros = 1;
 
-        public int letraRandomAdivinar;
-        public int letraMinRandomAdivinar;
-        public int numeroRandomAdivinar;
-        public int caracterRandomAdivinar;
-        public int letraRandom;
-        public int letraMinRandom;
-        public int numeroRandom;
-        public int caracterRandom;
+    public int letraRandomAdivinar;
+    public int letraMinRandomAdivinar;
+    public int numeroRandomAdivinar;
+    public int caracterRandomAdivinar;
+    public int letraRandom;
+    public int letraMinRandom;
+    public int numeroRandom;
+    public int caracterRandom;
 
     public static float time;
     public static float speed;
