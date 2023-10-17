@@ -39,11 +39,34 @@ public class Settings : MonoBehaviour {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
-    public void nextLevel()
-    {
-        /* switch ()
-        {
+    public void nextLevel() {
 
-        } */
+        switch (PlayerPrefs.GetString("Nivel"))
+        {
+            case "Nivel1":
+                PlayerPrefs.SetString("Nivel", "Nivel2");
+                SceneManager.LoadScene(1);
+                break;
+            case "Nivel2":
+                PlayerPrefs.SetString("Nivel", "Nivel3");
+                SceneManager.LoadScene(1);
+                break;
+            case "Nivel3":
+                PlayerPrefs.SetString("Nivel", "Nivel4");
+                SceneManager.LoadScene(1);
+                break;
+            case "Nivel4":
+                PlayerPrefs.SetString("Nivel", "Nivel5");
+                SceneManager.LoadScene(1);
+                break;
+            case "Nivel5":
+                PlayerPrefs.SetString("Nivel", "Nivel6");
+                SceneManager.LoadScene(1);
+                break;
+
+        }
+
+
     }
+
 }

@@ -20,10 +20,19 @@ public class myTime : MonoBehaviour {
                 meTime = 60f;
                 break;
             case "Nivel2":
-                meTime = Niveles.time; 
+                meTime = 60f;
                 break;
             case "Nivel3":
-                meTime = Niveles.time;
+                meTime = 60f;
+                break;
+            case "Nivel4":
+                meTime = 60f;
+                break;
+            case "Nivel5":
+                meTime = 60f;
+                break;
+            case "Nivel6":
+                meTime = 60f;
                 break;
         }
         timerText = GetComponent<Text>();
