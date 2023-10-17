@@ -44,7 +44,7 @@ public class Nivel2 : Niveles
 
     public override void spawn()
     {
-        GameObject p = Instantiate(prefabNumerosLetras, new Vector3(Random.Range(-3.0f, 2.0f), 5, 0), Quaternion.identity) as GameObject;
+        GameObject p = Instantiate(prefabNumerosLetras, new Vector3(Random.Range(-10.0f, 9.0f), 5, 0), Quaternion.identity) as GameObject;
 
         switch (probLletra)
         {
