@@ -5,7 +5,7 @@ using UnityEngine;
 public class playerMovimiento : MonoBehaviour {
     
     public GameObject character;
-
+    public static float speed;
     private Rigidbody2D characterBody;
     private float ScreenWidth;
 
@@ -15,6 +15,7 @@ public class playerMovimiento : MonoBehaviour {
     // Use this for initialization
     void Start()
     {
+        speed = 0.5f;
         ScreenWidth = Screen.width;
         characterBody = character.GetComponent<Rigidbody2D>();
     }
@@ -32,13 +33,13 @@ public class playerMovimiento : MonoBehaviour {
                     if (Input.GetTouch(i).position.x > ScreenWidth / 2 /*|| Input.GetKeyDown(KeyCode.D) || Input.GetKeyDown(KeyCode.RightArrow)*/)
                     {
                         //move right
-                        RunCharacter(0.5f);
+                        RunCharacter(speed);
                         // character.GetComponent<SpriteRenderer>().sprite = spriteRight;
                     }
                     else if (Input.GetTouch(i).position.x < ScreenWidth / 2 /*|| Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.LeftArrow)*/)
                     {
                         //move left
-                        RunCharacter(-0.5f);
+                        RunCharacter(-speed);
                         //character.GetComponent<SpriteRenderer>().sprite = spriteLeft;
                     }
                     else

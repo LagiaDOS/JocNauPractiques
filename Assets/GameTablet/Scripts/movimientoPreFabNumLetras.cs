@@ -23,8 +23,6 @@ public class movimientoPreFabNumLetras : MonoBehaviour {
             }
             
         }
-            
-        
     }
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -46,4 +44,5 @@ public class movimientoPreFabNumLetras : MonoBehaviour {
             Destroy(this.gameObject);
         }
     }
+
 }

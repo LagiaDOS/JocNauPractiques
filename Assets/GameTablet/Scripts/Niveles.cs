@@ -6,8 +6,11 @@ abstract public class Niveles : MonoBehaviour, ConfigurationLevels
 {
     public GameObject prefabNumerosLetras;
     public GameObject prefabAdivinar;
+    public GameObject prefabSpeedUp;
+    public GameObject prefabSpeedDown;
     public Sprite[] spritesNumerosLetras;
     public float spawnLetrasNumros = 1;
+    public float spawnPowerUp = 15;
 
         public int letraRandomAdivinar;
         public int letraMinRandomAdivinar;
@@ -31,7 +34,12 @@ abstract public class Niveles : MonoBehaviour, ConfigurationLevels
     {
         prefabNumerosLetras = Resources.Load("Prefabs/prefabNumLetras") as GameObject;
         prefabAdivinar = Resources.Load("Prefabs/prefabAdivinar") as GameObject;
+        prefabSpeedUp = Resources.Load("Prefabs/prefabSpeedUp") as GameObject;
+        prefabSpeedDown = Resources.Load("Prefabs/prefabSpeedDown") as GameObject;
+
         spritesNumerosLetras = Resources.LoadAll<Sprite>("Sprites/LetrasNumeros");
+
+
 
         letraRandomAdivinar = Random.Range(0, 25);
         letraMinRandomAdivinar = Random.Range(26, 51);
