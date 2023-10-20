@@ -54,7 +54,6 @@ public class Nivel1 : Niveles
         if (probPowerUp == 0)
         {
             GameObject SU = Instantiate(prefabSpeedUp, new Vector3(UnityEngine.Random.Range(-3.0f, 2.0f), 5, 0), Quaternion.identity) as GameObject;
-            Debug.Log(playerMovimiento.speed, gameObject);
         }
         else
         {

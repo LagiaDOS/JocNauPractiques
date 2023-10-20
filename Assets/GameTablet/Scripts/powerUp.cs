@@ -27,10 +27,11 @@ public class powerUp : MonoBehaviour
             //Si el objeto supera el valor de la y, lo destruimos
             if (meTime <= 0)
             {
-                if (speedup == true) {
-                    Debug.Log("speed up destroy", gameObject);
+                if (speedup)
+                {
+                    speedup = false;
                 }
-                if (speeddown == true) {
+                if (speeddown) {
                     Niveles.speed = Niveles.speed + 1.0f;
                 }
                 Destroy(this.gameObject);
@@ -43,10 +44,10 @@ public class powerUp : MonoBehaviour
         //Si los objetos que bajan, han colisionado con el jugador accedemos al if
         if (other.tag == "Player")
         {
-            if (this.tag == "Speed") {
-            // playerMovimiento.speed = playerMovimiento.speed + 10.0f;
-            speedup = true;
-            Debug.Log("speed up", gameObject);
+            if (this.tag == "Speed")
+            {
+                speedup = true;
+                Debug.Log("speed up", gameObject);
                 Debug.Log(speedup, gameObject);
 
             }
