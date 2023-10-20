@@ -9,15 +9,12 @@ public class playerMovimiento : MonoBehaviour {
     private Rigidbody2D characterBody;
     private float ScreenWidth;
 
-    // Arreglar renders dels sprites
-    // public Sprite spriteRight, spriteLeft,spriteNeutral;
-
     // Use this for initialization
     void Start()
     {
-        speed = 0.5f;
         ScreenWidth = Screen.width;
         characterBody = character.GetComponent<Rigidbody2D>();
+        speed = 0.5f;
     }
 
     // Update is called once per frame
@@ -25,25 +22,28 @@ public class playerMovimiento : MonoBehaviour {
     {
         if (!Niveles.gameOver && !Settings.gamePause)
         {
-           
                 int i = 0;
                 //loop over every touch found
                 while (i < Input.touchCount)
                 {
                     if (Input.GetTouch(i).position.x > ScreenWidth / 2 /*|| Input.GetKeyDown(KeyCode.D) || Input.GetKeyDown(KeyCode.RightArrow)*/)
                     {
-                        //move right
-                        RunCharacter(speed);
+                    //move right
+                        if (powerUp.speedup) { RunCharacter(speed + 10.0f); }
+                        else { RunCharacter(speed); }
                         // character.GetComponent<SpriteRenderer>().sprite = spriteRight;
                     }
                     else if (Input.GetTouch(i).position.x < ScreenWidth / 2 /*|| Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.LeftArrow)*/)
                     {
-                        //move left
-                        RunCharacter(-speed);
-                        //character.GetComponent<SpriteRenderer>().sprite = spriteLeft;
-                    }
-                    else
+                    //move left
+                        if (powerUp.speedup) { RunCharacter(-speed - 10.0f); }
+                        else { RunCharacter(-speed); }
+                    //character.GetComponent<SpriteRenderer>().sprite = spriteLeft;
+                }
+                    else if (Input.GetTouch(i).position.x < ScreenWidth / 2 && Input.GetTouch(i).position.x > ScreenWidth / 2 ||
+                    Input.GetKeyDown(KeyCode.D) && Input.GetKeyDown(KeyCode.A)  || Input.GetKeyDown(KeyCode.RightArrow) && Input.GetKeyDown(KeyCode.LeftArrow))
                     {
+                        speed = 0.0f;
                         //character.GetComponent<SpriteRenderer>().sprite = spriteNeutral;
                     }
                     ++i;

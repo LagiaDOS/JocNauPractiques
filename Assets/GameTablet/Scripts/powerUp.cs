@@ -8,7 +8,7 @@ public class powerUp : MonoBehaviour
     public GameObject character;
     public float speed;
     public float meTime = 15.0f;
-    bool speedup = false;
+    public static bool speedup = false;
     bool speeddown = false;
 
     // Use this for initialization
@@ -44,10 +44,10 @@ public class powerUp : MonoBehaviour
         if (other.tag == "Player")
         {
             if (this.tag == "Speed") {
-            playerMovimiento.speed = playerMovimiento.speed + 10.0f;
+            // playerMovimiento.speed = playerMovimiento.speed + 10.0f;
             speedup = true;
             Debug.Log("speed up", gameObject);
-                Debug.Log(playerMovimiento.speed, gameObject);
+                Debug.Log(speedup, gameObject);
 
             }
 

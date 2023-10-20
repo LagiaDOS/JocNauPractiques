@@ -5,9 +5,10 @@ using UnityEngine.SceneManagement;
 
 public class ChoiceLevel : MonoBehaviour {
 
-    public void loadPlaneta()
+    public void loadPlaneta(string planeta)
     {
         //carrega la escena dels planetes
+        PlayerPrefs.SetString("Planeta", planeta);
         SceneManager.LoadScene(2);
     }
     public void loadNivel(string nivel)
