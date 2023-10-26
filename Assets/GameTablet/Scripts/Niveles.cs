@@ -18,11 +18,16 @@ abstract public class Niveles : MonoBehaviour, ConfigurationLevels
         public int vocalRandomAdivinar;
         public int numeroRandomAdivinar;
         public int caracterRandomAdivinar;
+        public int colorRandomAdivinar;
+
         public int vocalRandom;
         public int letraRandom;
         public int letraMinRandom;
         public int numeroRandom;
         public int caracterRandom;
+        public int colorRandom;
+
+
 
     public static float time;
     public static float speed;
@@ -45,12 +50,15 @@ abstract public class Niveles : MonoBehaviour, ConfigurationLevels
         letraMinRandomAdivinar = Random.Range(26, 51);
         vocalRandomAdivinar = vocals[Random.Range(0, vocals.Length)];
         numeroRandomAdivinar = Random.Range(52, 61);
-        caracterRandomAdivinar = Random.Range(62, 88);
+        caracterRandomAdivinar = Random.Range(62, 89);
+        colorRandomAdivinar = Random.Range(90, 96);
+
 
         letraRandom = Random.Range(0, 25);
         letraMinRandom = Random.Range(26, 51);
         numeroRandom = Random.Range(52, 61);
-        caracterRandom = Random.Range(62, 88);
+        caracterRandom = Random.Range(62, 89);
+        colorRandom = Random.Range(90, 96);
 
         speed = 0.0f;
         time = 999.0f;

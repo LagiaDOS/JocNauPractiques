@@ -6,7 +6,11 @@ using UnityEngine;
 public class GameController : MonoBehaviour {
     private ConfigurationLevels cgl;
     public static GameController instance;
-    
+
+    public AudioClip audioFacil; 
+    public AudioClip audioDificil;
+    private AudioSource m_MyAudioSource;
+
 
     //posa la instancia en el nivell actual. Si per algun motiu hi ha una creada, la elimina.
     void Awake()
@@ -23,7 +27,11 @@ public class GameController : MonoBehaviour {
 
     // Use this for initialization
     void Start () {
-        
+
+        m_MyAudioSource = GetComponent<AudioSource>();
+        m_MyAudioSource.clip = audioFacil;
+
+
         //agafa el string de Nivel de PlayerPrefs, i despres carrega el scrip del nivell corresponent.
         switch (PlayerPrefs.GetString("Nivel"))
         {
