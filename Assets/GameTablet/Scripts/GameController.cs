@@ -36,7 +36,7 @@ public class GameController : MonoBehaviour {
                 break;
 
             case "Nivel3":
-                //gameObject.AddComponent<Nivel3>();
+                instance.cgl = instance.gameObject.AddComponent<Nivel3>();
                 break;
         }
         instance.cgl.init();
