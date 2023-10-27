@@ -31,7 +31,7 @@ abstract public class Niveles : MonoBehaviour, ConfigurationLevels
 
     public static float time;
     public static float speed;
-
+    
     public static string tagAdivinar;
     public static bool gameOver;
 
