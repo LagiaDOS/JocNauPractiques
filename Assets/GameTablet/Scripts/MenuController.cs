@@ -39,7 +39,7 @@ public class MenuController : MonoBehaviour {
         CreateSchema();
         borrarPlanetas();
         insertarPlaneta("Planeta1", 11, 0,1);
-        insertarPlaneta("Planeta2", 11, 0,0);
+        insertarPlaneta("Planeta2", 11, 0,1);
         insertarPlaneta("Planeta3", 11, 0,0);
         insertarPlaneta("Planeta4", 11, 0,0);
         getPlanetas();

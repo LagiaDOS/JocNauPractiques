@@ -21,7 +21,7 @@ public class playerMovimiento : MonoBehaviour {
     {
         if (!Niveles.gameOver && !Settings.gamePause)
         {
-            playerSpeed = powerUp.speedup ? 1.0f : 0.5f; // Adjust the speed as needed
+            playerSpeed = powerUp.speedup ? 1.0f : 0.3f; // Adjust the speed as needed
             int i = 0;
             //loop over every touch found
             while (i < Input.touchCount)
@@ -44,7 +44,7 @@ public class playerMovimiento : MonoBehaviour {
     void FixedUpdate()
     {
 #if UNITY_EDITOR
-        float playerSpeed = powerUp.speedup ? 1.0f : 0.5f;
+        float playerSpeed = powerUp.speedup ? 1.0f : 0.3f;
         RunCharacter(Input.GetAxis("Horizontal") * playerSpeed);
 #endif
     }

@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class Nivel2 : Niveles
 {
     private int probLletra;
+    private int probPowerUp;
 
     private void Start()
     {
@@ -20,8 +21,10 @@ public class Nivel2 : Niveles
         {
 
             spawnLetrasNumros -= Time.deltaTime;
-            probLletra = Random.Range(0, 4);
-            // Debug.Log(probLletra,gameObject);
+            spawnPowerUp -= Time.deltaTime;
+            probLletra = UnityEngine.Random.Range(0, 4);
+            probPowerUp = UnityEngine.Random.Range(0, 2);
+            // Debug.Log(probPowerUp,gameObject);
 
             if (spawnLetrasNumros <= 0.0f)
             {
@@ -29,14 +32,37 @@ public class Nivel2 : Niveles
                 spawnLetrasNumros = 1f;
             }
 
+            if (spawnPowerUp <= 0.0f)
+            {
+                //Debug.Log("Spawn powerup", gameObject);
+                spawnPowerup();
+                spawnPowerUp = 15f;
+            }
+
             if (time <= 40.0f)
             {
-                Debug.Log(time, gameObject);
+                // Debug.Log(time, gameObject);
+                // Niveles.speed = 6.0f;
             }
 
         }
 
     }
+
+    private void spawnPowerup()
+    {
+        if (probPowerUp == 0)
+        {
+            GameObject SU = Instantiate(prefabSpeedUp, new Vector3(UnityEngine.Random.Range(-3.0f, 2.0f), 5, 0), Quaternion.identity) as GameObject;
+        }
+        else
+        {
+            GameObject SD = Instantiate(prefabSpeedDown, new Vector3(UnityEngine.Random.Range(-3.0f, 2.0f), 5, 0), Quaternion.identity) as GameObject;
+        }
+
+
+    }
+
     public override void configuration()
     {
         Niveles.time = 60.0f;

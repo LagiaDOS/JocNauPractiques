@@ -43,6 +43,48 @@ public class GameController : MonoBehaviour {
             case "Nivel3":
                 instance.cgl = instance.gameObject.AddComponent<Nivel3>();
                 break;
+
+            case "Nivel4":
+                instance.cgl = instance.gameObject.AddComponent<Nivel4>();
+                audioSource.clip = audioFacil;
+                break;
+
+            case "Nivel5":
+                instance.cgl = instance.gameObject.AddComponent<Nivel5>();
+                audioSource.clip = audioDificil;
+                break;
+
+            case "Nivel6":
+                instance.cgl = instance.gameObject.AddComponent<Nivel6>();
+                break;
+
+            case "Nivel7":
+                instance.cgl = instance.gameObject.AddComponent<Nivel7>();
+                audioSource.clip = audioFacil;
+                break;
+
+            case "Nivel8":
+                instance.cgl = instance.gameObject.AddComponent<Nivel8>();
+                audioSource.clip = audioDificil;
+                break;
+
+            case "Nivel9":
+                instance.cgl = instance.gameObject.AddComponent<Nivel9>();
+                break;
+
+            case "Nivel10":
+                instance.cgl = instance.gameObject.AddComponent<Nivel10>();
+                audioSource.clip = audioFacil;
+                break;
+
+            case "Nivel11":
+                instance.cgl = instance.gameObject.AddComponent<Nivel11>();
+                audioSource.clip = audioDificil;
+                break;
+
+            case "Nivel12":
+                instance.cgl = instance.gameObject.AddComponent<Nivel12>();
+                break;
         }
         instance.cgl.init();
         audioSource.Play();
