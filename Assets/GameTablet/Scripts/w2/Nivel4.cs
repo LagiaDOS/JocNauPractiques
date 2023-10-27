@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -7,6 +6,7 @@ using UnityEngine.UI;
 public class Nivel4 : Niveles
 {
     private int probNumero;
+    private int probPowerUp;
 
     private void Start()
     {
@@ -20,7 +20,9 @@ public class Nivel4 : Niveles
         {
 
             spawnLetrasNumros -= Time.deltaTime;
+            spawnPowerUp -= Time.deltaTime;
             probNumero = UnityEngine.Random.Range(0, 4);
+            probPowerUp = UnityEngine.Random.Range(0, 2);
             // Debug.Log(probPowerUp,gameObject);
 
             if (spawnLetrasNumros <= 0.0f)
@@ -29,19 +31,36 @@ public class Nivel4 : Niveles
                 spawnLetrasNumros = 1f;
             }
 
+            if (spawnPowerUp <= 0.0f)
+            {
+                //Debug.Log("Spawn powerup", gameObject);
+                spawnPowerup();
+                spawnPowerUp = 15f;
+            }
 
-            
             if (time <= 40.0f)
             {
-               // Debug.Log(time, gameObject);
-               // Niveles.speed = 6.0f;
+                // Debug.Log(time, gameObject);
+                // Niveles.speed = 6.0f;
             }
 
         }
 
     }
 
+    private void spawnPowerup()
+    {
+        if (probPowerUp == 0)
+        {
+            GameObject SU = Instantiate(prefabSpeedUp, new Vector3(UnityEngine.Random.Range(-3.0f, 2.0f), 5, 0), Quaternion.identity) as GameObject;
+        }
+        else
+        {
+            GameObject SD = Instantiate(prefabSpeedDown, new Vector3(UnityEngine.Random.Range(-3.0f, 2.0f), 5, 0), Quaternion.identity) as GameObject;
+        }
 
+
+    }
 
     public override void configuration()
     {
@@ -60,7 +79,7 @@ public class Nivel4 : Niveles
                 //Debug.Log(numeroRandomAdivinar, gameObject);
                 break;
             default:
-                numeroRandom = vocals[UnityEngine.Random.Range(0, vocals.Length)];
+                numeroRandom = Random.Range(52, 61);
                 p.GetComponent<SpriteRenderer>().sprite = spritesNumerosLetras[numeroRandom];
                 p.gameObject.tag = spritesNumerosLetras[numeroRandom].name;
                 //Debug.Log(numeroRandom, gameObject);
