@@ -13,27 +13,14 @@ public class myTime : MonoBehaviour {
 	void Start () {
         //meTime = 60.0f;
 
-        //depenent el nivell en el que estem, el temps disponible cambia
+        //depenent el nivell en el que estem, el temps disponible pot cambiar
         switch (PlayerPrefs.GetString("Nivel"))
         {
-            case "Nivel1":
+            default:
                 meTime = 60f;
                 break;
-            case "Nivel2":
-                meTime = 60f;
-                break;
-            case "Nivel3":
-                meTime = 60f;
-                break;
-            case "Nivel4":
-                meTime = 60f;
-                break;
-            case "Nivel5":
-                meTime = 60f;
-                break;
-            case "Nivel6":
-                meTime = 60f;
-                break;
+
+
         }
         timerText = GetComponent<Text>();
     }

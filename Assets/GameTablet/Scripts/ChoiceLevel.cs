@@ -23,8 +23,16 @@ public class ChoiceLevel : MonoBehaviour {
             case "Planeta3":
                 SceneManager.LoadScene(3);
                 break;
+
             case "Planeta4":
                 SceneManager.LoadScene(4);
+                break;
+
+            case "Selector":
+                SceneManager.LoadScene(0);
+                break;
+            case "Creditos":
+                //posar escena de creditos aqui
                 break;
         }
     }   

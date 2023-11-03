@@ -56,6 +56,7 @@ public class GameController : MonoBehaviour {
 
             case "Nivel6":
                 instance.cgl = instance.gameObject.AddComponent<Nivel6>();
+                
                 break;
 
             case "Nivel7":

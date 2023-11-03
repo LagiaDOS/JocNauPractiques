@@ -7,8 +7,7 @@ public class Nivel5 : Niveles
 {
     private int probNumero;
     private int probPowerUp;
-
-
+    
     private void Start()
     {
         Niveles.speed = 2.0f;
@@ -16,17 +15,12 @@ public class Nivel5 : Niveles
 
     void Update()
     {
-
         if (gameOver == false && !Settings.gamePause)
         {
-
             spawnLetrasNumros -= Time.deltaTime;
             spawnPowerUp -= Time.deltaTime;
-
             probNumero = Random.Range(0, 4);
-            // Debug.Log(probNumero,gameObject);
             probPowerUp = UnityEngine.Random.Range(0, 2);
-
 
             if (spawnLetrasNumros <= 0.0f)
             {
@@ -34,21 +28,15 @@ public class Nivel5 : Niveles
                 spawnLetrasNumros = 1f;
             }
 
-            if (time <= 40.0f)
-            {
-                Debug.Log(time, gameObject);
-            }
-
             if (spawnPowerUp <= 0.0f)
             {
-                Debug.Log("Spawn powerup", gameObject);
                 spawnPowerup();
                 spawnPowerUp = 15f;
             }
 
         }
-
     }
+
     public override void configuration()
     {
         Niveles.time = 60.0f;
@@ -70,8 +58,8 @@ public class Nivel5 : Niveles
                 p.gameObject.tag = spritesNumerosLetras[numeroRandom].name;
                 break;
         }
-
     }
+
     public override void valorAdivinar()
     {
         GameObject.Find("valorAdivinar").GetComponent<Image>().sprite = spritesNumerosLetras[numeroRandomAdivinar];
@@ -89,6 +77,5 @@ public class Nivel5 : Niveles
             GameObject SD = Instantiate(prefabSpeedDown, new Vector3(UnityEngine.Random.Range(-3.0f, 2.0f), 5, 0), Quaternion.identity) as GameObject;
         }
     }
-
 
 }

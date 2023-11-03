@@ -15,33 +15,18 @@ public class Nivel7 : Niveles
 
     void Update()
     {
-
         if (gameOver == false && !Settings.gamePause)
         {
-
             spawnLetrasNumros -= Time.deltaTime;
             probColor = UnityEngine.Random.Range(0, 4);
-            // Debug.Log(probPowerUp,gameObject);
 
             if (spawnLetrasNumros <= 0.0f)
             {
                 spawn();
                 spawnLetrasNumros = 1f;
             }
-
-
-            
-            if (time <= 40.0f)
-            {
-               // Debug.Log(time, gameObject);
-               // Niveles.speed = 6.0f;
-            }
-
         }
-
     }
-
-
 
     public override void configuration()
     {
@@ -57,16 +42,14 @@ public class Nivel7 : Niveles
             case 3:
                 p.GetComponent<SpriteRenderer>().sprite = spritesNumerosLetras[colorRandomAdivinar];
                 p.gameObject.tag = spritesNumerosLetras[colorRandomAdivinar].name;
-                //Debug.Log(colorRandomAdivinar, gameObject);
                 break;
+
             default:
-                colorRandom = vocals[UnityEngine.Random.Range(0, vocals.Length)];
+                colorRandom = UnityEngine.Random.Range(90, 96);
                 p.GetComponent<SpriteRenderer>().sprite = spritesNumerosLetras[colorRandom];
                 p.gameObject.tag = spritesNumerosLetras[colorRandom].name;
-                //Debug.Log(colorRandom, gameObject);
                 break;
         }
-
     }
 
     public override void valorAdivinar()
@@ -74,4 +57,5 @@ public class Nivel7 : Niveles
         GameObject.Find("valorAdivinar").GetComponent<Image>().sprite = spritesNumerosLetras[colorRandomAdivinar];
         tagAdivinar = spritesNumerosLetras[colorRandomAdivinar].name;
     }
+
 }
