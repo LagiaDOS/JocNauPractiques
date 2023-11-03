@@ -8,12 +8,9 @@ public class Nivel9 : Niveles
     private int colorLletra;
     private int nouColorAdivinar;
     private int probPowerUp;
-
-
     private bool changeSpeed1;
     private bool changeSpeed2;
     private bool changeLetter;
-
 
     private void Start()
     {
@@ -29,11 +26,8 @@ public class Nivel9 : Niveles
         {
             spawnLetrasNumros -= Time.deltaTime;
             spawnPowerUp -= Time.deltaTime;
-
             colorLletra = Random.Range(0, 4);
-            // Debug.Log(colorLletra,gameObject);
             probPowerUp = UnityEngine.Random.Range(0, 2);
-
 
             if (spawnLetrasNumros <= 0.0f)
             {
@@ -43,38 +37,25 @@ public class Nivel9 : Niveles
 
             if (time <= 30.0f && changeLetter == false)
             {
-                Debug.Log("canvi lletra", gameObject);
-                Debug.Log(changeLetter, gameObject);
-                Debug.Log(colorRandomAdivinar, gameObject);
-
                 nouColorAdivinar = Random.Range(90, 96);
                 valorAdivinar();
-
-                Debug.Log(nouColorAdivinar, gameObject);
-
-                //GameObject.Find("valorAdivinar").GetComponent<Image>().sprite = spritesNumerosLetras[nouColorAdivinar];
-                //tagAdivinar = spritesNumerosLetras[nouColorAdivinar].name;
-
                 changeLetter = true;
             }
 
             if (time <= 40.0f && changeSpeed1 == false)
             {
-                // Debug.Log(time, gameObject);
                 Niveles.speed = 3.0f;
                 changeSpeed1 = true;
             }
 
             if (time <= 20.0f && changeSpeed2 == false)
             {
-                // Debug.Log(time, gameObject);
                 Niveles.speed = 4.0f;
                 changeSpeed2 = true;
             }
 
             if (spawnPowerUp <= 0.0f)
             {
-                //Debug.Log("Spawn powerup", gameObject);
                 spawnPowerup();
                 spawnPowerUp = 15f;
             }
@@ -93,7 +74,6 @@ public class Nivel9 : Niveles
 
         if (time > 30.0f)
         {
-
             switch (colorLletra)
             {
                 case 3:
@@ -109,7 +89,6 @@ public class Nivel9 : Niveles
         }
         else if (time <= 30.0f)
         {
-
             switch (colorLletra)
             {
                 case 3:
@@ -129,15 +108,11 @@ public class Nivel9 : Niveles
     {
         if (time > 30.0f)
         {
-            Debug.Log("lletra 1 adivinar", gameObject);
-
             GameObject.Find("valorAdivinar").GetComponent<Image>().sprite = spritesNumerosLetras[colorRandomAdivinar];
             tagAdivinar = spritesNumerosLetras[colorRandomAdivinar].name;
         }
         else if (time < 30.0f)
         {
-            Debug.Log("lletra 2 adivinar", gameObject);
-
             GameObject.Find("valorAdivinar").GetComponent<Image>().sprite = spritesNumerosLetras[nouColorAdivinar];
             tagAdivinar = spritesNumerosLetras[nouColorAdivinar].name;
         }

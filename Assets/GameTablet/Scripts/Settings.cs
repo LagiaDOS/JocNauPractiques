@@ -63,6 +63,30 @@ public class Settings : MonoBehaviour {
                 PlayerPrefs.SetString("Nivel", "Nivel6");
                 SceneManager.LoadScene(1);
                 break;
+            case "Nivel6":
+                PlayerPrefs.SetString("Nivel", "Nivel7");
+                SceneManager.LoadScene(1);
+                break;
+            case "Nivel7":
+                PlayerPrefs.SetString("Nivel", "Nivel8");
+                SceneManager.LoadScene(1);
+                break;
+            case "Nivel8":
+                PlayerPrefs.SetString("Nivel", "Nivel+");
+                SceneManager.LoadScene(1);
+                break;
+            case "Nivel10":
+                PlayerPrefs.SetString("Nivel", "Nivel10");
+                SceneManager.LoadScene(1);
+                break;
+            case "Nivel11":
+                PlayerPrefs.SetString("Nivel", "Nivel12");
+                SceneManager.LoadScene(1);
+                break;
+            case "Nivel12":
+                //carregar escena de credits
+                
+                break;
 
         }
 

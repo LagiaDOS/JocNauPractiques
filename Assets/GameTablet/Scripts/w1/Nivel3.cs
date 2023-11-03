@@ -12,20 +12,16 @@ public class Nivel3 : Niveles
     private void Start()
     {
         Niveles.speed = 2.0f;
-
     }
 
     void Update()
     {
-
         if (gameOver == false && !Settings.gamePause)
         {
-
             spawnLetrasNumros -= Time.deltaTime;
             spawnPowerUp -= Time.deltaTime;
             probLletra = UnityEngine.Random.Range(0, 4);
             probPowerUp = UnityEngine.Random.Range(0, 2);
-            // Debug.Log(probPowerUp,gameObject);
 
             if (spawnLetrasNumros <= 0.0f)
             {
@@ -35,19 +31,10 @@ public class Nivel3 : Niveles
 
             if (spawnPowerUp <= 0.0f)
             {
-                //Debug.Log("Spawn powerup", gameObject);
                 spawnPowerup();
                 spawnPowerUp = 15f;
             }
-
-            if (time <= 40.0f)
-            {
-                // Debug.Log(time, gameObject);
-                // Niveles.speed = 6.0f;
-            }
-
         }
-
     }
 
     private void spawnPowerup()
@@ -60,8 +47,6 @@ public class Nivel3 : Niveles
         {
             GameObject SD = Instantiate(prefabSpeedDown, new Vector3(UnityEngine.Random.Range(-3.0f, 2.0f), 5, 0), Quaternion.identity) as GameObject;
         }
-
-
     }
 
     public override void configuration()
@@ -73,7 +58,7 @@ public class Nivel3 : Niveles
     {
         GameObject p = Instantiate(prefabNumerosLetras, new Vector3(Random.Range(-10.0f, 9.0f), 5, 0), Quaternion.identity) as GameObject;
 
-            if(time > 30.0f)
+        if (time > 30.0f)
         {
             switch (probLletra)
             {
@@ -103,9 +88,8 @@ public class Nivel3 : Niveles
                     break;
             }
         }
-            
-
     }
+
     public override void valorAdivinar()
     {
         if (time > 30.0f)
@@ -119,4 +103,5 @@ public class Nivel3 : Niveles
             tagAdivinar = spritesNumerosLetras[novaLletraAdivinar].name;
         }
     }
+
 }

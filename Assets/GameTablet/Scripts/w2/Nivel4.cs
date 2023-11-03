@@ -15,15 +15,12 @@ public class Nivel4 : Niveles
 
     void Update()
     {
-
         if (gameOver == false && !Settings.gamePause)
         {
-
             spawnLetrasNumros -= Time.deltaTime;
             spawnPowerUp -= Time.deltaTime;
             probNumero = UnityEngine.Random.Range(0, 4);
             probPowerUp = UnityEngine.Random.Range(0, 2);
-            // Debug.Log(probPowerUp,gameObject);
 
             if (spawnLetrasNumros <= 0.0f)
             {
@@ -33,19 +30,10 @@ public class Nivel4 : Niveles
 
             if (spawnPowerUp <= 0.0f)
             {
-                //Debug.Log("Spawn powerup", gameObject);
                 spawnPowerup();
                 spawnPowerUp = 15f;
             }
-
-            if (time <= 40.0f)
-            {
-                // Debug.Log(time, gameObject);
-                // Niveles.speed = 6.0f;
-            }
-
         }
-
     }
 
     private void spawnPowerup()
@@ -58,8 +46,6 @@ public class Nivel4 : Niveles
         {
             GameObject SD = Instantiate(prefabSpeedDown, new Vector3(UnityEngine.Random.Range(-3.0f, 2.0f), 5, 0), Quaternion.identity) as GameObject;
         }
-
-
     }
 
     public override void configuration()
@@ -76,13 +62,11 @@ public class Nivel4 : Niveles
             case 3:
                 p.GetComponent<SpriteRenderer>().sprite = spritesNumerosLetras[numeroRandomAdivinar];
                 p.gameObject.tag = spritesNumerosLetras[numeroRandomAdivinar].name;
-                //Debug.Log(numeroRandomAdivinar, gameObject);
                 break;
             default:
                 numeroRandom = Random.Range(52, 61);
                 p.GetComponent<SpriteRenderer>().sprite = spritesNumerosLetras[numeroRandom];
                 p.gameObject.tag = spritesNumerosLetras[numeroRandom].name;
-                //Debug.Log(numeroRandom, gameObject);
                 break;
         }
 

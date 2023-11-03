@@ -271,7 +271,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 217139223}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 92746358}
+        m_MethodName: loadPlaneta
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Selector
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &217139223
@@ -573,7 +584,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 769534886}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -19.058823, z: 0}
+  m_LocalPosition: {x: 0, y: 15.989838, z: 0}
   m_LocalScale: {x: 1, y: 1.000448, z: 1.000448}
   m_Children: []
   m_Father: {fileID: 1964576557}
@@ -994,7 +1005,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1513875849}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 92746358}
+        m_MethodName: loadPlaneta
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Planeta2
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1513875849
@@ -1243,7 +1265,7 @@ RectTransform:
   m_GameObject: {fileID: 1964576553}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 90}
-  m_LocalScale: {x: 0.038185082, y: 0.038185082, z: 0.038185082}
+  m_LocalScale: {x: 0.030122325, y: 0.030122325, z: 0.030122325}
   m_Children:
   - {fileID: 1109366952}
   - {fileID: 1095549674}

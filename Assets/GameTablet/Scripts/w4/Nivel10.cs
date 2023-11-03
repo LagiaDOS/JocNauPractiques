@@ -15,34 +15,19 @@ public class Nivel10 : Niveles
 
     void Update()
     {
-
         if (gameOver == false && !Settings.gamePause)
         {
-
             spawnLetrasNumros -= Time.deltaTime;
             probCaracter = UnityEngine.Random.Range(0, 4);
-            // Debug.Log(probPowerUp,gameObject);
 
             if (spawnLetrasNumros <= 0.0f)
             {
                 spawn();
                 spawnLetrasNumros = 1f;
             }
-
-
-            
-            if (time <= 40.0f)
-            {
-               // Debug.Log(time, gameObject);
-               // Niveles.speed = 6.0f;
-            }
-
         }
-
     }
-
-
-
+    
     public override void configuration()
     {
         Niveles.time = 60.0f;
@@ -57,13 +42,12 @@ public class Nivel10 : Niveles
             case 3:
                 p.GetComponent<SpriteRenderer>().sprite = spritesNumerosLetras[caracterRandomAdivinar];
                 p.gameObject.tag = spritesNumerosLetras[caracterRandomAdivinar].name;
-                //Debug.Log(caracterRandomAdivinar, gameObject);
                 break;
+
             default:
-                caracterRandom = vocals[UnityEngine.Random.Range(0, vocals.Length)];
+                caracterRandom = UnityEngine.Random.Range(62, 89);
                 p.GetComponent<SpriteRenderer>().sprite = spritesNumerosLetras[caracterRandom];
                 p.gameObject.tag = spritesNumerosLetras[caracterRandom].name;
-                //Debug.Log(caracterRandom, gameObject);
                 break;
         }
 
@@ -74,4 +58,5 @@ public class Nivel10 : Niveles
         GameObject.Find("valorAdivinar").GetComponent<Image>().sprite = spritesNumerosLetras[caracterRandomAdivinar];
         tagAdivinar = spritesNumerosLetras[caracterRandomAdivinar].name;
     }
+
 }

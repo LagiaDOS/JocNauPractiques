@@ -19,6 +19,7 @@ abstract public class Niveles : MonoBehaviour, ConfigurationLevels
         public int numeroRandomAdivinar;
         public int caracterRandomAdivinar;
         public int colorRandomAdivinar;
+    public int numeroLletraRandomAdivinar;
 
         public int vocalRandom;
         public int letraRandom;
@@ -52,6 +53,14 @@ abstract public class Niveles : MonoBehaviour, ConfigurationLevels
         numeroRandomAdivinar = Random.Range(52, 61);
         caracterRandomAdivinar = Random.Range(62, 89);
         colorRandomAdivinar = Random.Range(90, 96);
+
+
+
+        numeroLletraRandomAdivinar = Random.Range(0, 34);
+        //numeroLletraRandomAdivinar = 34;
+        //Debug.Log("Numero lletra random adivinar pre calcul" + numeroLletraRandomAdivinar, gameObject);
+        if (numeroLletraRandomAdivinar >= 25) { numeroLletraRandomAdivinar = numeroLletraRandomAdivinar + 27; }
+        //Debug.Log("Numero lletra random adivinar post calcul" + numeroLletraRandomAdivinar, gameObject);
 
 
         letraRandom = Random.Range(0, 25);

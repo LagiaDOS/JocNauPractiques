@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -8,12 +9,9 @@ public class Nivel6 : Niveles
     private int probNumero;
     private int nouNumeroAdivinar;
     private int probPowerUp;
-
-
     private bool changeSpeed1;
     private bool changeSpeed2;
     private bool changeNumber;
-
 
     private void Start()
     {
@@ -29,11 +27,8 @@ public class Nivel6 : Niveles
         {
             spawnLetrasNumros -= Time.deltaTime;
             spawnPowerUp -= Time.deltaTime;
-
             probNumero = Random.Range(0, 4);
-            // Debug.Log(probNumero,gameObject);
             probPowerUp = UnityEngine.Random.Range(0, 2);
-
 
             if (spawnLetrasNumros <= 0.0f)
             {
@@ -43,18 +38,11 @@ public class Nivel6 : Niveles
 
             if (time <= 30.0f && changeNumber == false)
             {
-                Debug.Log("canvi lletra", gameObject);
-                Debug.Log(changeNumber, gameObject);
-                Debug.Log(numeroRandomAdivinar, gameObject);
-
-                nouNumeroAdivinar = Random.Range(0, 25);
+                nouNumeroAdivinar = Random.Range(0, 36);
+                if (nouNumeroAdivinar >= 26) { nouNumeroAdivinar = +26; }
                 valorAdivinar();
-
-                Debug.Log(nouNumeroAdivinar, gameObject);
-
-                //GameObject.Find("valorAdivinar").GetComponent<Image>().sprite = spritesNumerosLetras[nouNumeroAdivinar];
-                //tagAdivinar = spritesNumerosLetras[nouNumeroAdivinar].name;
-
+                GameObject.Find("valorAdivinar").GetComponent<Image>().sprite = spritesNumerosLetras[nouNumeroAdivinar];
+                tagAdivinar = spritesNumerosLetras[nouNumeroAdivinar].name;
                 changeNumber = true;
             }
 
@@ -67,14 +55,12 @@ public class Nivel6 : Niveles
 
             if (time <= 20.0f && changeSpeed2 == false)
             {
-                // Debug.Log(time, gameObject);
                 Niveles.speed = 4.0f;
                 changeSpeed2 = true;
             }
 
             if (spawnPowerUp <= 0.0f)
             {
-                //Debug.Log("Spawn powerup", gameObject);
                 spawnPowerup();
                 spawnPowerUp = 15f;
             }
@@ -93,15 +79,16 @@ public class Nivel6 : Niveles
 
         if (time > 30.0f)
         {
-
             switch (probNumero)
             {
                 case 3:
-                    p.GetComponent<SpriteRenderer>().sprite = spritesNumerosLetras[numeroRandomAdivinar];
-                    p.gameObject.tag = spritesNumerosLetras[numeroRandomAdivinar].name;
+                    p.GetComponent<SpriteRenderer>().sprite = spritesNumerosLetras[numeroLletraRandomAdivinar];
+                    p.gameObject.tag = spritesNumerosLetras[numeroLletraRandomAdivinar].name;
                     break;
+
                 default:
-                    numeroRandom = Random.Range(52, 61);
+                    numeroRandom = Random.Range(0, 34);
+                    if (numeroRandom >= 25) { numeroRandom = numeroRandom + 27; }
                     p.GetComponent<SpriteRenderer>().sprite = spritesNumerosLetras[numeroRandom];
                     p.gameObject.tag = spritesNumerosLetras[numeroRandom].name;
                     break;
@@ -109,7 +96,6 @@ public class Nivel6 : Niveles
         }
         else if (time <= 30.0f)
         {
-
             switch (probNumero)
             {
                 case 3:
@@ -117,7 +103,8 @@ public class Nivel6 : Niveles
                     p.gameObject.tag = spritesNumerosLetras[nouNumeroAdivinar].name;
                     break;
                 default:
-                    numeroRandom = Random.Range(52, 61);
+                    numeroRandom = Random.Range(0, 34);
+                    if (numeroRandom >= 25) { numeroRandom = numeroRandom + 27; }
                     p.GetComponent<SpriteRenderer>().sprite = spritesNumerosLetras[numeroRandom];
                     p.gameObject.tag = spritesNumerosLetras[numeroRandom].name;
                     break;
@@ -129,15 +116,11 @@ public class Nivel6 : Niveles
     {
         if (time > 30.0f)
         {
-            Debug.Log("lletra 1 adivinar", gameObject);
-
-            GameObject.Find("valorAdivinar").GetComponent<Image>().sprite = spritesNumerosLetras[numeroRandomAdivinar];
-            tagAdivinar = spritesNumerosLetras[numeroRandomAdivinar].name;
+            GameObject.Find("valorAdivinar").GetComponent<Image>().sprite = spritesNumerosLetras[numeroLletraRandomAdivinar];
+            tagAdivinar = spritesNumerosLetras[numeroLletraRandomAdivinar].name;
         }
         else if (time < 30.0f)
         {
-            Debug.Log("lletra 2 adivinar", gameObject);
-
             GameObject.Find("valorAdivinar").GetComponent<Image>().sprite = spritesNumerosLetras[nouNumeroAdivinar];
             tagAdivinar = spritesNumerosLetras[nouNumeroAdivinar].name;
         }
@@ -155,4 +138,8 @@ public class Nivel6 : Niveles
         }
     }
 
+
 }
+
+
+
