@@ -1,97 +1,128 @@
 fileFormatVersion: 2
 guid: b3338b1f4ac9c464eba272e07371b914
-timeCreated: 1698918556
+timeCreated: 1699006274
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
     21300000: NumerosDosUnidades_0
     21300002: NumerosDosUnidades_1
-    21300004: NumerosDosUnidades_2
+    21300004: NumerosDosUnidades_1
     21300006: NumerosDosUnidades_3
-    21300008: NumerosDosUnidades_4
+    21300008: NumerosDosUnidades_2
     21300010: NumerosDosUnidades_5
-    21300012: NumerosDosUnidades_6
+    21300012: NumerosDosUnidades_3
     21300014: NumerosDosUnidades_7
-    21300016: NumerosDosUnidades_8
+    21300016: NumerosDosUnidades_4
     21300018: NumerosDosUnidades_9
-    21300020: NumerosDosUnidades_10
+    21300020: NumerosDosUnidades_5
     21300022: NumerosDosUnidades_11
-    21300024: NumerosDosUnidades_12
+    21300024: NumerosDosUnidades_6
     21300026: NumerosDosUnidades_13
-    21300028: NumerosDosUnidades_14
+    21300028: NumerosDosUnidades_7
     21300030: NumerosDosUnidades_15
-    21300032: NumerosDosUnidades_16
+    21300032: NumerosDosUnidades_8
     21300034: NumerosDosUnidades_17
-    21300036: NumerosDosUnidades_18
-    21300038: NumerosDosUnidades_19
-    21300040: NumerosDosUnidades_20
+    21300036: NumerosDosUnidades_9
+    21300038: NumerosDosUnidades_10
+    21300040: NumerosDosUnidades_11
     21300042: NumerosDosUnidades_21
-    21300044: NumerosDosUnidades_22
-    21300046: NumerosDosUnidades_23
-    21300048: NumerosDosUnidades_24
+    21300044: NumerosDosUnidades_12
+    21300046: NumerosDosUnidades_13
+    21300048: NumerosDosUnidades_14
     21300050: NumerosDosUnidades_25
-    21300052: NumerosDosUnidades_26
-    21300054: NumerosDosUnidades_27
-    21300056: NumerosDosUnidades_28
+    21300052: NumerosDosUnidades_15
+    21300054: NumerosDosUnidades_16
+    21300056: NumerosDosUnidades_17
     21300058: NumerosDosUnidades_29
-    21300060: NumerosDosUnidades_30
-    21300062: NumerosDosUnidades_31
-    21300064: NumerosDosUnidades_32
-    21300066: NumerosDosUnidades_33
+    21300060: NumerosDosUnidades_18
+    21300062: NumerosDosUnidades_19
+    21300064: NumerosDosUnidades_20
+    21300066: NumerosDosUnidades_21
     21300068: NumerosDosUnidades_34
-    21300070: NumerosDosUnidades_35
-    21300072: NumerosDosUnidades_36
+    21300070: NumerosDosUnidades_22
+    21300072: NumerosDosUnidades_24
     21300074: NumerosDosUnidades_37
-    21300076: NumerosDosUnidades_38
-    21300078: NumerosDosUnidades_39
+    21300076: NumerosDosUnidades_25
+    21300078: NumerosDosUnidades_26
     21300080: NumerosDosUnidades_40
-    21300082: NumerosDosUnidades_41
-    21300084: NumerosDosUnidades_42
-    21300086: NumerosDosUnidades_43
+    21300082: NumerosDosUnidades_27
+    21300084: NumerosDosUnidades_28
+    21300086: NumerosDosUnidades_29
     21300088: NumerosDosUnidades_44
-    21300090: NumerosDosUnidades_45
+    21300090: NumerosDosUnidades_30
     21300092: NumerosDosUnidades_46
-    21300094: NumerosDosUnidades_47
-    21300096: NumerosDosUnidades_48
+    21300094: NumerosDosUnidades_31
+    21300096: NumerosDosUnidades_32
     21300098: NumerosDosUnidades_49
-    21300100: NumerosDosUnidades_50
-    21300102: NumerosDosUnidades_51
+    21300100: NumerosDosUnidades_33
+    21300102: NumerosDosUnidades_35
     21300104: NumerosDosUnidades_52
     21300106: NumerosDosUnidades_53
-    21300108: NumerosDosUnidades_54
+    21300108: NumerosDosUnidades_36
     21300110: NumerosDosUnidades_55
-    21300112: NumerosDosUnidades_56
+    21300112: NumerosDosUnidades_37
     21300114: NumerosDosUnidades_57
-    21300116: NumerosDosUnidades_58
+    21300116: NumerosDosUnidades_38
     21300118: NumerosDosUnidades_59
-    21300120: NumerosDosUnidades_60
-    21300122: NumerosDosUnidades_61
+    21300120: NumerosDosUnidades_39
+    21300122: NumerosDosUnidades_40
     21300124: NumerosDosUnidades_62
-    21300126: NumerosDosUnidades_63
-    21300128: NumerosDosUnidades_64
-    21300130: NumerosDosUnidades_65
+    21300126: NumerosDosUnidades_41
+    21300128: NumerosDosUnidades_42
+    21300130: NumerosDosUnidades_43
     21300132: NumerosDosUnidades_66
-    21300134: NumerosDosUnidades_67
-    21300136: NumerosDosUnidades_68
-    21300138: NumerosDosUnidades_69
+    21300134: NumerosDosUnidades_44
+    21300136: NumerosDosUnidades_45
+    21300138: NumerosDosUnidades_46
     21300140: NumerosDosUnidades_70
-    21300142: NumerosDosUnidades_71
-    21300144: NumerosDosUnidades_72
-    21300146: NumerosDosUnidades_73
-    21300148: NumerosDosUnidades_74
-    21300150: NumerosDosUnidades_75
+    21300142: NumerosDosUnidades_47
+    21300144: NumerosDosUnidades_48
+    21300146: NumerosDosUnidades_49
+    21300148: NumerosDosUnidades_50
+    21300150: NumerosDosUnidades_51
     21300152: NumerosDosUnidades_76
-    21300154: NumerosDosUnidades_77
-    21300156: NumerosDosUnidades_78
+    21300154: NumerosDosUnidades_52
+    21300156: NumerosDosUnidades_53
     21300158: NumerosDosUnidades_79
-    21300160: NumerosDosUnidades_80
-    21300162: NumerosDosUnidades_81
-    21300164: NumerosDosUnidades_82
-    21300166: NumerosDosUnidades_83
+    21300160: NumerosDosUnidades_54
+    21300162: NumerosDosUnidades_55
+    21300164: NumerosDosUnidades_56
+    21300166: NumerosDosUnidades_57
     21300168: NumerosDosUnidades_84
-    21300170: NumerosDosUnidades_85
+    21300170: NumerosDosUnidades_58
     21300172: NumerosDosUnidades_86
-    21300174: NumerosDosUnidades_87
+    21300174: NumerosDosUnidades_59
+    21300176: NumerosDosUnidades_60
+    21300178: NumerosDosUnidades_61
+    21300180: NumerosDosUnidades_62
+    21300182: NumerosDosUnidades_63
+    21300184: NumerosDosUnidades_64
+    21300186: NumerosDosUnidades_65
+    21300188: NumerosDosUnidades_66
+    21300190: NumerosDosUnidades_67
+    21300192: NumerosDosUnidades_68
+    21300194: NumerosDosUnidades_69
+    21300196: NumerosDosUnidades_70
+    21300198: NumerosDosUnidades_71
+    21300200: NumerosDosUnidades_72
+    21300202: NumerosDosUnidades_73
+    21300204: NumerosDosUnidades_74
+    21300206: NumerosDosUnidades_75
+    21300208: NumerosDosUnidades_76
+    21300210: NumerosDosUnidades_77
+    21300212: NumerosDosUnidades_78
+    21300214: NumerosDosUnidades_79
+    21300216: NumerosDosUnidades_80
+    21300218: NumerosDosUnidades_81
+    21300220: NumerosDosUnidades_82
+    21300222: NumerosDosUnidades_83
+    21300224: NumerosDosUnidades_84
+    21300226: NumerosDosUnidades_85
+    21300228: NumerosDosUnidades_86
+    21300230: NumerosDosUnidades_87
+    21300232: NumerosDosUnidades_88
+    21300234: NumerosDosUnidades_89
+    21300236: NumerosDosUnidades_23
   externalObjects: {}
   serializedVersion: 4
   mipmaps:
@@ -201,13 +232,13 @@ TextureImporter:
         width: 87
         height: 58
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: NumerosDosUnidades_2
+      name: NumerosDosUnidades_1
       rect:
         serializedVersion: 2
         x: 137
@@ -221,7 +252,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: NumerosDosUnidades_4
+      name: NumerosDosUnidades_2
       rect:
         serializedVersion: 2
         x: 232
@@ -229,7 +260,49 @@ TextureImporter:
         width: 94
         height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: NumerosDosUnidades_3
+      rect:
+        serializedVersion: 2
+        x: 341
+        y: 928
+        width: 96
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: NumerosDosUnidades_4
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 927
+        width: 94
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: NumerosDosUnidades_5
+      rect:
+        serializedVersion: 2
+        x: 553
+        y: 926
+        width: 95
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -238,12 +311,26 @@ TextureImporter:
       name: NumerosDosUnidades_6
       rect:
         serializedVersion: 2
-        x: 341
+        x: 660
+        y: 928
+        width: 92
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: NumerosDosUnidades_7
+      rect:
+        serializedVersion: 2
+        x: 765
         y: 928
         width: 96
-        height: 62
+        height: 66
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -252,12 +339,26 @@ TextureImporter:
       name: NumerosDosUnidades_8
       rect:
         serializedVersion: 2
-        x: 448
-        y: 927
-        width: 94
-        height: 61
+        x: 879
+        y: 928
+        width: 95
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: NumerosDosUnidades_9
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 837
+        width: 92
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -266,12 +367,26 @@ TextureImporter:
       name: NumerosDosUnidades_10
       rect:
         serializedVersion: 2
-        x: 553
-        y: 926
-        width: 95
-        height: 66
+        x: 147
+        y: 837
+        width: 110
+        height: 65
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: NumerosDosUnidades_11
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 840
+        width: 92
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -280,12 +395,26 @@ TextureImporter:
       name: NumerosDosUnidades_12
       rect:
         serializedVersion: 2
-        x: 660
-        y: 928
-        width: 92
-        height: 65
+        x: 382
+        y: 840
+        width: 114
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: NumerosDosUnidades_13
+      rect:
+        serializedVersion: 2
+        x: 503
+        y: 840
+        width: 117
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -294,12 +423,26 @@ TextureImporter:
       name: NumerosDosUnidades_14
       rect:
         serializedVersion: 2
-        x: 765
-        y: 928
-        width: 96
-        height: 66
+        x: 630
+        y: 837
+        width: 112
+        height: 67
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: NumerosDosUnidades_15
+      rect:
+        serializedVersion: 2
+        x: 754
+        y: 838
+        width: 113
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -308,12 +451,26 @@ TextureImporter:
       name: NumerosDosUnidades_16
       rect:
         serializedVersion: 2
-        x: 879
-        y: 928
-        width: 95
-        height: 64
+        x: 883
+        y: 836
+        width: 110
+        height: 65
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: NumerosDosUnidades_17
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 756
+        width: 110
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -322,12 +479,12 @@ TextureImporter:
       name: NumerosDosUnidades_18
       rect:
         serializedVersion: 2
-        x: 32
-        y: 837
-        width: 92
-        height: 65
+        x: 149
+        y: 756
+        width: 114
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -336,12 +493,12 @@ TextureImporter:
       name: NumerosDosUnidades_19
       rect:
         serializedVersion: 2
-        x: 147
-        y: 837
-        width: 110
-        height: 65
+        x: 282
+        y: 756
+        width: 109
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -350,12 +507,26 @@ TextureImporter:
       name: NumerosDosUnidades_20
       rect:
         serializedVersion: 2
-        x: 271
-        y: 840
-        width: 92
-        height: 65
+        x: 405
+        y: 756
+        width: 107
+        height: 62
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: NumerosDosUnidades_21
+      rect:
+        serializedVersion: 2
+        x: 526
+        y: 756
+        width: 94
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -364,26 +535,12 @@ TextureImporter:
       name: NumerosDosUnidades_22
       rect:
         serializedVersion: 2
-        x: 382
-        y: 840
+        x: 634
+        y: 754
         width: 114
         height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: NumerosDosUnidades_23
-      rect:
-        serializedVersion: 2
-        x: 503
-        y: 840
-        width: 117
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -392,12 +549,26 @@ TextureImporter:
       name: NumerosDosUnidades_24
       rect:
         serializedVersion: 2
-        x: 630
-        y: 837
-        width: 112
-        height: 67
+        x: 761
+        y: 751
+        width: 110
+        height: 68
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: NumerosDosUnidades_25
+      rect:
+        serializedVersion: 2
+        x: 881
+        y: 755
+        width: 112
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -406,12 +577,12 @@ TextureImporter:
       name: NumerosDosUnidades_26
       rect:
         serializedVersion: 2
-        x: 754
-        y: 838
-        width: 113
-        height: 64
+        x: 32
+        y: 678
+        width: 110
+        height: 62
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -420,12 +591,12 @@ TextureImporter:
       name: NumerosDosUnidades_27
       rect:
         serializedVersion: 2
-        x: 883
-        y: 836
-        width: 110
-        height: 65
+        x: 158
+        y: 677
+        width: 113
+        height: 69
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -434,12 +605,26 @@ TextureImporter:
       name: NumerosDosUnidades_28
       rect:
         serializedVersion: 2
-        x: 32
-        y: 756
-        width: 110
-        height: 66
+        x: 286
+        y: 676
+        width: 114
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: NumerosDosUnidades_29
+      rect:
+        serializedVersion: 2
+        x: 405
+        y: 677
+        width: 107
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -448,12 +633,12 @@ TextureImporter:
       name: NumerosDosUnidades_30
       rect:
         serializedVersion: 2
-        x: 149
-        y: 756
-        width: 114
-        height: 64
+        x: 528
+        y: 677
+        width: 110
+        height: 63
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -462,12 +647,12 @@ TextureImporter:
       name: NumerosDosUnidades_31
       rect:
         serializedVersion: 2
-        x: 282
-        y: 756
-        width: 109
-        height: 64
+        x: 646
+        y: 682
+        width: 93
+        height: 58
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -476,12 +661,12 @@ TextureImporter:
       name: NumerosDosUnidades_32
       rect:
         serializedVersion: 2
-        x: 405
-        y: 756
-        width: 107
-        height: 62
+        x: 760
+        y: 676
+        width: 111
+        height: 65
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -490,12 +675,12 @@ TextureImporter:
       name: NumerosDosUnidades_33
       rect:
         serializedVersion: 2
-        x: 526
-        y: 756
-        width: 94
+        x: 886
+        y: 676
+        width: 114
         height: 66
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -504,12 +689,12 @@ TextureImporter:
       name: NumerosDosUnidades_35
       rect:
         serializedVersion: 2
-        x: 634
-        y: 754
-        width: 114
-        height: 64
+        x: 32
+        y: 599
+        width: 111
+        height: 66
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -518,12 +703,26 @@ TextureImporter:
       name: NumerosDosUnidades_36
       rect:
         serializedVersion: 2
-        x: 761
-        y: 751
-        width: 110
-        height: 68
+        x: 158
+        y: 600
+        width: 109
+        height: 66
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: NumerosDosUnidades_37
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 600
+        width: 114
+        height: 67
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -532,12 +731,12 @@ TextureImporter:
       name: NumerosDosUnidades_38
       rect:
         serializedVersion: 2
-        x: 881
-        y: 755
-        width: 112
-        height: 63
+        x: 403
+        y: 598
+        width: 114
+        height: 67
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -546,12 +745,26 @@ TextureImporter:
       name: NumerosDosUnidades_39
       rect:
         serializedVersion: 2
-        x: 32
-        y: 678
+        x: 530
+        y: 601
         width: 110
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: NumerosDosUnidades_40
+      rect:
+        serializedVersion: 2
+        x: 659
+        y: 598
+        width: 109
         height: 62
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -560,12 +773,12 @@ TextureImporter:
       name: NumerosDosUnidades_41
       rect:
         serializedVersion: 2
-        x: 158
-        y: 677
-        width: 113
-        height: 69
+        x: 778
+        y: 602
+        width: 95
+        height: 59
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -574,12 +787,12 @@ TextureImporter:
       name: NumerosDosUnidades_42
       rect:
         serializedVersion: 2
-        x: 286
-        y: 676
-        width: 114
-        height: 64
+        x: 888
+        y: 600
+        width: 113
+        height: 65
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -588,12 +801,26 @@ TextureImporter:
       name: NumerosDosUnidades_43
       rect:
         serializedVersion: 2
-        x: 405
-        y: 677
-        width: 107
+        x: 32
+        y: 523
+        width: 113
         height: 62
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: NumerosDosUnidades_44
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 522
+        width: 115
+        height: 67
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -602,12 +829,26 @@ TextureImporter:
       name: NumerosDosUnidades_45
       rect:
         serializedVersion: 2
-        x: 528
-        y: 677
-        width: 110
-        height: 63
+        x: 289
+        y: 522
+        width: 112
+        height: 62
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: NumerosDosUnidades_46
+      rect:
+        serializedVersion: 2
+        x: 417
+        y: 522
+        width: 109
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -616,12 +857,12 @@ TextureImporter:
       name: NumerosDosUnidades_47
       rect:
         serializedVersion: 2
-        x: 646
-        y: 682
-        width: 93
-        height: 58
+        x: 540
+        y: 521
+        width: 108
+        height: 69
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -630,12 +871,26 @@ TextureImporter:
       name: NumerosDosUnidades_48
       rect:
         serializedVersion: 2
-        x: 760
-        y: 676
-        width: 111
-        height: 65
+        x: 659
+        y: 520
+        width: 113
+        height: 63
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: NumerosDosUnidades_49
+      rect:
+        serializedVersion: 2
+        x: 780
+        y: 521
+        width: 101
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -644,12 +899,12 @@ TextureImporter:
       name: NumerosDosUnidades_50
       rect:
         serializedVersion: 2
-        x: 886
-        y: 676
-        width: 114
-        height: 66
+        x: 889
+        y: 521
+        width: 106
+        height: 62
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -659,11 +914,39 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 32
-        y: 599
-        width: 111
-        height: 66
+        y: 440
+        width: 89
+        height: 68
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: NumerosDosUnidades_52
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 446
+        width: 110
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: NumerosDosUnidades_53
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 447
+        width: 110
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -672,12 +955,26 @@ TextureImporter:
       name: NumerosDosUnidades_54
       rect:
         serializedVersion: 2
-        x: 158
-        y: 600
-        width: 109
-        height: 66
+        x: 405
+        y: 440
+        width: 111
+        height: 70
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: NumerosDosUnidades_55
+      rect:
+        serializedVersion: 2
+        x: 537
+        y: 446
+        width: 109
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -686,12 +983,26 @@ TextureImporter:
       name: NumerosDosUnidades_56
       rect:
         serializedVersion: 2
-        x: 280
-        y: 600
-        width: 114
+        x: 660
+        y: 441
+        width: 106
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: NumerosDosUnidades_57
+      rect:
+        serializedVersion: 2
+        x: 772
+        y: 441
+        width: 104
         height: 67
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -700,12 +1011,26 @@ TextureImporter:
       name: NumerosDosUnidades_58
       rect:
         serializedVersion: 2
-        x: 403
-        y: 598
-        width: 114
-        height: 67
+        x: 889
+        y: 440
+        width: 106
+        height: 63
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: NumerosDosUnidades_59
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 366
+        width: 109
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -714,12 +1039,12 @@ TextureImporter:
       name: NumerosDosUnidades_60
       rect:
         serializedVersion: 2
-        x: 530
-        y: 601
+        x: 150
+        y: 366
         width: 110
-        height: 64
+        height: 66
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -728,12 +1053,26 @@ TextureImporter:
       name: NumerosDosUnidades_61
       rect:
         serializedVersion: 2
-        x: 659
-        y: 598
-        width: 109
-        height: 62
+        x: 282
+        y: 366
+        width: 92
+        height: 65
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: NumerosDosUnidades_62
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 363
+        width: 112
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -742,12 +1081,12 @@ TextureImporter:
       name: NumerosDosUnidades_63
       rect:
         serializedVersion: 2
-        x: 778
-        y: 602
-        width: 95
-        height: 59
+        x: 532
+        y: 363
+        width: 111
+        height: 62
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -756,12 +1095,12 @@ TextureImporter:
       name: NumerosDosUnidades_64
       rect:
         serializedVersion: 2
-        x: 888
-        y: 600
-        width: 113
-        height: 65
+        x: 660
+        y: 360
+        width: 109
+        height: 67
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -770,12 +1109,26 @@ TextureImporter:
       name: NumerosDosUnidades_65
       rect:
         serializedVersion: 2
-        x: 32
-        y: 523
-        width: 113
-        height: 62
+        x: 784
+        y: 363
+        width: 111
+        height: 63
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: NumerosDosUnidades_66
+      rect:
+        serializedVersion: 2
+        x: 909
+        y: 360
+        width: 108
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -784,12 +1137,12 @@ TextureImporter:
       name: NumerosDosUnidades_67
       rect:
         serializedVersion: 2
-        x: 159
-        y: 522
-        width: 115
-        height: 67
+        x: 32
+        y: 285
+        width: 110
+        height: 63
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -798,12 +1151,12 @@ TextureImporter:
       name: NumerosDosUnidades_68
       rect:
         serializedVersion: 2
-        x: 289
-        y: 522
+        x: 152
+        y: 288
         width: 112
-        height: 62
+        height: 60
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -812,12 +1165,26 @@ TextureImporter:
       name: NumerosDosUnidades_69
       rect:
         serializedVersion: 2
-        x: 417
-        y: 522
-        width: 109
-        height: 62
+        x: 282
+        y: 284
+        width: 110
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: NumerosDosUnidades_70
+      rect:
+        serializedVersion: 2
+        x: 407
+        y: 284
+        width: 110
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -826,12 +1193,12 @@ TextureImporter:
       name: NumerosDosUnidades_71
       rect:
         serializedVersion: 2
-        x: 540
-        y: 521
-        width: 108
-        height: 69
+        x: 525
+        y: 285
+        width: 94
+        height: 61
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -840,12 +1207,12 @@ TextureImporter:
       name: NumerosDosUnidades_72
       rect:
         serializedVersion: 2
-        x: 659
-        y: 520
-        width: 113
-        height: 63
+        x: 639
+        y: 284
+        width: 114
+        height: 65
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -854,12 +1221,12 @@ TextureImporter:
       name: NumerosDosUnidades_73
       rect:
         serializedVersion: 2
-        x: 780
-        y: 521
-        width: 101
-        height: 64
+        x: 769
+        y: 284
+        width: 115
+        height: 65
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -868,12 +1235,12 @@ TextureImporter:
       name: NumerosDosUnidades_74
       rect:
         serializedVersion: 2
-        x: 889
-        y: 521
-        width: 106
-        height: 62
+        x: 895
+        y: 282
+        width: 109
+        height: 65
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -883,11 +1250,25 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 32
-        y: 440
-        width: 89
-        height: 68
+        y: 204
+        width: 113
+        height: 63
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: NumerosDosUnidades_76
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 203
+        width: 110
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -896,12 +1277,12 @@ TextureImporter:
       name: NumerosDosUnidades_77
       rect:
         serializedVersion: 2
-        x: 154
-        y: 446
+        x: 281
+        y: 205
         width: 110
         height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -910,12 +1291,26 @@ TextureImporter:
       name: NumerosDosUnidades_78
       rect:
         serializedVersion: 2
-        x: 279
-        y: 447
+        x: 407
+        y: 203
         width: 110
         height: 63
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: NumerosDosUnidades_79
+      rect:
+        serializedVersion: 2
+        x: 524
+        y: 203
+        width: 110
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -924,12 +1319,12 @@ TextureImporter:
       name: NumerosDosUnidades_80
       rect:
         serializedVersion: 2
-        x: 405
-        y: 440
-        width: 111
-        height: 70
+        x: 640
+        y: 204
+        width: 106
+        height: 62
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -938,12 +1333,12 @@ TextureImporter:
       name: NumerosDosUnidades_81
       rect:
         serializedVersion: 2
-        x: 537
-        y: 446
-        width: 109
+        x: 761
+        y: 203
+        width: 90
         height: 62
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -952,12 +1347,12 @@ TextureImporter:
       name: NumerosDosUnidades_82
       rect:
         serializedVersion: 2
-        x: 660
-        y: 441
-        width: 106
-        height: 63
+        x: 868
+        y: 207
+        width: 110
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -966,12 +1361,26 @@ TextureImporter:
       name: NumerosDosUnidades_83
       rect:
         serializedVersion: 2
-        x: 772
-        y: 441
-        width: 104
-        height: 67
+        x: 32
+        y: 125
+        width: 112
+        height: 62
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: NumerosDosUnidades_84
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 124
+        width: 107
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -980,12 +1389,26 @@ TextureImporter:
       name: NumerosDosUnidades_85
       rect:
         serializedVersion: 2
-        x: 889
-        y: 440
-        width: 106
+        x: 281
+        y: 124
+        width: 109
         height: 63
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: NumerosDosUnidades_86
+      rect:
+        serializedVersion: 2
+        x: 407
+        y: 125
+        width: 106
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -994,12 +1417,26 @@ TextureImporter:
       name: NumerosDosUnidades_87
       rect:
         serializedVersion: 2
-        x: 29
-        y: 366
-        width: 109
-        height: 65
+        x: 525
+        y: 124
+        width: 108
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: NumerosDosUnidades_88
+      rect:
+        serializedVersion: 2
+        x: 651
+        y: 125
+        width: 109
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1008,418 +1445,40 @@ TextureImporter:
       name: NumerosDosUnidades_89
       rect:
         serializedVersion: 2
-        x: 150
-        y: 366
-        width: 110
-        height: 66
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: NumerosDosUnidades_91
-      rect:
-        serializedVersion: 2
-        x: 282
-        y: 366
-        width: 92
-        height: 65
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: NumerosDosUnidades_92
-      rect:
-        serializedVersion: 2
-        x: 400
-        y: 363
-        width: 112
-        height: 65
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: NumerosDosUnidades_93
-      rect:
-        serializedVersion: 2
-        x: 532
-        y: 363
-        width: 111
-        height: 62
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: NumerosDosUnidades_96
-      rect:
-        serializedVersion: 2
-        x: 660
-        y: 360
-        width: 109
-        height: 67
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: NumerosDosUnidades_97
-      rect:
-        serializedVersion: 2
-        x: 784
-        y: 363
-        width: 111
-        height: 63
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: NumerosDosUnidades_99
-      rect:
-        serializedVersion: 2
-        x: 909
-        y: 360
-        width: 108
-        height: 66
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: NumerosDosUnidades_100
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 285
-        width: 110
-        height: 63
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: NumerosDosUnidades_101
-      rect:
-        serializedVersion: 2
-        x: 152
-        y: 288
-        width: 112
-        height: 60
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: NumerosDosUnidades_103
-      rect:
-        serializedVersion: 2
-        x: 282
-        y: 284
-        width: 110
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: NumerosDosUnidades_104
-      rect:
-        serializedVersion: 2
-        x: 407
-        y: 284
-        width: 110
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: NumerosDosUnidades_105
-      rect:
-        serializedVersion: 2
-        x: 525
-        y: 285
-        width: 94
-        height: 61
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: NumerosDosUnidades_107
-      rect:
-        serializedVersion: 2
-        x: 639
-        y: 284
-        width: 114
-        height: 65
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: NumerosDosUnidades_108
-      rect:
-        serializedVersion: 2
-        x: 769
-        y: 284
-        width: 115
-        height: 65
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: NumerosDosUnidades_109
-      rect:
-        serializedVersion: 2
-        x: 895
-        y: 282
-        width: 109
-        height: 65
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: NumerosDosUnidades_111
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 204
-        width: 113
-        height: 63
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: NumerosDosUnidades_112
-      rect:
-        serializedVersion: 2
-        x: 158
-        y: 203
-        width: 110
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: NumerosDosUnidades_113
-      rect:
-        serializedVersion: 2
-        x: 281
-        y: 205
-        width: 110
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: NumerosDosUnidades_115
-      rect:
-        serializedVersion: 2
-        x: 407
-        y: 203
-        width: 110
-        height: 63
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: NumerosDosUnidades_117
-      rect:
-        serializedVersion: 2
-        x: 524
-        y: 203
-        width: 110
-        height: 66
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: NumerosDosUnidades_118
-      rect:
-        serializedVersion: 2
-        x: 640
-        y: 204
-        width: 106
-        height: 62
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: NumerosDosUnidades_119
-      rect:
-        serializedVersion: 2
-        x: 761
-        y: 203
-        width: 90
-        height: 62
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: NumerosDosUnidades_120
-      rect:
-        serializedVersion: 2
-        x: 868
-        y: 207
-        width: 110
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: NumerosDosUnidades_121
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 125
-        width: 112
-        height: 62
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: NumerosDosUnidades_122
-      rect:
-        serializedVersion: 2
-        x: 158
-        y: 124
-        width: 107
-        height: 63
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: NumerosDosUnidades_123
-      rect:
-        serializedVersion: 2
-        x: 281
-        y: 124
-        width: 109
-        height: 63
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: NumerosDosUnidades_124
-      rect:
-        serializedVersion: 2
-        x: 407
-        y: 125
-        width: 106
-        height: 62
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: NumerosDosUnidades_125
-      rect:
-        serializedVersion: 2
-        x: 525
-        y: 124
-        width: 108
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: NumerosDosUnidades_126
-      rect:
-        serializedVersion: 2
-        x: 653
-        y: 123
-        width: 109
-        height: 63
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: NumerosDosUnidades_127
-      rect:
-        serializedVersion: 2
-        x: 779
+        x: 778
         y: 123
         width: 99
         height: 62
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: NumerosDosUnidades_23
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 31
+        width: 111
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: NumerosDosUnidades_34
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 33
+        width: 114
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
