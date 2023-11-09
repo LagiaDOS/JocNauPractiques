@@ -22,7 +22,7 @@ GameObject:
   - component: {fileID: 212984550241888136}
   - component: {fileID: 61166617560624744}
   - component: {fileID: 114021639057683596}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: prefabNumLetras
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -111,8 +111,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 1332438025
-  m_SortingLayer: 1
+  m_SortingLayerID: 73506531
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}

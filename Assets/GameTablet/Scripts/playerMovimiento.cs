@@ -19,25 +19,33 @@ public class playerMovimiento : MonoBehaviour {
     // Update is called once per frame
     void Update()
     {
-        if (!Niveles.gameOver && !Settings.gamePause)
+        if (!Niveles.gameOver)
         {
-            playerSpeed = powerUp.speedup ? 1.0f : 0.3f; // Adjust the speed as needed
-            int i = 0;
-            //loop over every touch found
-            while (i < Input.touchCount)
+            if (!Settings.gamePause)
             {
-                if (Input.GetTouch(i).position.x > ScreenWidth / 2)
+                playerSpeed = powerUp.speedup ? 1.0f : 0.3f;
+                int i = 0;
+                //loop over every touch found
+                while (i < Input.touchCount)
                 {
-                    //move right
-                    RunCharacter(playerSpeed);
+                    if (Input.GetTouch(i).position.x > ScreenWidth / 2)
+                    {
+                        //move right
+                        RunCharacter(playerSpeed);
+                    }
+                    else if (Input.GetTouch(i).position.x < ScreenWidth / 2)
+                    {
+                        //move left
+                        RunCharacter(-playerSpeed);
+                    }
+                    ++i;
                 }
-                else if (Input.GetTouch(i).position.x < ScreenWidth / 2)
-                {
-                    //move left
-                    RunCharacter(-playerSpeed);
-                }
-                ++i;
             }
+        }
+        else
+        {
+            playerSpeed = powerUp.speedup ? 0f : 0f; // Adjust the speed as needed
+            RunCharacter(playerSpeed);
         }
     }
 
