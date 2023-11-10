@@ -72,7 +72,7 @@ public class Settings : MonoBehaviour {
                 SceneManager.LoadScene(1);
                 break;
             case "Nivel8":
-                PlayerPrefs.SetString("Nivel", "Nivel+");
+                PlayerPrefs.SetString("Nivel", "Nivel9");
                 SceneManager.LoadScene(1);
                 break;
             case "Nivel10":
