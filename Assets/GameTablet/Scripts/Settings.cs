@@ -14,10 +14,14 @@ public class Settings : MonoBehaviour {
 
     public  void panelShowHide()
     {
+        if (!Niveles.gameOver)
+        {
+            gamePause = !gamePause;
+            state = !state;
+            panel.gameObject.SetActive(state);
+        }
         //pausa el joc, i mostra el menu de pausa
-        gamePause = !gamePause;
-        state = !state;
-        panel.gameObject.SetActive(state);
+        
         
     }
 

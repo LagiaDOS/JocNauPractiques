@@ -6,15 +6,16 @@ public class playerMovimiento : MonoBehaviour
 {
 
     public GameObject character;
-    public float playerSpeed;
     private Rigidbody2D characterBody;
     private float ScreenWidth;
+    float playerSpeed;
 
     // Use this for initialization
     void Start()
     {
         ScreenWidth = Screen.width;
         characterBody = character.GetComponent<Rigidbody2D>();
+        playerSpeed = powerUp.speedup ? 1.0f : 0.5f;
     }
 
     // Update is called once per frame
@@ -22,33 +23,17 @@ public class playerMovimiento : MonoBehaviour
     {
         if (!Niveles.gameOver && !Settings.gamePause)
         {
-            playerSpeed = powerUp.speedup ? 1.0f : 0.3f;
-            int i = 0;
-            //loop over every touch found
-            while (i < Input.touchCount)
-            {
-                if (Input.GetTouch(i).position.x > ScreenWidth / 2)
-                {
-                    //move right
-                    RunCharacter(playerSpeed);
-                }
-                else if (Input.GetTouch(i).position.x < ScreenWidth / 2)
-                {
-                    //move left
-                    RunCharacter(-playerSpeed);
-                }
-                ++i;
-            }
+            RunCharacter(Input.GetAxis("Horizontal") * playerSpeed);       
         }
     }
 
-    void FixedUpdate()
+/*    void FixedUpdate()
     {
 #if UNITY_EDITOR
         float playerSpeed = powerUp.speedup ? 1.0f : 0.3f;
         RunCharacter(Input.GetAxis("Horizontal") * playerSpeed);
 #endif
-    }
+    }*/
 
     private void RunCharacter(float horizontalInput)
     {
