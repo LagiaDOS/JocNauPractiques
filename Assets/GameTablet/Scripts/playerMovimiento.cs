@@ -8,14 +8,12 @@ public class playerMovimiento : MonoBehaviour
     public GameObject character;
     private Rigidbody2D characterBody;
     private float ScreenWidth;
-    float playerSpeed;
 
     // Use this for initialization
     void Start()
     {
         ScreenWidth = Screen.width;
         characterBody = character.GetComponent<Rigidbody2D>();
-        playerSpeed = powerUp.speedup ? 1.0f : 0.5f;
     }
 
     // Update is called once per frame
@@ -23,6 +21,7 @@ public class playerMovimiento : MonoBehaviour
     {
         if (!Niveles.gameOver && !Settings.gamePause)
         {
+            float playerSpeed = powerUp.speedup ? 1.0f : 0.5f;
             RunCharacter(Input.GetAxis("Horizontal") * playerSpeed);       
         }
     }
