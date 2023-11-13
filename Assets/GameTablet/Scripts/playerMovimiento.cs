@@ -2,8 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class playerMovimiento : MonoBehaviour {
-    
+public class playerMovimiento : MonoBehaviour
+{
+
     public GameObject character;
     public float playerSpeed;
     private Rigidbody2D characterBody;
@@ -19,32 +20,29 @@ public class playerMovimiento : MonoBehaviour {
     // Update is called once per frame
     void Update()
     {
-        if (!Niveles.gameOver)
+        if (!Niveles.gameOver && !Settings.gamePause)
         {
-            if (!Settings.gamePause)
+            playerSpeed = powerUp.speedup ? 1.0f : 0.3f;
+            int i = 0;
+            //loop over every touch found
+            while (i < Input.touchCount)
             {
-                playerSpeed = powerUp.speedup ? 1.0f : 0.3f;
-                int i = 0;
-                //loop over every touch found
-                while (i < Input.touchCount)
+                if (Input.GetTouch(i).position.x > ScreenWidth / 2)
                 {
-                    if (Input.GetTouch(i).position.x > ScreenWidth / 2)
-                    {
-                        //move right
-                        RunCharacter(playerSpeed);
-                    }
-                    else if (Input.GetTouch(i).position.x < ScreenWidth / 2)
-                    {
-                        //move left
-                        RunCharacter(-playerSpeed);
-                    }
-                    ++i;
+                    //move right
+                    RunCharacter(playerSpeed);
                 }
+                else if (Input.GetTouch(i).position.x < ScreenWidth / 2)
+                {
+                    //move left
+                    RunCharacter(-playerSpeed);
+                }
+                ++i;
             }
         }
         else
         {
-            playerSpeed = powerUp.speedup ? 0f : 0f; // Adjust the speed as needed
+            playerSpeed = 0;
             RunCharacter(playerSpeed);
         }
     }
