@@ -22,7 +22,7 @@ GameObject:
   - component: {fileID: 222380841503416324}
   - component: {fileID: 114409146372412268}
   - component: {fileID: 212018897874983114}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: prefabAdivinar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -87,8 +87,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -493399279
-  m_SortingLayer: 0
+  m_SortingLayerID: 254229827
+  m_SortingLayer: 2
   m_SortingOrder: 1
   m_Sprite: {fileID: 0}
   m_Color: {r: 0.7607844, g: 0.7607844, b: 0.7607844, a: 1}
