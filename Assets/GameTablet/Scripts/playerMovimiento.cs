@@ -40,11 +40,6 @@ public class playerMovimiento : MonoBehaviour
                 ++i;
             }
         }
-        else
-        {
-            playerSpeed = 0;
-            RunCharacter(playerSpeed);
-        }
     }
 
     void FixedUpdate()
