@@ -10,6 +10,10 @@ public class Scroller : MonoBehaviour {
 
     // Update is called once per frame
     void Update () {
-        _img.uvRect = new Rect(_img.uvRect.position + new Vector2(_x, _y) * Time.deltaTime, _img.uvRect.size);
-	}
+        if (!Niveles.gameOver && !Settings.gamePause)
+        {
+            _img.uvRect = new Rect(_img.uvRect.position + new Vector2(_x, _y) * Time.deltaTime, _img.uvRect.size);
+        }
+
+    }
 }
