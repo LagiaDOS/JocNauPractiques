@@ -117,9 +117,9 @@ TagManager:
   - UI
   - 
   - 
-  - PrefabLletres
   - 
-  - BG
+  - 
+  - 
   - 
   - 
   - 
@@ -148,8 +148,8 @@ TagManager:
   - name: Background
     uniqueID: 1332438025
     locked: 0
-  - name: prefabObjects
-    uniqueID: 73506531
+  - name: Middleground
+    uniqueID: 254229827
     locked: 0
   - name: Foreground
     uniqueID: 4246465239
