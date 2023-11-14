@@ -44,26 +44,26 @@ public class Nivel5 : Niveles
 
     public override void spawn()
     {
-        GameObject p = Instantiate(prefabNumerosLetras, new Vector3(Random.Range(-8.0f, 8.0f), 5, 0), Quaternion.identity) as GameObject;
+        GameObject p = Instantiate(prefabNumerosLetras, new Vector3(Random.Range(-7.0f, 6.0f), 5, 0), Quaternion.identity) as GameObject;
 
         switch (probNumero)
         {
             case 3:
-                p.GetComponent<SpriteRenderer>().sprite = spritesNumerosLetras[numeroRandomAdivinar];
-                p.gameObject.tag = spritesNumerosLetras[numeroRandomAdivinar].name;
+                p.GetComponent<SpriteRenderer>().sprite = spritesNumerosDosUnidades[numeroDosUnidadesRandomAdivinar];
+                p.gameObject.tag = spritesNumerosDosUnidades[numeroDosUnidadesRandomAdivinar].name;
                 break;
             default:
-                numeroRandom = Random.Range(0, 25);
-                p.GetComponent<SpriteRenderer>().sprite = spritesNumerosLetras[numeroRandom];
-                p.gameObject.tag = spritesNumerosLetras[numeroRandom].name;
+                numeroDosUnidadesRandom = Random.Range(0, 89);
+                p.GetComponent<SpriteRenderer>().sprite = spritesNumerosDosUnidades[numeroDosUnidadesRandom];
+                p.gameObject.tag = spritesNumerosDosUnidades[numeroDosUnidadesRandom].name;
                 break;
         }
     }
 
     public override void valorAdivinar()
     {
-        GameObject.Find("valorAdivinar").GetComponent<Image>().sprite = spritesNumerosLetras[numeroRandomAdivinar];
-        tagAdivinar = spritesNumerosLetras[numeroRandomAdivinar].name;
+        GameObject.Find("valorAdivinar").GetComponent<Image>().sprite = spritesNumerosDosUnidades[numeroDosUnidadesRandomAdivinar];
+        tagAdivinar = spritesNumerosDosUnidades[numeroDosUnidadesRandomAdivinar].name;
     }
 
     private void spawnPowerup()

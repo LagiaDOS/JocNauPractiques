@@ -9,6 +9,7 @@ abstract public class Niveles : MonoBehaviour, ConfigurationLevels
     public GameObject prefabSpeedUp;
     public GameObject prefabSpeedDown;
     public Sprite[] spritesNumerosLetras;
+    public Sprite[] spritesNumerosDosUnidades;
     public float spawnLetrasNumros = 1;
     public float spawnPowerUp = 15;
 
@@ -19,7 +20,8 @@ abstract public class Niveles : MonoBehaviour, ConfigurationLevels
         public int numeroRandomAdivinar;
         public int caracterRandomAdivinar;
         public int colorRandomAdivinar;
-    public int numeroLletraRandomAdivinar;
+        public int numeroLletraRandomAdivinar;
+        public int numeroDosUnidadesRandomAdivinar;
 
         public int vocalRandom;
         public int letraRandom;
@@ -27,6 +29,7 @@ abstract public class Niveles : MonoBehaviour, ConfigurationLevels
         public int numeroRandom;
         public int caracterRandom;
         public int colorRandom;
+        public int numeroDosUnidadesRandom;
 
 
 
@@ -43,7 +46,8 @@ abstract public class Niveles : MonoBehaviour, ConfigurationLevels
         prefabSpeedUp = Resources.Load("Prefabs/prefabSpeedUp") as GameObject;
         prefabSpeedDown = Resources.Load("Prefabs/prefabSpeedDown") as GameObject;
 
-        spritesNumerosLetras = Resources.LoadAll<Sprite>("Sprites/LetrasNumeros");
+        spritesNumerosLetras = Resources.LoadAll<Sprite>("Sprites/LetrasNumeros/NumerosLetras");
+        spritesNumerosDosUnidades = Resources.LoadAll<Sprite>("Sprites/LetrasNumeros/NumerosDosUnidades");
 
 
 
@@ -53,6 +57,7 @@ abstract public class Niveles : MonoBehaviour, ConfigurationLevels
         numeroRandomAdivinar = Random.Range(52, 61);
         caracterRandomAdivinar = Random.Range(62, 89);
         colorRandomAdivinar = Random.Range(90, 96);
+        numeroDosUnidadesRandomAdivinar = Random.Range(0, 89);
 
 
 
@@ -68,6 +73,7 @@ abstract public class Niveles : MonoBehaviour, ConfigurationLevels
         numeroRandom = Random.Range(52, 61);
         caracterRandom = Random.Range(62, 89);
         colorRandom = Random.Range(90, 96);
+        numeroDosUnidadesRandom = Random.Range(0, 89);
 
         speed = 0.0f;
         time = 999.0f;
