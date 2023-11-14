@@ -57,6 +57,7 @@ public class Nivel2 : Niveles
     {
         GameObject p = Instantiate(prefabNumerosLetras, new Vector3(Random.Range(-10.0f, 9.0f), 5, 0), Quaternion.identity) as GameObject;
 
+
         switch (probLletra)
         {
             case 3:
@@ -64,7 +65,7 @@ public class Nivel2 : Niveles
                 p.gameObject.tag = spritesNumerosLetras[letraRandomAdivinar].name;
                 break;
             default:
-                letraRandom = Random.Range(0, 27);
+                letraRandom = Random.Range(0, 25);
                 p.GetComponent<SpriteRenderer>().sprite = spritesNumerosLetras[letraRandom];
                 p.gameObject.tag = spritesNumerosLetras[letraRandom].name;
                 break;
