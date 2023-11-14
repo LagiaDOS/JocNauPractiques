@@ -30,6 +30,8 @@ public class Settings : MonoBehaviour {
 
     public void salirMundo()
     {
+        ScoreScript.scoreValue = 0;
+
         switch (PlayerPrefs.GetString("Nivel"))
         {
             case "Nivel1":
@@ -88,6 +90,8 @@ public class Settings : MonoBehaviour {
     }
 
     public void nextLevel() {
+
+        ScoreScript.scoreValue = 0;
 
         switch (PlayerPrefs.GetString("Nivel"))
         {
