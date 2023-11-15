@@ -10,7 +10,8 @@ public class GameController : MonoBehaviour {
     public AudioSource audioSource;
 
     public AudioClip audioFacil; 
-    public AudioClip audioDificil; 
+    public AudioClip audioMitja;
+    public AudioClip audioDificil;
 
     //posa la instancia en el nivell actual. Si per algun motiu hi ha una creada, la elimina.
     void Awake()
@@ -37,11 +38,12 @@ public class GameController : MonoBehaviour {
 
             case "Nivel2":
                 instance.cgl = instance.gameObject.AddComponent<Nivel2>();
-                audioSource.clip = audioDificil;
+                audioSource.clip = audioMitja;
                 break;
 
             case "Nivel3":
                 instance.cgl = instance.gameObject.AddComponent<Nivel3>();
+                audioSource.clip = audioDificil;
                 break;
 
             case "Nivel4":
@@ -51,12 +53,12 @@ public class GameController : MonoBehaviour {
 
             case "Nivel5":
                 instance.cgl = instance.gameObject.AddComponent<Nivel5>();
-                audioSource.clip = audioDificil;
+                audioSource.clip = audioMitja;
                 break;
 
             case "Nivel6":
                 instance.cgl = instance.gameObject.AddComponent<Nivel6>();
-                
+                audioSource.clip = audioDificil;
                 break;
 
             case "Nivel7":
@@ -66,11 +68,12 @@ public class GameController : MonoBehaviour {
 
             case "Nivel8":
                 instance.cgl = instance.gameObject.AddComponent<Nivel8>();
-                audioSource.clip = audioDificil;
+                audioSource.clip = audioMitja;
                 break;
 
             case "Nivel9":
                 instance.cgl = instance.gameObject.AddComponent<Nivel9>();
+                audioSource.clip = audioDificil;
                 break;
 
             case "Nivel10":
@@ -80,11 +83,12 @@ public class GameController : MonoBehaviour {
 
             case "Nivel11":
                 instance.cgl = instance.gameObject.AddComponent<Nivel11>();
-                audioSource.clip = audioDificil;
+                audioSource.clip = audioMitja;
                 break;
 
             case "Nivel12":
                 instance.cgl = instance.gameObject.AddComponent<Nivel12>();
+                audioSource.clip = audioDificil;
                 break;
         }
         instance.cgl.init();
