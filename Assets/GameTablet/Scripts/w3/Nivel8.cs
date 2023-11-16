@@ -43,7 +43,7 @@ public class Nivel8 : Niveles
 
     public override void spawn()
     {
-        GameObject p = Instantiate(prefabNumerosLetras, new Vector3(Random.Range(-8.0f, 8.0f), 5, 0), Quaternion.identity) as GameObject;
+        GameObject p = Instantiate(prefabNumerosLetras, new Vector3(Random.Range(-7.0f, 6.0f), 5, 0), Quaternion.identity) as GameObject;
 
         switch (probColor)
         {
