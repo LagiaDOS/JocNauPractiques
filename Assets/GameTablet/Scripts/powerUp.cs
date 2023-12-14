@@ -11,6 +11,9 @@ public class powerUp : MonoBehaviour
     public static bool speedup = false;
     bool speeddown = false;
 
+    public AudioSource audiosource;
+
+
     // Use this for initialization
     void Start() {
         speed = Niveles.speed;
@@ -56,11 +59,11 @@ public class powerUp : MonoBehaviour
                 Niveles.speed = Niveles.speed-1.0f;
                 speeddown = true;
             }
-
+            
+            audiosource.Play();
+            
             GetComponent<Collider2D>().enabled = false;
             GetComponent<SpriteRenderer>().enabled = false;
-
-
         }
     }
 

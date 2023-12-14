@@ -32,7 +32,7 @@ public class ChoiceLevel : MonoBehaviour {
                 SceneManager.LoadScene(0);
                 break;
             case "Creditos":
-                //posar escena de creditos aqui
+                SceneManager.LoadScene(6);
                 break;
         }
     }   
