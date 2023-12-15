@@ -19,8 +19,6 @@ public class myTime : MonoBehaviour {
             default:
                 meTime = 60f;
                 break;
-
-
         }
         timerText = GetComponent<Text>();
     }
