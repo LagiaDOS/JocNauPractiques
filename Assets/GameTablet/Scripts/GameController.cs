@@ -8,10 +8,14 @@ public class GameController : MonoBehaviour {
     public static GameController instance;
 
     public AudioSource audioSource;
+    public AudioSource audioSourceCambi;
 
     public AudioClip audioFacil; 
     public AudioClip audioMitja;
     public AudioClip audioDificil;
+    public AudioClip audioCambi;
+    private Boolean cambiLocal = false;
+
 
     //posa la instancia en el nivell actual. Si per algun motiu hi ha una creada, la elimina.
     void Awake()
@@ -27,7 +31,7 @@ public class GameController : MonoBehaviour {
     }
 
     // Use this for initialization
-    void Start () { 
+    void Start () {
         //agafa el string de Nivel de PlayerPrefs, i despres carrega el scrip del nivell corresponent.
         switch (PlayerPrefs.GetString("Nivel"))
         {
@@ -93,6 +97,18 @@ public class GameController : MonoBehaviour {
         }
         instance.cgl.init();
         audioSource.Play();
+    }
+
+
+    private void Update()
+    {
+        if (cambiLocal == false && Niveles.cambi == true) {
+
+            audioSourceCambi.Play();
+            cambiLocal = true;
+
+        }
+
     }
 }
 

@@ -15,7 +15,6 @@ public class Nivel3 : Niveles
     private void Start()
     {
         Niveles.speed = 2.0f;
-
     }
 
     void Update()
@@ -99,13 +98,11 @@ public class Nivel3 : Niveles
     {
         if (time > 30.0f)
         {
-            
             GameObject.Find("valorAdivinar").GetComponent<Image>().sprite = spritesNumerosLetras[letraRandomAdivinar];
             tagAdivinar = spritesNumerosLetras[letraRandomAdivinar].name;
         }
         else if (time < 30.0f)
         {
-            
             GameObject.Find("valorAdivinar").GetComponent<Image>().sprite = spritesNumerosLetras[novaLletraAdivinar];
             tagAdivinar = spritesNumerosLetras[novaLletraAdivinar].name;
         }
