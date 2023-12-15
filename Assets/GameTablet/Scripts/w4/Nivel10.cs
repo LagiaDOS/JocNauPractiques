@@ -17,13 +17,13 @@ public class Nivel10 : Niveles
     {
         if (gameOver == false && !Settings.gamePause)
         {
-            spawnLetrasNumros -= Time.deltaTime;
+            spawnLetrasNumeros -= Time.deltaTime;
             probCaracter = UnityEngine.Random.Range(0, 4);
 
-            if (spawnLetrasNumros <= 0.0f)
+            if (spawnLetrasNumeros <= 0.0f)
             {
                 spawn();
-                spawnLetrasNumros = 1f;
+                spawnLetrasNumeros = 1f;
             }
         }
     }

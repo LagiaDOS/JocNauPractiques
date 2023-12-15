@@ -10,7 +10,7 @@ abstract public class Niveles : MonoBehaviour, ConfigurationLevels
     public GameObject prefabSpeedDown;
     public Sprite[] spritesNumerosLetras;
     public Sprite[] spritesNumerosDosUnidades;
-    public float spawnLetrasNumros = 1;
+    public float spawnLetrasNumeros = 1;
     public float spawnPowerUp = 15;
 
         public int letraRandomAdivinar;

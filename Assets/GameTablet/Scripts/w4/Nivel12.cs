@@ -24,16 +24,16 @@ public class Nivel12 : Niveles
     {
         if (!gameOver && !Settings.gamePause)
         {
-            spawnLetrasNumros -= Time.deltaTime;
+            spawnLetrasNumeros -= Time.deltaTime;
             spawnPowerUp -= Time.deltaTime;
 
             probCaracter = Random.Range(0, 4);
             probPowerUp = UnityEngine.Random.Range(0, 2);
 
-            if (spawnLetrasNumros <= 0.0f)
+            if (spawnLetrasNumeros <= 0.0f)
             {
                 spawn();
-                spawnLetrasNumros = 1f;
+                spawnLetrasNumeros = 1f;
             }
 
             if (time <= 30.0f && changeLetter == false)
