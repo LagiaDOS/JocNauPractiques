@@ -31,13 +31,12 @@ abstract public class Niveles : MonoBehaviour, ConfigurationLevels
         public int colorRandom;
         public int numeroDosUnidadesRandom;
 
-
-
     public static float time;
     public static float speed;
     
     public static string tagAdivinar;
     public static bool gameOver;
+    public static bool cambi = false;
 
     public void init()
     {
@@ -59,14 +58,11 @@ abstract public class Niveles : MonoBehaviour, ConfigurationLevels
         colorRandomAdivinar = Random.Range(90, 96);
         numeroDosUnidadesRandomAdivinar = Random.Range(0, 89);
 
-
-
         numeroLletraRandomAdivinar = Random.Range(0, 34);
         //numeroLletraRandomAdivinar = 34;
         //Debug.Log("Numero lletra random adivinar pre calcul" + numeroLletraRandomAdivinar, gameObject);
         if (numeroLletraRandomAdivinar >= 25) { numeroLletraRandomAdivinar = numeroLletraRandomAdivinar + 27; }
         //Debug.Log("Numero lletra random adivinar post calcul" + numeroLletraRandomAdivinar, gameObject);
-
 
         letraRandom = Random.Range(0, 25);
         letraMinRandom = Random.Range(26, 51);
@@ -81,6 +77,8 @@ abstract public class Niveles : MonoBehaviour, ConfigurationLevels
         valorAdivinar();
         gameOver = false;
         Settings.gamePause = false;
+
+
     }
     
     abstract public void configuration();
