@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -8,12 +9,15 @@ abstract public class Niveles : MonoBehaviour, ConfigurationLevels
     public GameObject prefabAdivinar;
     public GameObject prefabSpeedUp;
     public GameObject prefabSpeedDown;
+    public Canvas canvasRender;
+
     public Sprite[] spritesNumerosLetras;
     public Sprite[] spritesNumerosDosUnidades;
     public float spawnLetrasNumros = 1;
     public float spawnPowerUp = 15;
 
-        public int letraRandomAdivinar;
+
+        public string letraRandomAdivinar;
         public int letraMinRandomAdivinar;
         public int[] vocals = { 0, 4, 8, 14, 20 };
         public int vocalRandomAdivinar;
@@ -24,7 +28,7 @@ abstract public class Niveles : MonoBehaviour, ConfigurationLevels
         public int numeroDosUnidadesRandomAdivinar;
 
         public int vocalRandom;
-        public int letraRandom;
+        public string letraRandom;
         public int letraMinRandom;
         public int numeroRandom;
         public int caracterRandom;
@@ -40,36 +44,44 @@ abstract public class Niveles : MonoBehaviour, ConfigurationLevels
 
     public void init()
     {
+        int rand = 0;
+        char caracter = 'e';
         prefabNumerosLetras = Resources.Load("Prefabs/prefabNumLetras") as GameObject;
         prefabAdivinar = Resources.Load("Prefabs/prefabAdivinar") as GameObject;
         prefabSpeedUp = Resources.Load("Prefabs/prefabSpeedUp") as GameObject;
         prefabSpeedDown = Resources.Load("Prefabs/prefabSpeedDown") as GameObject;
+        
+        //spritesNumerosLetras = Resources.LoadAll<Sprite>("Sprites/LetrasNumeros/NumerosLetras");
+        //spritesNumerosDosUnidades = Resources.LoadAll<Sprite>("Sprites/LetrasNumeros/NumerosDosUnidades");
+        
+        rand = UnityEngine.Random.Range(0, 25);
+        caracter = Convert.ToChar(rand + 65);
+        letraRandomAdivinar = caracter.ToString();
 
-        spritesNumerosLetras = Resources.LoadAll<Sprite>("Sprites/LetrasNumeros/NumerosLetras");
-        spritesNumerosDosUnidades = Resources.LoadAll<Sprite>("Sprites/LetrasNumeros/NumerosDosUnidades");
 
+        //letraMinRandomAdivinar = Random.Range(26, 51);
+        vocalRandomAdivinar = vocals[UnityEngine.Random.Range(0, vocals.Length)];
+        numeroRandomAdivinar = UnityEngine.Random.Range(52, 61);
+        caracterRandomAdivinar = UnityEngine.Random.Range(62, 89);
+        colorRandomAdivinar = UnityEngine.Random.Range(90, 96);
+        numeroDosUnidadesRandomAdivinar = UnityEngine.Random.Range(0, 89);
 
-
-        letraRandomAdivinar = Random.Range(0, 25);
-        letraMinRandomAdivinar = Random.Range(26, 51);
-        vocalRandomAdivinar = vocals[Random.Range(0, vocals.Length)];
-        numeroRandomAdivinar = Random.Range(52, 61);
-        caracterRandomAdivinar = Random.Range(62, 89);
-        colorRandomAdivinar = Random.Range(90, 96);
-        numeroDosUnidadesRandomAdivinar = Random.Range(0, 89);
-
-        numeroLletraRandomAdivinar = Random.Range(0, 34);
+        numeroLletraRandomAdivinar = UnityEngine.Random.Range(0, 34);
         //numeroLletraRandomAdivinar = 34;
         //Debug.Log("Numero lletra random adivinar pre calcul" + numeroLletraRandomAdivinar, gameObject);
         if (numeroLletraRandomAdivinar >= 25) { numeroLletraRandomAdivinar = numeroLletraRandomAdivinar + 27; }
         //Debug.Log("Numero lletra random adivinar post calcul" + numeroLletraRandomAdivinar, gameObject);
 
-        letraRandom = Random.Range(0, 25);
-        letraMinRandom = Random.Range(26, 51);
-        numeroRandom = Random.Range(52, 61);
-        caracterRandom = Random.Range(62, 89);
-        colorRandom = Random.Range(90, 96);
-        numeroDosUnidadesRandom = Random.Range(0, 89);
+
+        rand = UnityEngine.Random.Range(0, 25);
+        caracter = Convert.ToChar(rand + 65);
+        letraRandom = caracter.ToString();
+
+        letraMinRandom = UnityEngine.Random.Range(26, 51);
+        numeroRandom = UnityEngine.Random.Range(52, 61);
+        caracterRandom = UnityEngine.Random.Range(62, 89);
+        colorRandom = UnityEngine.Random.Range(90, 96);
+        numeroDosUnidadesRandom = UnityEngine.Random.Range(0, 89);
 
         speed = 0.0f;
         time = 999.0f;

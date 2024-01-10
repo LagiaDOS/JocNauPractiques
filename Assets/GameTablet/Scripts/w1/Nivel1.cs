@@ -57,28 +57,39 @@ public class Nivel1 : Niveles
     public override void spawn()
     {
         GameObject p = Instantiate(prefabNumerosLetras, new Vector3(UnityEngine.Random.Range(-7.0f, 6.0f), 5, 0), Quaternion.identity) as GameObject;
-
-
-
+        //p.transform.parent = canvasRender;
 
         switch (probLletra)
         {
             case 3:
-                p.GetComponent<SpriteRenderer>().sprite = spritesNumerosLetras[vocalRandomAdivinar];
-                p.gameObject.tag = spritesNumerosLetras[vocalRandomAdivinar].name;
+                p.GetComponent<Text>().text =letraRandomAdivinar;
+                p.gameObject.tag = "correcte";
+                //p.GetComponent<SpriteRenderer>().sprite = spritesNumerosLetras[vocalRandomAdivinar];
+                //p.gameObject.tag = spritesNumerosLetras[vocalRandomAdivinar].name;
                 break;
             default:
-                vocalRandom = vocals[UnityEngine.Random.Range(0, vocals.Length)];
-                p.GetComponent<SpriteRenderer>().sprite = spritesNumerosLetras[vocalRandom];
-                p.gameObject.tag = spritesNumerosLetras[vocalRandom].name;
+                int rand = UnityEngine.Random.Range(0, 25);
+                char caracter = Convert.ToChar(rand + 65);
+                letraRandom = caracter.ToString();
+
+                p.GetComponent<Text>().text = letraRandom;
+
+                if (letraRandom == letraRandomAdivinar)
+                {
+                    p.gameObject.tag = "correcte";
+                }
+
+                //vocalRandom = vocals[UnityEngine.Random.Range(0, vocals.Length)];
+                //p.GetComponent<SpriteRenderer>().sprite = spritesNumerosLetras[vocalRandom];
+                //p.gameObject.tag = spritesNumerosLetras[vocalRandom].name;
                 break;
         }
     }
 
     public override void valorAdivinar()
     {
-        GameObject.Find("valorAdivinar").GetComponent<Image>().sprite = spritesNumerosLetras[vocalRandomAdivinar];
-        tagAdivinar = spritesNumerosLetras[vocalRandomAdivinar].name;
+        GameObject.Find("valorAdivinar").GetComponent<Text>().text = letraRandomAdivinar;
+        //tagAdivinar = spritesNumerosLetras[vocalRandomAdivinar].name;
     }
 
 }
