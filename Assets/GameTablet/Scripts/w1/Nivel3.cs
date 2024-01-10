@@ -66,13 +66,13 @@ public class Nivel3 : Niveles
             switch (probLletra)
             {
                 case 3:
-                    p.GetComponent<SpriteRenderer>().sprite = spritesNumerosLetras[letraRandomAdivinar];
-                    p.gameObject.tag = spritesNumerosLetras[letraRandomAdivinar].name;
+                    //p.GetComponent<SpriteRenderer>().sprite = spritesNumerosLetras[letraRandomAdivinar];
+                    //p.gameObject.tag = spritesNumerosLetras[letraRandomAdivinar].name;
                     break;
                 default:
-                    letraRandom = Random.Range(0, 27);
-                    p.GetComponent<SpriteRenderer>().sprite = spritesNumerosLetras[letraRandom];
-                    p.gameObject.tag = spritesNumerosLetras[letraRandom].name;
+                   // letraRandom = Random.Range(0, 27);
+                   // p.GetComponent<SpriteRenderer>().sprite = spritesNumerosLetras[letraRandom];
+                   // p.gameObject.tag = spritesNumerosLetras[letraRandom].name;
                     break;
             }
         }
@@ -86,9 +86,9 @@ public class Nivel3 : Niveles
                     p.gameObject.tag = spritesNumerosLetras[novaLletraAdivinar].name;
                     break;
                 default:
-                    letraRandom = Random.Range(0, 27);
-                    p.GetComponent<SpriteRenderer>().sprite = spritesNumerosLetras[letraRandom];
-                    p.gameObject.tag = spritesNumerosLetras[letraRandom].name;
+                    //letraRandom = Random.Range(0, 27);
+                    //p.GetComponent<SpriteRenderer>().sprite = spritesNumerosLetras[letraRandom];
+                    //p.gameObject.tag = spritesNumerosLetras[letraRandom].name;
                     break;
             }
         }
@@ -98,13 +98,13 @@ public class Nivel3 : Niveles
     {
         if (time > 30.0f)
         {
-            GameObject.Find("valorAdivinar").GetComponent<Image>().sprite = spritesNumerosLetras[letraRandomAdivinar];
-            tagAdivinar = spritesNumerosLetras[letraRandomAdivinar].name;
+           // GameObject.Find("valorAdivinar").GetComponent<Image>().sprite = spritesNumerosLetras[letraRandomAdivinar];
+            //tagAdivinar = spritesNumerosLetras[letraRandomAdivinar].name;
         }
         else if (time < 30.0f)
         {
-            GameObject.Find("valorAdivinar").GetComponent<Image>().sprite = spritesNumerosLetras[novaLletraAdivinar];
-            tagAdivinar = spritesNumerosLetras[novaLletraAdivinar].name;
+            //GameObject.Find("valorAdivinar").GetComponent<Image>().sprite = spritesNumerosLetras[novaLletraAdivinar];
+            //tagAdivinar = spritesNumerosLetras[novaLletraAdivinar].name;
         }
     }
 

@@ -5,10 +5,17 @@ using UnityEngine;
 public class movimientoPreFabNumLetras : MonoBehaviour {
     public AudioClip _audioSource;
     public float speed;
+    public GameObject canvasRend;
     // Use this for initialization
+
+
+
     void Start () {
         speed = Niveles.speed;
-	}
+        canvasRend = GameObject.Find("Canvas2");
+        this.transform.parent = canvasRend.transform;
+        this.transform.localScale = new Vector3 (1, 1, 0);
+    }
 	
 	// Update is called once per frame
 	void Update () {
@@ -30,7 +37,7 @@ public class movimientoPreFabNumLetras : MonoBehaviour {
         //Si los objetos que bajan, han colisionado con el jugador accedemos al if
         if (other.tag == "Player")
         {
-            if (this.tag == Niveles.tagAdivinar)
+            if (this.tag == "correcte")
             {
                 ScoreScript.scoreValue += 100;
             }

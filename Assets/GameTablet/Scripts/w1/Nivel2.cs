@@ -61,21 +61,21 @@ public class Nivel2 : Niveles
         switch (probLletra)
         {
             case 3:
-                p.GetComponent<SpriteRenderer>().sprite = spritesNumerosLetras[letraRandomAdivinar];
-                p.gameObject.tag = spritesNumerosLetras[letraRandomAdivinar].name;
+                //p.GetComponent<SpriteRenderer>().sprite = spritesNumerosLetras[letraRandomAdivinar];
+                //p.gameObject.tag = spritesNumerosLetras[letraRandomAdivinar].name;
                 break;
             default:
-                letraRandom = Random.Range(0, 25);
-                p.GetComponent<SpriteRenderer>().sprite = spritesNumerosLetras[letraRandom];
-                p.gameObject.tag = spritesNumerosLetras[letraRandom].name;
+                //letraRandom = Random.Range(0, 25);
+                //p.GetComponent<SpriteRenderer>().sprite = spritesNumerosLetras[letraRandom];
+                //p.gameObject.tag = spritesNumerosLetras[letraRandom].name;
                 break;
         }
     }
 
     public override void valorAdivinar()
     {
-        GameObject.Find("valorAdivinar").GetComponent<Image>().sprite = spritesNumerosLetras[letraRandomAdivinar];
-        tagAdivinar = spritesNumerosLetras[letraRandomAdivinar].name;
+        //GameObject.Find("valorAdivinar").GetComponent<Image>().sprite = spritesNumerosLetras[letraRandomAdivinar];
+        //tagAdivinar = spritesNumerosLetras[letraRandomAdivinar].name;
     }
 
 }
