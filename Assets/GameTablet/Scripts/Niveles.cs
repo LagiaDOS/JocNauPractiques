@@ -19,7 +19,7 @@ abstract public class Niveles : MonoBehaviour, ConfigurationLevels
 
         public string letraRandomAdivinar;
         public int letraMinRandomAdivinar;
-        public int[] vocals = { 0, 4, 8, 14, 20 };
+        public string[] vocals = { "A", "E", "I", "O", "U" };
         public int vocalRandomAdivinar;
         public int numeroRandomAdivinar;
         public int caracterRandomAdivinar;
@@ -60,7 +60,7 @@ abstract public class Niveles : MonoBehaviour, ConfigurationLevels
 
 
         //letraMinRandomAdivinar = Random.Range(26, 51);
-        vocalRandomAdivinar = vocals[UnityEngine.Random.Range(0, vocals.Length)];
+        vocalRandomAdivinar = UnityEngine.Random.Range(0, vocals.Length);
         numeroRandomAdivinar = UnityEngine.Random.Range(52, 61);
         caracterRandomAdivinar = UnityEngine.Random.Range(62, 89);
         colorRandomAdivinar = UnityEngine.Random.Range(90, 96);

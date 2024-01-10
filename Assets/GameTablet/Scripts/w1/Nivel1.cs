@@ -62,17 +62,17 @@ public class Nivel1 : Niveles
         switch (probLletra)
         {
             case 3:
-                p.GetComponent<Text>().text =letraRandomAdivinar;
+                p.GetComponent<Text>().text = vocals[vocalRandomAdivinar];
                 p.gameObject.tag = "correcte";
                 //p.GetComponent<SpriteRenderer>().sprite = spritesNumerosLetras[vocalRandomAdivinar];
                 //p.gameObject.tag = spritesNumerosLetras[vocalRandomAdivinar].name;
                 break;
             default:
-                int rand = UnityEngine.Random.Range(0, 25);
-                char caracter = Convert.ToChar(rand + 65);
-                letraRandom = caracter.ToString();
-
-                p.GetComponent<Text>().text = letraRandom;
+                //int rand = UnityEngine.Random.Range(0, 25);
+                //char caracter = Convert.ToChar(rand + 65);
+                //letraRandom = caracter.ToString();
+                vocalRandom = UnityEngine.Random.Range(0, vocals.Length);
+                p.GetComponent<Text>().text = vocals[vocalRandom];
 
                 if (letraRandom == letraRandomAdivinar)
                 {
@@ -88,7 +88,7 @@ public class Nivel1 : Niveles
 
     public override void valorAdivinar()
     {
-        GameObject.Find("valorAdivinar").GetComponent<Text>().text = letraRandomAdivinar;
+        GameObject.Find("valorAdivinar").GetComponent<Text>().text = vocals[vocalRandomAdivinar];
         //tagAdivinar = spritesNumerosLetras[vocalRandomAdivinar].name;
     }
 
