@@ -7,6 +7,12 @@ public class Nivel4 : Niveles
 {
     private int probNumero;
     private int probPowerUp;
+    private float changeOperacion= 15f;
+
+    private int sumaResta;
+    private int numeroArray;
+    
+
 
     private void Start()
     {
@@ -19,6 +25,7 @@ public class Nivel4 : Niveles
         {
             spawnLetrasNumros -= Time.deltaTime;
             spawnPowerUp -= Time.deltaTime;
+            changeOperacion -= Time.deltaTime;
             probNumero = UnityEngine.Random.Range(0, 4);
             probPowerUp = UnityEngine.Random.Range(0, 2);
 
@@ -28,11 +35,11 @@ public class Nivel4 : Niveles
                 spawnLetrasNumros = 1f;
             }
 
-            if (spawnPowerUp <= 0.0f)
-            {
-                spawnPowerup();
-                spawnPowerUp = 15f;
-            }
+            //if (spawnPowerUp <= 0.0f)
+            //{
+            //    spawnPowerup();
+           //     spawnPowerUp = 15f;
+           // }
         }
     }
 
@@ -55,18 +62,28 @@ public class Nivel4 : Niveles
 
     public override void spawn()
     {
+
+        //decidir si es fa una suma o no
+        //escollir el numero resposta
+        //escollim una de les operacions i la posem al hud
+        //generem 4 numeros aleatoris (un correcte) per agafar
+
+
+
+
+
         GameObject p = Instantiate(prefabNumerosLetras, new Vector3(UnityEngine.Random.Range(-7.0f, 6.0f), 5, 0), Quaternion.identity) as GameObject;
 
         switch (probNumero)
         {
             case 3:
-                p.GetComponent<SpriteRenderer>().sprite = spritesNumerosLetras[numeroRandomAdivinar];
-                p.gameObject.tag = spritesNumerosLetras[numeroRandomAdivinar].name;
+                //p.GetComponent<SpriteRenderer>().sprite = spritesNumerosLetras[numeroRandomAdivinar];
+                //p.gameObject.tag = spritesNumerosLetras[numeroRandomAdivinar].name;
                 break;
             default:
-                numeroRandom = Random.Range(52, 61);
-                p.GetComponent<SpriteRenderer>().sprite = spritesNumerosLetras[numeroRandom];
-                p.gameObject.tag = spritesNumerosLetras[numeroRandom].name;
+               // numeroRandom = Random.Range(52, 61);
+               // p.GetComponent<SpriteRenderer>().sprite = spritesNumerosLetras[numeroRandom];
+               // p.gameObject.tag = spritesNumerosLetras[numeroRandom].name;
                 break;
         }
 
@@ -74,7 +91,7 @@ public class Nivel4 : Niveles
 
     public override void valorAdivinar()
     {
-        GameObject.Find("valorAdivinar").GetComponent<Image>().sprite = spritesNumerosLetras[numeroRandomAdivinar];
-        tagAdivinar = spritesNumerosLetras[numeroRandomAdivinar].name;
+        //GameObject.Find("valorAdivinar").GetComponent<Image>().sprite = spritesNumerosLetras[numeroRandomAdivinar];
+        //tagAdivinar = spritesNumerosLetras[numeroRandomAdivinar].name;
     }
 }
