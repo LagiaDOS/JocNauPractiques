@@ -7,7 +7,8 @@ public class Nivel5 : Niveles
 {
     private int probNumero;
     private int probPowerUp;
-    
+    private int numeroGen;
+
     private void Start()
     {
         Niveles.speed = 2.0f;
@@ -62,7 +63,8 @@ public class Nivel5 : Niveles
 
     public override void valorAdivinar()
     {
-        GameObject.Find("valorAdivinar").GetComponent<Image>().sprite = spritesNumerosDosUnidades[numeroDosUnidadesRandomAdivinar];
+
+        GameObject.Find("valorAdivinar").GetComponent<Text>().text = (numeroGen-1).ToString() + " - ? -" + (numeroGen + 1).ToString();
         tagAdivinar = spritesNumerosDosUnidades[numeroDosUnidadesRandomAdivinar].name;
     }
 

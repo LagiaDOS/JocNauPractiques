@@ -8,19 +8,21 @@ public class Nivel4 : Niveles
 {
     private int probNumero;
     private int probPowerUp;
-    private float changeOperacion= 15f;
-
+    private float changeOperacion = 10f;
     private int sumaResta;
     private int numeroArray;
     private int operacio;
     private string textHud;
     private int resposta;
-    private int[] arrayNumeros ={0,0,0,0};
-
+    private int[] arrayNumeros = { 0, 0, 0, 0 };
 
     private void Start()
     {
         Niveles.speed = 2.0f;
+        spawnLetrasNumros = 5;
+
+        changeHud();
+        //spawn();
     }
 
     void Update()
@@ -33,19 +35,28 @@ public class Nivel4 : Niveles
             probNumero = UnityEngine.Random.Range(0, 4);
             probPowerUp = UnityEngine.Random.Range(0, 2);
 
+            if (changeOperacion <= 0.0f)
+            {
+                changeHud();
+                changeOperacion = 10f;
+            }
+
             if (spawnLetrasNumros <= 0.0f)
             {
                 spawn();
-                spawnLetrasNumros = 1f;
+                spawnLetrasNumros = 10f;
             }
 
             //if (spawnPowerUp <= 0.0f)
             //{
             //    spawnPowerup();
-           //     spawnPowerUp = 15f;
-           // }
+            //     spawnPowerUp = 15f;
+            // }
         }
     }
+
+
+
 
     private void spawnPowerup()
     {
@@ -62,11 +73,110 @@ public class Nivel4 : Niveles
     public override void configuration()
     {
         Niveles.time = 60.0f;
+
     }
 
     public override void spawn()
     {
+        //generem 4 numeros aleatoris (un correcte) per agafar
+        arrayNumeros[0] = resposta;
 
+        //Debug.Log("Numeros randoms array 0");
+        for (int i = 1; i < 4; i++)
+        {
+            //Debug.Log("Numeros randoms array 1");
+            //while (arrayNumeros[i] == resposta)
+            // {
+            //     Debug.Log("Numeros randoms array 2");
+            //     arrayNumeros[i] = UnityEngine.Random.Range(0, 9);
+            // }
+
+            for (int y = 1; y < 4; y = y)
+            {
+                //Debug.Log("Numeros randoms array 2");
+                arrayNumeros[y] = UnityEngine.Random.Range(0, 9);
+
+                if (arrayNumeros[y] != resposta) { y++; }
+
+            }
+
+        }
+
+
+        int n = 0;
+        Boolean[] arrayBool = { false, false, false, false };
+        int[] arrayNumeros2 = { 0, 0, 0, 0 };
+        int rand = 0;
+        bool loop = false;
+        Debug.Log("Fora del loop de shuffle");
+
+        while (n < 4)
+        {
+            //Debug.Log("Dintre del loop de shuffle");
+
+            loop = false;
+            while (loop == false)
+            {
+                //Debug.Log("Fora del loop de shuffle 2");
+
+                rand = UnityEngine.Random.Range(0, 3);
+
+                if (arrayBool[rand] == true)
+                {
+                    Debug.Log("shufle true");
+                }
+                else
+                {
+                    Debug.Log("suffle falses");
+
+                    arrayNumeros2[n] = arrayNumeros[rand];
+                    arrayBool[n] = true;
+                    loop = true;
+                }
+            }
+            n++;
+        }
+
+        //Debug.Log("array 1" + arrayNumeros);
+       // Debug.Log("array 2" + arrayNumeros2);
+
+       // arrayNumeros = arrayNumeros2;
+
+
+        GameObject a = Instantiate(prefabNumerosLetras, new Vector3(-8f, 5, 0), Quaternion.identity) as GameObject;
+        a.GetComponent<Text>().text = arrayNumeros[0].ToString();
+        if (arrayNumeros[0] == resposta) { a.gameObject.tag = "correcte"; }
+
+        GameObject b = Instantiate(prefabNumerosLetras, new Vector3(-3.0f, 5, 0), Quaternion.identity) as GameObject;
+        b.GetComponent<Text>().text = arrayNumeros[1].ToString();
+        if (arrayNumeros[1] == resposta) { a.gameObject.tag = "correcte"; }
+
+        GameObject c = Instantiate(prefabNumerosLetras, new Vector3(3.0f, 5, 0), Quaternion.identity) as GameObject;
+        c.GetComponent<Text>().text = arrayNumeros[2].ToString();
+        if (arrayNumeros[2] == resposta) { a.gameObject.tag = "correcte"; }
+
+        GameObject d = Instantiate(prefabNumerosLetras, new Vector3(8.0f, 5, 0), Quaternion.identity) as GameObject;
+        d.GetComponent<Text>().text = arrayNumeros[3].ToString();
+        if (arrayNumeros[3] == resposta) { a.gameObject.tag = "correcte"; }
+
+        //* switch (probNumero)
+        //{
+        //case 3:
+        //p.GetComponent<SpriteRenderer>().sprite = spritesNumerosLetras[numeroRandomAdivinar];
+        //p.gameObject.tag = spritesNumerosLetras[numeroRandomAdivinar].name;
+        //    break;
+        //  default:
+        // numeroRandom = Random.Range(52, 61);
+        // p.GetComponent<SpriteRenderer>().sprite = spritesNumerosLetras[numeroRandom];
+        // p.gameObject.tag = spritesNumerosLetras[numeroRandom].name;
+        //        break;
+        //  }
+
+        //}
+    }
+
+    public void changeHud()
+    {
         //decidir si es fa una suma o no, 0 es resta, 1 es suma
         sumaResta = UnityEngine.Random.Range(0, 1);
 
@@ -91,7 +201,8 @@ public class Nivel4 : Niveles
                 case 9: textHud = resta9[UnityEngine.Random.Range(0, resta9.Length)]; resposta = 9; break;
             }
         }
-        else {
+        else
+        {
             //suma si es 1
             switch (numeroArray)
             {
@@ -107,40 +218,8 @@ public class Nivel4 : Niveles
                 case 9: textHud = suma9[UnityEngine.Random.Range(0, suma9.Length)]; resposta = 9; break;
             }
         }
+
         GameObject.Find("valorAdivinar").GetComponent<Text>().text = textHud;
-
-        //generem 4 numeros aleatoris (un correcte) per agafar
-
-        arrayNumeros[0] = Int32.Parse(textHud);
-
-
-        for (int i = 1; i == 4; i++)
-        {
-            while (arrayNumeros[i] == arrayNumeros[0])
-            {
-                arrayNumeros[i] = UnityEngine.Random.Range(0, 9);
-            }
-        }
-
-        //un cop fet l'array, em el shuffle i despres creem els 4 objectes al mateix temps en 4 posicions fixes
-
-
-
-
-        GameObject p = Instantiate(prefabNumerosLetras, new Vector3(UnityEngine.Random.Range(-7.0f, 6.0f), 5, 0), Quaternion.identity) as GameObject;
-
-        switch (probNumero)
-        {
-            case 3:
-                //p.GetComponent<SpriteRenderer>().sprite = spritesNumerosLetras[numeroRandomAdivinar];
-                //p.gameObject.tag = spritesNumerosLetras[numeroRandomAdivinar].name;
-                break;
-            default:
-               // numeroRandom = Random.Range(52, 61);
-               // p.GetComponent<SpriteRenderer>().sprite = spritesNumerosLetras[numeroRandom];
-               // p.gameObject.tag = spritesNumerosLetras[numeroRandom].name;
-                break;
-        }
 
     }
 
@@ -149,4 +228,10 @@ public class Nivel4 : Niveles
         //GameObject.Find("valorAdivinar").GetComponent<Image>().sprite = spritesNumerosLetras[numeroRandomAdivinar];
         //tagAdivinar = spritesNumerosLetras[numeroRandomAdivinar].name;
     }
+
+
+
+
+
+
 }
