@@ -63,7 +63,54 @@ public class Nivel1 : Niveles
         {
             case 3:
                 p.GetComponent<Text>().text = vocals[vocalRandomAdivinar];
-                p.gameObject.tag = "correcte";
+
+                switch (vocalRandomAdivinar)
+                {
+                    case 0: //A
+
+                        if (monosilabRandomAdivinar == 2 || monosilabRandomAdivinar == 4 ||
+                            monosilabRandomAdivinar == 6 || monosilabRandomAdivinar == 7)
+                        {
+                            p.gameObject.tag = "correcte";
+                        }
+
+                        break;
+                    case 1: // E
+
+                        if (monosilabRandomAdivinar == 8 || monosilabRandomAdivinar == 11 ||
+                            monosilabRandomAdivinar == 14 || monosilabRandomAdivinar == 16 || monosilabRandomAdivinar == 17)
+                        {
+                            p.gameObject.tag = "correcte";
+                        }
+
+                        break;
+                    case 2:  // I
+
+                        if (monosilabRandomAdivinar == 10 || monosilabRandomAdivinar == 12 || monosilabRandomAdivinar == 19)
+                        {
+                            p.gameObject.tag = "correcte";
+                        }
+                        break;
+                    case 3:  // O
+
+                        if (monosilabRandomAdivinar == 1 || monosilabRandomAdivinar == 3 ||
+                            monosilabRandomAdivinar == 5 || monosilabRandomAdivinar == 20)
+                        {
+                            p.gameObject.tag = "correcte";
+                        }
+                        break;
+                    case 4:  // U
+
+                        if (monosilabRandomAdivinar == 9 || monosilabRandomAdivinar == 13 ||
+                            monosilabRandomAdivinar == 15 || monosilabRandomAdivinar == 18)
+                        {
+                            p.gameObject.tag = "correcte";
+                        }
+                        break;
+                    default:
+                        break;
+                }
+                
                 //p.GetComponent<SpriteRenderer>().sprite = spritesNumerosLetras[vocalRandomAdivinar];
                 //p.gameObject.tag = spritesNumerosLetras[vocalRandomAdivinar].name;
                 break;
@@ -74,9 +121,54 @@ public class Nivel1 : Niveles
                 vocalRandom = UnityEngine.Random.Range(0, vocals.Length);
                 p.GetComponent<Text>().text = vocals[vocalRandom];
 
-                if (letraRandom == letraRandomAdivinar)
+                if (vocalRandom == vocalRandomAdivinar)
                 {
-                    p.gameObject.tag = "correcte";
+                    switch (vocalRandomAdivinar)
+                    {
+                        case 0: //A
+
+                            if (monosilabRandomAdivinar == 2 || monosilabRandomAdivinar == 4 ||
+                                monosilabRandomAdivinar == 6 || monosilabRandomAdivinar == 7)
+                            {
+                                p.gameObject.tag = "correcte";
+                            }
+
+                            break;
+                        case 1: // E
+
+                            if (monosilabRandomAdivinar == 8 || monosilabRandomAdivinar == 11 ||
+                                monosilabRandomAdivinar == 14 || monosilabRandomAdivinar == 16 || monosilabRandomAdivinar == 17)
+                            {
+                                p.gameObject.tag = "correcte";
+                            }
+
+                            break;
+                        case 2:  // I
+
+                            if (monosilabRandomAdivinar == 10 || monosilabRandomAdivinar == 12 || monosilabRandomAdivinar == 19)
+                            {
+                                p.gameObject.tag = "correcte";
+                            }
+                            break;
+                        case 3:  // O
+
+                            if (monosilabRandomAdivinar == 1 || monosilabRandomAdivinar == 3 ||
+                                monosilabRandomAdivinar == 5 || monosilabRandomAdivinar == 20)
+                            {
+                                p.gameObject.tag = "correcte";
+                            }
+                            break;
+                        case 4:  // U
+
+                            if (monosilabRandomAdivinar == 9 || monosilabRandomAdivinar == 13 ||
+                                monosilabRandomAdivinar == 15 || monosilabRandomAdivinar == 18)
+                            {
+                                p.gameObject.tag = "correcte";
+                            }
+                            break;
+                        default:
+                            break;
+                    }
                 }
 
                 //vocalRandom = vocals[UnityEngine.Random.Range(0, vocals.Length)];
@@ -88,7 +180,8 @@ public class Nivel1 : Niveles
 
     public override void valorAdivinar()
     {
-        GameObject.Find("valorAdivinar").GetComponent<Text>().text = vocals[vocalRandomAdivinar];
+        GameObject.Find("valorAdivinar").GetComponent<Text>().text = monosilabs[monosilabRandomAdivinar];
+        GameObject.Find("valorAdivinar2").GetComponent<SpriteRenderer>().sprite = spritesMonosilabs[monosilabRandomAdivinar];
         //tagAdivinar = spritesNumerosLetras[vocalRandomAdivinar].name;
     }
 

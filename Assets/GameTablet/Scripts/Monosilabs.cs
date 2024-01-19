@@ -13,27 +13,17 @@ public class Monosilabs : MonoBehaviour
 
 
     // Funció per generar una paraula monosíl·làbica aleatòria
-    public string DictarMonosilab()
+    public string dictarMonosilab()
     {
         int index = UnityEngine.Random.Range(0, monosilabs.Length);
         return monosilabs[index];
     }
 
-    // Funció per instanciar un prefabAdivinar amb la paraula generada
-    public void SpawnParaulaMonosilabica()
+    public void spawnParaulaMonosilabica()
     {
         string paraula = dictarMonosilab();
         GameObject adivinar = Instantiate(prefabAdivinar, new Vector3(0, 0, 0), Quaternion.identity) as GameObject;
         adivinar.GetComponent<Text>().text = paraula;
     }
 
-    public void DictarVocalCorrecta(string paraula)
-    {
-        int index = paraula.IndexOf('_');
-        if (index != -1 && index < paraula.Length - 1)
-        {
-            return paraula[index + 1];
-        }
-        return '\0'; // Retorna un caràcter nul si no es pot determinar la vocal correcta
-    }
 }
