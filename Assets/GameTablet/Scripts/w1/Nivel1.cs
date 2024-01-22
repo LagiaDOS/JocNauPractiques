@@ -181,7 +181,7 @@ public class Nivel1 : Niveles
     public override void valorAdivinar()
     {
         GameObject.Find("valorAdivinar").GetComponent<Text>().text = monosilabs[monosilabRandomAdivinar];
-        GameObject.Find("valorAdivinar2").GetComponent<SpriteRenderer>().sprite = spritesMonosilabs[monosilabRandomAdivinar];
+        GameObject.Find("valorAdivinar2").GetComponent<Image>().sprite = spritesMonosilabs[monosilabRandomAdivinar];
         //tagAdivinar = spritesNumerosLetras[vocalRandomAdivinar].name;
     }
 
