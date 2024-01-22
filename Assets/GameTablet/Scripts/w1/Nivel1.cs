@@ -166,8 +166,6 @@ public class Nivel1 : Niveles
                                 p.gameObject.tag = "correcte";
                             }
                             break;
-                        default:
-                            break;
                     }
                 }
 
