@@ -8,11 +8,16 @@ public class Nivel1 : Niveles
 {
     private int probLletra;
     private int probPowerUp;
+    private float tiempoUltimaAccion;
+    private float intervaloDeTiempo = 15f;
+    
 
     private void Start()
     {
         Niveles.speed = 2.0f;
-    }
+        tiempoUltimaAccion = Time.time;
+        
+}
 
     void Update()
     {
@@ -20,6 +25,7 @@ public class Nivel1 : Niveles
         {
             spawnLetrasNumros -= Time.deltaTime;
             spawnPowerUp -= Time.deltaTime;
+            changeVocal -= Time.deltaTime;
             probLletra = UnityEngine.Random.Range(0, 4);
             probPowerUp = UnityEngine.Random.Range(0, 2);
 
@@ -33,6 +39,12 @@ public class Nivel1 : Niveles
             {
                 spawnPowerup();
                 spawnPowerUp = 15f;
+            }
+
+            if (changeVocal <= 0.0f)
+            {
+                swapMonosilab();
+                changeVocal = 12f;
             }
         }
     }
@@ -49,6 +61,47 @@ public class Nivel1 : Niveles
         }
     }
 
+    public void swapMonosilab()
+    {
+        monosilabRandomAdivinar = UnityEngine.Random.Range(0, monosilabs.Length);
+        if (monosilabRandomAdivinar == 1 || monosilabRandomAdivinar == 3 ||
+            monosilabRandomAdivinar == 5 || monosilabRandomAdivinar == 6)
+        {
+
+            vocalAdivinar = 0;
+
+        }
+        else if (monosilabRandomAdivinar == 7 || monosilabRandomAdivinar == 10 ||
+                 monosilabRandomAdivinar == 13 || monosilabRandomAdivinar == 15 || monosilabRandomAdivinar == 16)
+        {
+
+            vocalAdivinar = 1;
+
+        }
+        else if (monosilabRandomAdivinar == 9 || monosilabRandomAdivinar == 11 || monosilabRandomAdivinar == 18)
+        {
+
+            vocalAdivinar = 2;
+
+        }
+        else if (monosilabRandomAdivinar == 0 || monosilabRandomAdivinar == 2 ||
+                  monosilabRandomAdivinar == 4 || monosilabRandomAdivinar == 19)
+        {
+
+            vocalAdivinar = 3;
+
+        }
+        else if (monosilabRandomAdivinar == 8 || monosilabRandomAdivinar == 12 ||
+                  monosilabRandomAdivinar == 14 || monosilabRandomAdivinar == 17)
+        {
+
+            vocalAdivinar = 4;
+
+        }
+
+        valorAdivinar();
+    }
+
     public override void configuration()
     {
         Niveles.time = 60.0f;
@@ -62,55 +115,93 @@ public class Nivel1 : Niveles
         switch (probLletra)
         {
             case 3:
-                p.GetComponent<Text>().text = vocals[vocalRandomAdivinar];
+                p.GetComponent<Text>().text = vocals[vocalAdivinar];
 
-                switch (vocalRandomAdivinar)
+                if (monosilabRandomAdivinar == 1 || monosilabRandomAdivinar == 3 ||
+                    monosilabRandomAdivinar == 5 || monosilabRandomAdivinar == 6)
                 {
-                    case 0: //A
 
-                        if (monosilabRandomAdivinar == 2 || monosilabRandomAdivinar == 4 ||
-                            monosilabRandomAdivinar == 6 || monosilabRandomAdivinar == 7)
-                        {
-                            p.gameObject.tag = "correcte";
-                        }
+                    vocalAdivinar = 0;
+                    p.gameObject.tag = "correcte";
 
-                        break;
-                    case 1: // E
-
-                        if (monosilabRandomAdivinar == 8 || monosilabRandomAdivinar == 11 ||
-                            monosilabRandomAdivinar == 14 || monosilabRandomAdivinar == 16 || monosilabRandomAdivinar == 17)
-                        {
-                            p.gameObject.tag = "correcte";
-                        }
-
-                        break;
-                    case 2:  // I
-
-                        if (monosilabRandomAdivinar == 10 || monosilabRandomAdivinar == 12 || monosilabRandomAdivinar == 19)
-                        {
-                            p.gameObject.tag = "correcte";
-                        }
-                        break;
-                    case 3:  // O
-
-                        if (monosilabRandomAdivinar == 1 || monosilabRandomAdivinar == 3 ||
-                            monosilabRandomAdivinar == 5 || monosilabRandomAdivinar == 20)
-                        {
-                            p.gameObject.tag = "correcte";
-                        }
-                        break;
-                    case 4:  // U
-
-                        if (monosilabRandomAdivinar == 9 || monosilabRandomAdivinar == 13 ||
-                            monosilabRandomAdivinar == 15 || monosilabRandomAdivinar == 18)
-                        {
-                            p.gameObject.tag = "correcte";
-                        }
-                        break;
-                    default:
-                        break;
                 }
-                
+                else if (monosilabRandomAdivinar == 7 || monosilabRandomAdivinar == 10 ||
+                         monosilabRandomAdivinar == 13 || monosilabRandomAdivinar == 15 || monosilabRandomAdivinar == 16)
+                {
+
+                    vocalAdivinar = 1;
+                    p.gameObject.tag = "correcte";
+
+                }
+                else if (monosilabRandomAdivinar == 9 || monosilabRandomAdivinar == 11 || monosilabRandomAdivinar == 18)
+                {
+
+                    vocalAdivinar = 2;
+                    p.gameObject.tag = "correcte";
+
+                }
+                else if (monosilabRandomAdivinar == 0 || monosilabRandomAdivinar == 2 ||
+                          monosilabRandomAdivinar == 4 || monosilabRandomAdivinar == 19)
+                {
+
+                    vocalAdivinar = 3;
+                    p.gameObject.tag = "correcte";
+
+                }
+                else if (monosilabRandomAdivinar == 8 || monosilabRandomAdivinar == 12 ||
+                          monosilabRandomAdivinar == 14 || monosilabRandomAdivinar == 17)
+                {
+
+                    vocalAdivinar = 4;
+                    p.gameObject.tag = "correcte";
+
+                }
+
+                /* switch (vocalAdivinar)
+                 {
+                     case 0: //A
+
+                         if (monosilabRandomAdivinar == 1 || monosilabRandomAdivinar == 3 ||
+                             monosilabRandomAdivinar == 5 || monosilabRandomAdivinar == 6)
+                         {
+                             p.gameObject.tag = "correcte";
+                         }
+
+                         break;
+                     case 1: // E
+
+                         if (monosilabRandomAdivinar == 7 || monosilabRandomAdivinar == 10 ||
+                             monosilabRandomAdivinar == 13 || monosilabRandomAdivinar == 15 || monosilabRandomAdivinar == 16)
+                         {
+                             p.gameObject.tag = "correcte";
+                         }
+
+                         break;
+                     case 2:  // I
+
+                         if (monosilabRandomAdivinar == 9 || monosilabRandomAdivinar == 11 || monosilabRandomAdivinar == 18)
+                         {
+                             p.gameObject.tag = "correcte";
+                         }
+                         break;
+                     case 3:  // O
+
+                         if (monosilabRandomAdivinar == 0 || monosilabRandomAdivinar == 2 ||
+                             monosilabRandomAdivinar == 4 || monosilabRandomAdivinar == 19)
+                         {
+                             p.gameObject.tag = "correcte";
+                         }
+                         break;
+                     case 4:  // U
+
+                         if (monosilabRandomAdivinar == 8 || monosilabRandomAdivinar == 12 ||
+                             monosilabRandomAdivinar == 14 || monosilabRandomAdivinar == 17)
+                         {
+                             p.gameObject.tag = "correcte";
+                         }
+                         break;
+                 }*/
+
                 //p.GetComponent<SpriteRenderer>().sprite = spritesNumerosLetras[vocalRandomAdivinar];
                 //p.gameObject.tag = spritesNumerosLetras[vocalRandomAdivinar].name;
                 break;
@@ -121,50 +212,29 @@ public class Nivel1 : Niveles
                 vocalRandom = UnityEngine.Random.Range(0, vocals.Length);
                 p.GetComponent<Text>().text = vocals[vocalRandom];
 
-                if (vocalRandom == vocalRandomAdivinar)
+                if (vocalRandom == vocalAdivinar)
                 {
-                    switch (vocalRandomAdivinar)
+                    switch (vocalAdivinar)
                     {
                         case 0: //A
-
-                            if (monosilabRandomAdivinar == 2 || monosilabRandomAdivinar == 4 ||
-                                monosilabRandomAdivinar == 6 || monosilabRandomAdivinar == 7)
-                            {
                                 p.gameObject.tag = "correcte";
-                            }
 
                             break;
                         case 1: // E
-
-                            if (monosilabRandomAdivinar == 8 || monosilabRandomAdivinar == 11 ||
-                                monosilabRandomAdivinar == 14 || monosilabRandomAdivinar == 16 || monosilabRandomAdivinar == 17)
-                            {
                                 p.gameObject.tag = "correcte";
-                            }
 
                             break;
                         case 2:  // I
-
-                            if (monosilabRandomAdivinar == 10 || monosilabRandomAdivinar == 12 || monosilabRandomAdivinar == 19)
-                            {
                                 p.gameObject.tag = "correcte";
-                            }
+
                             break;
                         case 3:  // O
+                           p.gameObject.tag = "correcte";
 
-                            if (monosilabRandomAdivinar == 1 || monosilabRandomAdivinar == 3 ||
-                                monosilabRandomAdivinar == 5 || monosilabRandomAdivinar == 20)
-                            {
-                                p.gameObject.tag = "correcte";
-                            }
                             break;
                         case 4:  // U
-
-                            if (monosilabRandomAdivinar == 9 || monosilabRandomAdivinar == 13 ||
-                                monosilabRandomAdivinar == 15 || monosilabRandomAdivinar == 18)
-                            {
                                 p.gameObject.tag = "correcte";
-                            }
+
                             break;
                     }
                 }

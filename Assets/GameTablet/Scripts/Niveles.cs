@@ -16,16 +16,17 @@ abstract public class Niveles : MonoBehaviour, ConfigurationLevels
     public Sprite[] spritesMonosilabs;
     public float spawnLetrasNumros = 1;
     public float spawnPowerUp = 15;
+    public float changeVocal = 12;
 
 
-        public string letraRandomAdivinar;
+    public string letraRandomAdivinar;
         public int letraMinRandomAdivinar;
         public string[] vocals = { "A", "E", "I", "O", "U" };
         public string[] monosilabs = { "S_L", "N_S", "G_T", "BL_NC", "FL_R", "G_LL", "S_L",
                                  "G_L", "F_LL", "N_T", "N_U", "N_U", "O_", "R_I",
                                  "S_C", "V_U", "V_NT", "_LL", "PE_X", "N_I" };
         public int monosilabRandomAdivinar;
-        public int vocalRandomAdivinar;
+        public int vocalAdivinar;
         public int numeroRandomAdivinar;
         public int caracterRandomAdivinar;
         public int colorRandomAdivinar;
@@ -68,7 +69,7 @@ abstract public class Niveles : MonoBehaviour, ConfigurationLevels
 
         //letraMinRandomAdivinar = Random.Range(26, 51);
         monosilabRandomAdivinar = UnityEngine.Random.Range(0, monosilabs.Length);
-        vocalRandomAdivinar = UnityEngine.Random.Range(0, vocals.Length);
+        //vocalAdivinar = UnityEngine.Random.Range(0, vocals.Length);
         numeroRandomAdivinar = UnityEngine.Random.Range(52, 61);
         caracterRandomAdivinar = UnityEngine.Random.Range(62, 89);
         colorRandomAdivinar = UnityEngine.Random.Range(90, 96);
