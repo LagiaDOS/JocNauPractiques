@@ -31,9 +31,7 @@ abstract public class Niveles : MonoBehaviour, ConfigurationLevels
     public int numeroGen1;
     public int numeroGen2;
 
-    public string letraRandomAdivinar;
-        //public int letraMinRandomAdivinar;
-        public int[] vocals = { 0, 4, 8, 14, 20 };
+        //public int letraMinRandomAdivinar;  
 
     public string[] suma0 = {"0  +  0" };
     public string[] suma1 = {"0 + 1" };
