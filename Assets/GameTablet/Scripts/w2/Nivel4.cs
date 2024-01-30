@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using System.Linq;
+using System.Security.Cryptography;
 
 public class Nivel4 : Niveles
 {
@@ -69,6 +71,146 @@ public class Nivel4 : Niveles
                 p.gameObject.tag = spritesNumerosLetras[numeroRandom].name;
                 break;
         }
+
+
+        int n = 0;
+        Boolean[] arrayBool = { false, false, false, false };
+        int[] arrayNumeros2 = { 0, 0, 0, 0 };
+        int rand = 0;
+        bool loop = false;
+        Debug.Log("Fora del loop de shuffle");
+
+        Debug.Log("Array pre shuffle");
+        Debug.Log("Array shuffle posicio 0 es " + arrayNumeros[0]);
+        Debug.Log("Array shuffle posicio 1 es " + arrayNumeros[1]);
+        Debug.Log("Array shuffle posicio 2 es " + arrayNumeros[2]);
+        Debug.Log("Array shuffle posicio 3 es " + arrayNumeros[3]);
+        Debug.Log("respsota " + resposta);
+
+        int[] arr = { 1, 2, 3, 4, 5 };
+        System.Random random = new System.Random();
+        arrayNumeros = arrayNumeros.OrderBy(x => random.Next()).ToArray();
+
+        Debug.Log("Array post shuffle");
+        Debug.Log("Array shuffle posicio 0 es " + arrayNumeros[0]);
+        Debug.Log("Array shuffle posicio 1 es " + arrayNumeros[1]);
+        Debug.Log("Array shuffle posicio 2 es " + arrayNumeros[2]);
+        Debug.Log("Array shuffle posicio 3 es " + arrayNumeros[3]);
+        Debug.Log("respsota " + resposta);
+
+
+
+        ////el crash el fa el bucle de shuffle. Arreglar.
+        //while (n < 4)
+        //{
+        //    //Debug.Log("Dintre del loop de shuffle");
+
+        //    loop = false;
+        //    while (loop == false)
+        //    {
+        //        //Debug.Log("Fora del loop de shuffle 2");
+
+        //        rand = UnityEngine.Random.Range(0, 3);
+
+        //        if (arrayBool[rand] == true)
+        //        {
+        //            Debug.Log("shufle true");
+        //        }
+        //        else
+        //        {
+        //            Debug.Log("suffle falses");
+
+        //            arrayNumeros2[n] = arrayNumeros[rand];
+        //            arrayBool[n] = true;
+        //            loop = true;
+        //        }
+        //    }
+        //    n++;
+        //}
+
+        //Debug.Log("array 1" + arrayNumeros);
+        // Debug.Log("array 2" + arrayNumeros2);
+
+        // arrayNumeros = arrayNumeros2;
+
+
+        GameObject a = Instantiate(prefabNumerosLetras, new Vector3(-8f, 5, 0), Quaternion.identity) as GameObject;
+        a.GetComponent<Text>().text = arrayNumeros[0].ToString();
+        if (arrayNumeros[0] == resposta) { a.gameObject.tag = "correcte"; }
+
+        GameObject b = Instantiate(prefabNumerosLetras, new Vector3(-3.0f, 5, 0), Quaternion.identity) as GameObject;
+        b.GetComponent<Text>().text = arrayNumeros[1].ToString();
+        if (arrayNumeros[1] == resposta) { b.gameObject.tag = "correcte"; }
+
+        GameObject c = Instantiate(prefabNumerosLetras, new Vector3(3.0f, 5, 0), Quaternion.identity) as GameObject;
+        c.GetComponent<Text>().text = arrayNumeros[2].ToString();
+        if (arrayNumeros[2] == resposta) { c.gameObject.tag = "correcte"; }
+
+        GameObject d = Instantiate(prefabNumerosLetras, new Vector3(8.0f, 5, 0), Quaternion.identity) as GameObject;
+        d.GetComponent<Text>().text = arrayNumeros[3].ToString();
+        if (arrayNumeros[3] == resposta) { d.gameObject.tag = "correcte"; }
+
+        //* switch (probNumero)
+        //{
+        //case 3:
+        //p.GetComponent<SpriteRenderer>().sprite = spritesNumerosLetras[numeroRandomAdivinar];
+        //p.gameObject.tag = spritesNumerosLetras[numeroRandomAdivinar].name;
+        //    break;
+        //  default:
+        // numeroRandom = Random.Range(52, 61);
+        // p.GetComponent<SpriteRenderer>().sprite = spritesNumerosLetras[numeroRandom];
+        // p.gameObject.tag = spritesNumerosLetras[numeroRandom].name;
+        //        break;
+        //  }
+
+        //}
+    }
+
+    public void changeHud()
+    {
+        //decidir si es fa una suma o no, 0 es resta, 1 es suma
+        sumaResta = UnityEngine.Random.Range(0, 1);
+
+        //escollir el numero resposta
+        numeroArray = UnityEngine.Random.Range(0, 9);
+        //escollim una de les operacions i la posem al hud
+
+        if (sumaResta == 0)
+        {
+            //resta si es 0
+            switch (numeroArray)
+            {
+                case 0: textHud = resta0[UnityEngine.Random.Range(0, resta0.Length)]; resposta = 0; break;
+                case 1: textHud = resta1[UnityEngine.Random.Range(0, resta1.Length)]; resposta = 1; break;
+                case 2: textHud = resta2[UnityEngine.Random.Range(0, resta2.Length)]; resposta = 2; break;
+                case 3: textHud = resta3[UnityEngine.Random.Range(0, resta3.Length)]; resposta = 3; break;
+                case 4: textHud = resta4[UnityEngine.Random.Range(0, resta4.Length)]; resposta = 4; break;
+                case 5: textHud = resta5[UnityEngine.Random.Range(0, resta5.Length)]; resposta = 5; break;
+                case 6: textHud = resta6[UnityEngine.Random.Range(0, resta6.Length)]; resposta = 6; break;
+                case 7: textHud = resta7[UnityEngine.Random.Range(0, resta7.Length)]; resposta = 7; break;
+                case 8: textHud = resta8[UnityEngine.Random.Range(0, resta8.Length)]; resposta = 8; break;
+                case 9: textHud = resta9[UnityEngine.Random.Range(0, resta9.Length)]; resposta = 9; break;
+            }
+        }
+        else
+        {
+            //suma si es 1
+            switch (numeroArray)
+            {
+                case 0: textHud = suma0[UnityEngine.Random.Range(0, suma0.Length)]; resposta = 0; break;
+                case 1: textHud = suma1[UnityEngine.Random.Range(0, suma1.Length)]; resposta = 1; break;
+                case 2: textHud = suma2[UnityEngine.Random.Range(0, suma2.Length)]; resposta = 2; break;
+                case 3: textHud = suma3[UnityEngine.Random.Range(0, suma3.Length)]; resposta = 3; break;
+                case 4: textHud = suma4[UnityEngine.Random.Range(0, suma4.Length)]; resposta = 4; break;
+                case 5: textHud = suma5[UnityEngine.Random.Range(0, suma5.Length)]; resposta = 5; break;
+                case 6: textHud = suma6[UnityEngine.Random.Range(0, suma6.Length)]; resposta = 6; break;
+                case 7: textHud = suma7[UnityEngine.Random.Range(0, suma7.Length)]; resposta = 7; break;
+                case 8: textHud = suma8[UnityEngine.Random.Range(0, suma8.Length)]; resposta = 8; break;
+                case 9: textHud = suma9[UnityEngine.Random.Range(0, suma9.Length)]; resposta = 9; break;
+            }
+        }
+
+        GameObject.Find("valorAdivinar").GetComponent<Text>().text = textHud;
 
     }
 
