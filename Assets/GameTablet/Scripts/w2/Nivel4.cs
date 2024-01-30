@@ -21,7 +21,7 @@ public class Nivel4 : Niveles
     private void Start()
     {
         Niveles.speed = 2.0f;
-        spawnLetrasNumros = 5;
+        spawnLetrasNumros = 4;
 
         changeHud();
         //spawn();
@@ -40,13 +40,13 @@ public class Nivel4 : Niveles
             if (changeOperacion <= 0.0f)
             {
                 changeHud();
-                changeOperacion = 10f;
+                changeOperacion = 8f;
             }
 
             if (spawnLetrasNumros <= 0.0f)
             {
                 spawn();
-                spawnLetrasNumros = 10f;
+                spawnLetrasNumros = 8f;
             }
 
             //if (spawnPowerUp <= 0.0f)
