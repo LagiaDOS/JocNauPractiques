@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -9,10 +10,21 @@ public class Nivel4 : Niveles
 {
     private int probNumero;
     private int probPowerUp;
+    private float changeOperacion = 10f;
+    private int sumaResta;
+    private int numeroArray;
+    private int operacio;
+    private string textHud;
+    private int resposta;
+    private int[] arrayNumeros = { 0, 0, 0, 0 };
 
     private void Start()
     {
         Niveles.speed = 2.0f;
+        spawnLetrasNumros = 5;
+
+        changeHud();
+        //spawn();
     }
 
     void Update()
@@ -21,22 +33,32 @@ public class Nivel4 : Niveles
         {
             spawnLetrasNumros -= Time.deltaTime;
             spawnPowerUp -= Time.deltaTime;
+            changeOperacion -= Time.deltaTime;
             probNumero = UnityEngine.Random.Range(0, 4);
             probPowerUp = UnityEngine.Random.Range(0, 2);
+
+            if (changeOperacion <= 0.0f)
+            {
+                changeHud();
+                changeOperacion = 10f;
+            }
 
             if (spawnLetrasNumros <= 0.0f)
             {
                 spawn();
-                spawnLetrasNumros = 1f;
+                spawnLetrasNumros = 10f;
             }
 
-            if (spawnPowerUp <= 0.0f)
-            {
-                spawnPowerup();
-                spawnPowerUp = 15f;
-            }
+            //if (spawnPowerUp <= 0.0f)
+            //{
+            //    spawnPowerup();
+            //     spawnPowerUp = 15f;
+            // }
         }
     }
+
+
+
 
     private void spawnPowerup()
     {
@@ -53,23 +75,33 @@ public class Nivel4 : Niveles
     public override void configuration()
     {
         Niveles.time = 60.0f;
+
     }
 
     public override void spawn()
     {
-        GameObject p = Instantiate(prefabNumerosLetras, new Vector3(UnityEngine.Random.Range(-7.0f, 6.0f), 5, 0), Quaternion.identity) as GameObject;
+        //generem 4 numeros aleatoris (un correcte) per agafar
+        arrayNumeros[0] = resposta;
 
-        switch (probNumero)
+        //Debug.Log("Numeros randoms array 0");
+        for (int i = 1; i < 4; i++)
         {
-            case 3:
-                p.GetComponent<SpriteRenderer>().sprite = spritesNumerosLetras[numeroRandomAdivinar];
-                p.gameObject.tag = spritesNumerosLetras[numeroRandomAdivinar].name;
-                break;
-            default:
-                numeroRandom = Random.Range(52, 61);
-                p.GetComponent<SpriteRenderer>().sprite = spritesNumerosLetras[numeroRandom];
-                p.gameObject.tag = spritesNumerosLetras[numeroRandom].name;
-                break;
+            //Debug.Log("Numeros randoms array 1");
+            //while (arrayNumeros[i] == resposta)
+            // {
+            //     Debug.Log("Numeros randoms array 2");
+            //     arrayNumeros[i] = UnityEngine.Random.Range(0, 9);
+            // }
+
+            for (int y = 1; y < 4; y = y)
+            {
+                //Debug.Log("Numeros randoms array 2");
+                arrayNumeros[y] = UnityEngine.Random.Range(0, 9);
+
+                if (arrayNumeros[y] != resposta) { y++; }
+
+            }
+
         }
 
 
@@ -211,12 +243,19 @@ public class Nivel4 : Niveles
         }
 
         GameObject.Find("valorAdivinar").GetComponent<Text>().text = textHud;
+        GameObject.Find("valorAdivinar2").GetComponent<Image>().sprite = spritesMonosilabs[20];
 
     }
 
     public override void valorAdivinar()
     {
-        GameObject.Find("valorAdivinar").GetComponent<Image>().sprite = spritesNumerosLetras[numeroRandomAdivinar];
-        tagAdivinar = spritesNumerosLetras[numeroRandomAdivinar].name;
+        //GameObject.Find("valorAdivinar").GetComponent<Image>().sprite = spritesNumerosLetras[numeroRandomAdivinar];
+        //tagAdivinar = spritesNumerosLetras[numeroRandomAdivinar].name;
     }
+
+
+
+
+
+
 }
