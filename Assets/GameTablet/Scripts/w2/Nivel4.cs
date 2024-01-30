@@ -3,6 +3,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using System.Linq;
+using System.Security.Cryptography;
 
 public class Nivel4 : Niveles
 {
@@ -110,37 +112,58 @@ public class Nivel4 : Niveles
         bool loop = false;
         Debug.Log("Fora del loop de shuffle");
 
-        while (n < 4)
-        {
-            //Debug.Log("Dintre del loop de shuffle");
+        Debug.Log("Array pre shuffle");
+        Debug.Log("Array shuffle posicio 0 es " + arrayNumeros[0]);
+        Debug.Log("Array shuffle posicio 1 es " + arrayNumeros[1]);
+        Debug.Log("Array shuffle posicio 2 es " + arrayNumeros[2]);
+        Debug.Log("Array shuffle posicio 3 es " + arrayNumeros[3]);
+        Debug.Log("respsota " + resposta);
 
-            loop = false;
-            while (loop == false)
-            {
-                //Debug.Log("Fora del loop de shuffle 2");
+        int[] arr = { 1, 2, 3, 4, 5 };
+        System.Random random = new System.Random();
+        arrayNumeros = arrayNumeros.OrderBy(x => random.Next()).ToArray();
 
-                rand = UnityEngine.Random.Range(0, 3);
+        Debug.Log("Array post shuffle");
+        Debug.Log("Array shuffle posicio 0 es " + arrayNumeros[0]);
+        Debug.Log("Array shuffle posicio 1 es " + arrayNumeros[1]);
+        Debug.Log("Array shuffle posicio 2 es " + arrayNumeros[2]);
+        Debug.Log("Array shuffle posicio 3 es " + arrayNumeros[3]);
+        Debug.Log("respsota " + resposta);
 
-                if (arrayBool[rand] == true)
-                {
-                    Debug.Log("shufle true");
-                }
-                else
-                {
-                    Debug.Log("suffle falses");
 
-                    arrayNumeros2[n] = arrayNumeros[rand];
-                    arrayBool[n] = true;
-                    loop = true;
-                }
-            }
-            n++;
-        }
+
+        ////el crash el fa el bucle de shuffle. Arreglar.
+        //while (n < 4)
+        //{
+        //    //Debug.Log("Dintre del loop de shuffle");
+
+        //    loop = false;
+        //    while (loop == false)
+        //    {
+        //        //Debug.Log("Fora del loop de shuffle 2");
+
+        //        rand = UnityEngine.Random.Range(0, 3);
+
+        //        if (arrayBool[rand] == true)
+        //        {
+        //            Debug.Log("shufle true");
+        //        }
+        //        else
+        //        {
+        //            Debug.Log("suffle falses");
+
+        //            arrayNumeros2[n] = arrayNumeros[rand];
+        //            arrayBool[n] = true;
+        //            loop = true;
+        //        }
+        //    }
+        //    n++;
+        //}
 
         //Debug.Log("array 1" + arrayNumeros);
-       // Debug.Log("array 2" + arrayNumeros2);
+        // Debug.Log("array 2" + arrayNumeros2);
 
-       // arrayNumeros = arrayNumeros2;
+        // arrayNumeros = arrayNumeros2;
 
 
         GameObject a = Instantiate(prefabNumerosLetras, new Vector3(-8f, 5, 0), Quaternion.identity) as GameObject;
@@ -149,15 +172,15 @@ public class Nivel4 : Niveles
 
         GameObject b = Instantiate(prefabNumerosLetras, new Vector3(-3.0f, 5, 0), Quaternion.identity) as GameObject;
         b.GetComponent<Text>().text = arrayNumeros[1].ToString();
-        if (arrayNumeros[1] == resposta) { a.gameObject.tag = "correcte"; }
+        if (arrayNumeros[1] == resposta) { b.gameObject.tag = "correcte"; }
 
         GameObject c = Instantiate(prefabNumerosLetras, new Vector3(3.0f, 5, 0), Quaternion.identity) as GameObject;
         c.GetComponent<Text>().text = arrayNumeros[2].ToString();
-        if (arrayNumeros[2] == resposta) { a.gameObject.tag = "correcte"; }
+        if (arrayNumeros[2] == resposta) { c.gameObject.tag = "correcte"; }
 
         GameObject d = Instantiate(prefabNumerosLetras, new Vector3(8.0f, 5, 0), Quaternion.identity) as GameObject;
         d.GetComponent<Text>().text = arrayNumeros[3].ToString();
-        if (arrayNumeros[3] == resposta) { a.gameObject.tag = "correcte"; }
+        if (arrayNumeros[3] == resposta) { d.gameObject.tag = "correcte"; }
 
         //* switch (probNumero)
         //{

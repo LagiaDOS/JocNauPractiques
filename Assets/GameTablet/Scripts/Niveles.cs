@@ -15,9 +15,10 @@ abstract public class Niveles : MonoBehaviour, ConfigurationLevels
     public Sprite[] spritesNumerosDosUnidades;
     public float spawnLetrasNumros = 1;
     public float spawnPowerUp = 15;
+    public int numeroGen1;
+    public int numeroGen2;
 
-
-        public string letraRandomAdivinar;
+    public string letraRandomAdivinar;
         //public int letraMinRandomAdivinar;
         public int[] vocals = { 0, 4, 8, 14, 20 };
 
@@ -106,6 +107,11 @@ abstract public class Niveles : MonoBehaviour, ConfigurationLevels
         caracterRandom = UnityEngine.Random.Range(62, 89);
         colorRandom = UnityEngine.Random.Range(90, 96);
         numeroDosUnidadesRandom = UnityEngine.Random.Range(0, 89);
+
+
+        numeroGen1 = UnityEngine.Random.Range(1, 10);
+        numeroGen2 = UnityEngine.Random.Range(10, 20);
+
 
         speed = 0.0f;
         time = 999.0f;

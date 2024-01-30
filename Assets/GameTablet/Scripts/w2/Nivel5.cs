@@ -7,7 +7,7 @@ public class Nivel5 : Niveles
 {
     private int probNumero;
     private int probPowerUp;
-    private int numeroGen;
+    private bool change = false;
 
     private void Start()
     {
@@ -35,6 +35,13 @@ public class Nivel5 : Niveles
                 spawnPowerUp = 15f;
             }
 
+            if (time < 30f && change == false) {
+                change = true;
+                numeroGen1 = UnityEngine.Random.Range(1, 10); ;
+                valorAdivinar();
+                
+            }
+
         }
     }
 
@@ -50,13 +57,18 @@ public class Nivel5 : Niveles
         switch (probNumero)
         {
             case 3:
-                p.GetComponent<SpriteRenderer>().sprite = spritesNumerosDosUnidades[numeroDosUnidadesRandomAdivinar];
-                p.gameObject.tag = spritesNumerosDosUnidades[numeroDosUnidadesRandomAdivinar].name;
+                p.GetComponent<Text>().text = numeroGen1.ToString();
+                p.gameObject.tag = "correcte";
                 break;
             default:
-                numeroDosUnidadesRandom = Random.Range(0, 89);
-                p.GetComponent<SpriteRenderer>().sprite = spritesNumerosDosUnidades[numeroDosUnidadesRandom];
-                p.gameObject.tag = spritesNumerosDosUnidades[numeroDosUnidadesRandom].name;
+                numeroDosUnidadesRandom = Random.Range(1, 10);
+                p.GetComponent<Text>().text = numeroDosUnidadesRandom.ToString();
+
+                if (numeroDosUnidadesRandom == numeroGen1)
+                {
+                    p.gameObject.tag = "correcte";
+                }
+
                 break;
         }
     }
@@ -64,7 +76,7 @@ public class Nivel5 : Niveles
     public override void valorAdivinar()
     {
 
-        GameObject.Find("valorAdivinar").GetComponent<Text>().text = (numeroGen-1).ToString() + " - ? -" + (numeroGen + 1).ToString();
+        GameObject.Find("valorAdivinar").GetComponent<Text>().text = (numeroGen1-1).ToString() + " - ? -" + (numeroGen1 + 1).ToString();
         tagAdivinar = spritesNumerosDosUnidades[numeroDosUnidadesRandomAdivinar].name;
     }
 
