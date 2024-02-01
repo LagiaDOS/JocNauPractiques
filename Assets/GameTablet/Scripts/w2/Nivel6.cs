@@ -78,7 +78,7 @@ public class Nivel6 : Niveles
     {
 
         GameObject.Find("valorAdivinar").GetComponent<Text>().text = (numeroGen2 - 1).ToString() + " - ? -" + (numeroGen2 + 1).ToString();
-        tagAdivinar = spritesNumerosDosUnidades[numeroDosUnidadesRandomAdivinar].name;
+        GameObject.Find("valorAdivinar2").GetComponent<Image>().sprite = spritesMonosilabs[20];
     }
 
     private void spawnPowerup()

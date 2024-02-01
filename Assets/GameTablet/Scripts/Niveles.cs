@@ -13,12 +13,14 @@ abstract public class Niveles : MonoBehaviour, ConfigurationLevels
 
     public Sprite[] spritesNumerosLetras;
     public Sprite[] spritesNumerosDosUnidades;
+    public Sprite[] spritesMonosilabs;
     public float spawnLetrasNumros = 1;
     public float spawnPowerUp = 15;
-<<<<<<< Updated upstream
-=======
+
     public float changeVocal = 12;
     
+
+
 
     public string letraRandomAdivinar;
         public int letraMinRandomAdivinar;
@@ -29,13 +31,19 @@ abstract public class Niveles : MonoBehaviour, ConfigurationLevels
         public int monosilabRandomAdivinar;
         public int vocalAdivinar;
         public int numeroRandomAdivinar;
->>>>>>> Stashed changes
+
     public int numeroGen1;
     public int numeroGen2;
 
     public string letraRandomAdivinar;
         //public int letraMinRandomAdivinar;
         public int[] vocals = { 0, 4, 8, 14, 20 };
+
+    public int numeroGen1;
+    public int numeroGen2;
+
+        //public int letraMinRandomAdivinar;  
+
 
     public string[] suma0 = {"0  +  0" };
     public string[] suma1 = {"0 + 1" };
@@ -68,8 +76,9 @@ abstract public class Niveles : MonoBehaviour, ConfigurationLevels
         public int numeroDosUnidadesRandomAdivinar;
 
         public int vocalRandom;
+        public int monosilabRandom;
         public string letraRandom;
-        //public int letraMinRandom;
+        public int letraMinRandom;
         public int numeroRandom;
         public int caracterRandom;
         public int colorRandom;
@@ -85,25 +94,26 @@ abstract public class Niveles : MonoBehaviour, ConfigurationLevels
 
     public void init()
     {
-        
         int rand = 0;
         char caracter = 'e';
         prefabNumerosLetras = Resources.Load("Prefabs/prefabNumLetras") as GameObject;
         prefabAdivinar = Resources.Load("Prefabs/prefabAdivinar") as GameObject;
         prefabSpeedUp = Resources.Load("Prefabs/prefabSpeedUp") as GameObject;
         prefabSpeedDown = Resources.Load("Prefabs/prefabSpeedDown") as GameObject;
-        
+
+        spritesMonosilabs = Resources.LoadAll<Sprite>("Sprites/MonosilabIcons");
         //spritesNumerosLetras = Resources.LoadAll<Sprite>("Sprites/LetrasNumeros/NumerosLetras");
         //spritesNumerosDosUnidades = Resources.LoadAll<Sprite>("Sprites/LetrasNumeros/NumerosDosUnidades");
-        
+
         rand = UnityEngine.Random.Range(0, 25);
         caracter = Convert.ToChar(rand + 65);
         letraRandomAdivinar = caracter.ToString();
 
 
         //letraMinRandomAdivinar = Random.Range(26, 51);
-        vocalRandomAdivinar = vocals[UnityEngine.Random.Range(0, vocals.Length)];
-        //numeroRandomAdivinar = UnityEngine.Random.Range(52, 61);
+        monosilabRandomAdivinar = UnityEngine.Random.Range(0, monosilabs.Length);
+        //vocalAdivinar = UnityEngine.Random.Range(0, vocals.Length);
+        numeroRandomAdivinar = UnityEngine.Random.Range(52, 61);
         caracterRandomAdivinar = UnityEngine.Random.Range(62, 89);
         colorRandomAdivinar = UnityEngine.Random.Range(90, 96);
         numeroDosUnidadesRandomAdivinar = UnityEngine.Random.Range(0, 89);
@@ -119,7 +129,7 @@ abstract public class Niveles : MonoBehaviour, ConfigurationLevels
         caracter = Convert.ToChar(rand + 65);
         letraRandom = caracter.ToString();
 
-        //letraMinRandom = UnityEngine.Random.Range(26, 51);
+        letraMinRandom = UnityEngine.Random.Range(26, 51);
         numeroRandom = UnityEngine.Random.Range(52, 61);
         caracterRandom = UnityEngine.Random.Range(62, 89);
         colorRandom = UnityEngine.Random.Range(90, 96);
