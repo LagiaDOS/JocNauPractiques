@@ -94,6 +94,11 @@ public class GameController : MonoBehaviour {
                 instance.cgl = instance.gameObject.AddComponent<Nivel12>();
                 audioSource.clip = audioDificil;
                 break;
+
+            case "NivelTutorial":
+                instance.cgl = instance.gameObject.AddComponent<NivelTutorial>();
+                audioSource.clip = audioDificil;
+                break;
         }
         instance.cgl.init();
         audioSource.Play();

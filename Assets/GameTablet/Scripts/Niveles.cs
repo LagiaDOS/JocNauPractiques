@@ -15,6 +15,21 @@ abstract public class Niveles : MonoBehaviour, ConfigurationLevels
     public Sprite[] spritesNumerosDosUnidades;
     public float spawnLetrasNumros = 1;
     public float spawnPowerUp = 15;
+<<<<<<< Updated upstream
+=======
+    public float changeVocal = 12;
+    
+
+    public string letraRandomAdivinar;
+        public int letraMinRandomAdivinar;
+        public string[] vocals = { "A", "E", "I", "O", "U" };
+        public string[] monosilabs = { "S_L", "N_S", "G_T", "BL_NC", "FL_R", "G_LL", "S_L",
+                                 "G_L", "F_LL", "N_T", "N_U", "N_U", "O_", "R_I",
+                                 "S_C", "V_U", "V_NT", "_LL", "PE_X", "N_I" };
+        public int monosilabRandomAdivinar;
+        public int vocalAdivinar;
+        public int numeroRandomAdivinar;
+>>>>>>> Stashed changes
     public int numeroGen1;
     public int numeroGen2;
 
@@ -66,9 +81,11 @@ abstract public class Niveles : MonoBehaviour, ConfigurationLevels
     public static string tagAdivinar;
     public static bool gameOver;
     public static bool cambi = false;
+    public static bool tutorial = false;
 
     public void init()
     {
+        
         int rand = 0;
         char caracter = 'e';
         prefabNumerosLetras = Resources.Load("Prefabs/prefabNumLetras") as GameObject;
