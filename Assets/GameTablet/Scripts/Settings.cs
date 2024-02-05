@@ -3,14 +3,15 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class Settings : MonoBehaviour {
+public class Settings : MonoBehaviour
+{
     public GameObject panel;
     public GameObject buttonRight;
     public GameObject buttonLeft;
     public static bool gamePause = false;
     bool state;
 
-    public  void panelShowHide()
+    public void panelShowHide()
     {
         if (!Niveles.gameOver)
         {
@@ -92,7 +93,8 @@ public class Settings : MonoBehaviour {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
-    public void nextLevel() {
+    public void nextLevel()
+    {
 
         ScoreScript.scoreValue = 0;
 
@@ -153,7 +155,7 @@ public class Settings : MonoBehaviour {
             case "NivelTutorial":
                 //cambiar a escena de credits
                 PlayerPrefs.SetString("Nivel", "Nivel1");
-                SceneManager.LoadScene(6);
+                SceneManager.LoadScene(5);
                 break;
 
 
