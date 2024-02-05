@@ -141,10 +141,12 @@ public class NivelTutorial : Niveles {
         //4ta linea tutorial out
         if (timePasado >= 88.0f && paso == 9)
         {
-            GameObject.Find("textTutorial").SetActive(false);
             GameObject.Find("textTutorial").GetComponent<Text>().text = "";
+            GameObject.Find("textTutorial").SetActive(false);
             paso++;
         }
+
+
     }
     
     public override void configuration()
