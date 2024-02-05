@@ -6,8 +6,7 @@ using UnityEngine.UI;
 using System.Linq;
 using System.Security.Cryptography;
 
-public class NivelTutorial : Niveles
-{
+public class NivelTutorial : Niveles {
 
     private int probLletra;
     private int probPowerUp;
@@ -17,7 +16,7 @@ public class NivelTutorial : Niveles
     private Text tutorialText;
     private int paso = 0;
     private Text tutorialTextComp;
-
+         
     private void Start()
     {
         GameObject.Find("textTutorial").SetActive(true);
@@ -111,7 +110,7 @@ public class NivelTutorial : Niveles
         {
             GameObject.Find("textTutorial").GetComponent<Text>().text = "";
             GameObject.Find("valorAdivinar").GetComponent<Text>().text = "A";
-
+                       
             GameObject a = Instantiate(prefabNumerosLetras, new Vector3(UnityEngine.Random.Range(-7.0f, 6.0f), 8, 0), Quaternion.identity) as GameObject;
             GameObject b = Instantiate(prefabNumerosLetras, new Vector3(UnityEngine.Random.Range(-7.0f, 6.0f), 10, 0), Quaternion.identity) as GameObject;
             GameObject c = Instantiate(prefabNumerosLetras, new Vector3(UnityEngine.Random.Range(-7.0f, 6.0f), 12, 0), Quaternion.identity) as GameObject;
@@ -147,7 +146,7 @@ public class NivelTutorial : Niveles
             paso++;
         }
     }
-
+    
     public override void configuration()
     {
         Niveles.tutorial = true;
