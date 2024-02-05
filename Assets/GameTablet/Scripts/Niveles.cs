@@ -17,7 +17,10 @@ abstract public class Niveles : MonoBehaviour, ConfigurationLevels
     public Sprite[] spritesMonosilabs;
     public float spawnLetrasNumros = 1;
     public float spawnPowerUp = 15;
+
     public float changeVocal = 12;
+    
+
 
 
     public string letraRandomAdivinar;
@@ -29,6 +32,7 @@ abstract public class Niveles : MonoBehaviour, ConfigurationLevels
         public int monosilabRandomAdivinar;
         public int vocalAdivinar;
         public int numeroRandomAdivinar;
+
     public int numeroGen1;
     public int numeroGen2;
     //public int numeroGen2;
@@ -42,27 +46,28 @@ abstract public class Niveles : MonoBehaviour, ConfigurationLevels
 
         //public int letraMinRandomAdivinar;  
 
-    public string[] suma0 = {"0 + 0 = ?" };
-    public string[] suma1 = {"0 + 1 = ?"};
-    public string[] suma2 = {"0 + 2 = ?", "1 + 1 = ?" };
-    public string[] suma3 = {"0 + 3 = ?", "2 + 2 = ?" };
-    public string[] suma4 = {"0 + 4 = ?", "3 + 1 = ?", "2 + 2 = ?" };
-    public string[] suma5 = {"0 + 5 = ?", "3 + 2 = ?", "1 + 4 = ?" };
-    public string[] suma6 = {"0 + 6 = ?", "5 + 1 = ?", "2 + 4 = ?", "3 + 3 = ?" };
-    public string[] suma7 = {"7 + 0 = ?", "6 + 1 = ?", "5 + 2 = ?", "3 + 4 = ?"};
-    public string[] suma8 = {"0 + 8 = ?", "1 + 7 = ?", "6 + 2 = ?", "5 + 3 = ?", "4 + 4 = ?" };
-    public string[] suma9 = {"9 + 0 = ?", "8 + 1 = ?", "7 + 2 = ?", "6 + 3 = ?", "5 + 4 = ?" };
 
-    public string[] resta0 = {"0 - 0 = ?", "1 - 1 = ?", "2 - 2 = ?", "3 - 3 = ?", "4 - 4 = ?", "5 - 5 = ?", "6 - 6 = ?", "7 - 7 = ?", "8 - 8 = ?", "9 - 9 = ?"};
-    public string[] resta1 = {"9 - 8 = ?", "8 - 7 = ?", "7 - 6 = ?", "6 - 5 = ?", "5 - 4 = ?", "4 - 3 = ?", "3 - 2 = ?", "2 - 1 = ?", "1 - 0 = ?" };
-    public string[] resta2 = {"9 - 7 = ?", "8 - 6 = ?", "7 - 5 = ?", "6 - 4 = ?", "5 - 3 = ?", "4 - 2 = ?", "3 - 1 = ?", "2 - 0 = ?" };
-    public string[] resta3 = {"9 - 6 = ?", "8 - 6 = ?", "7 - 4 = ?", "6 - 3 = ?", "5 - 2 = ?", "4 - 1 = ?", "3 - 0 = ?" };
-    public string[] resta4 = {"9 - 5 = ?", "8 - 4 = ?", "7 - 3 = ?", "6 - 2 = ?", "5 - 1 = ?", "4 - 0 = ?" };
-    public string[] resta5 = {"9 - 4 = ?", "8 - 3 = ?", "7 - 2 = ?", "6 - 1 = ?", "5 - 0 = ?" };
-    public string[] resta6 = {"9 - 3 = ?", "8 - 2 = ?", "7 - 1 = ?", "6 - 0 = ?" };
-    public string[] resta7 = {"9 - 2 = ?", "8 - 1 = ?", "7 - 0 = ?" };
-    public string[] resta8 = {"9 - 1 = ?", "8 - 0 = ?" };
-    public string[] resta9 = {"9 - 0 = ?" };
+    public string[] suma0 = {"0  +  0" };
+    public string[] suma1 = {"0 + 1" };
+    public string[] suma2 = {"0 + 2", "1 + 1" };
+    public string[] suma3 = {"0 + 3", "2 + 2" };
+    public string[] suma4 = {"0 + 4", "3 + 1", "2 + 2" };
+    public string[] suma5 = {"0 + 5", "3 + 2", "1 + 4" };
+    public string[] suma6 = {"0 + 6", "5 + 1", "2 + 4", "3 + 3" };
+    public string[] suma7 = {"7 + 0", "6 + 1", "5 + 2", "3 + 4"};
+    public string[] suma8 = {"0 + 8", "1 + 7", "6 + 2", "5 + 3", "4 + 4" };
+    public string[] suma9 = {"9 + 0", "8 + 1", "7 + 2", "6 + 3", "5 + 4" };
+
+    public string[] resta0 = {"0 - 0", "1 - 1", "2 - 2", "3 - 3", "4 - 4", "5 - 5", "6 - 6", "7 - 7", "8 - 8", "9 - 9"};
+    public string[] resta1 = {"9 - 8", "8 - 7", "7 - 6", "6 - 5", "5 - 4", "4 - 3", "3 - 2", "2 - 1", "1 - 0"};
+    public string[] resta2 = {"9 - 7", "8 - 6", "7 - 5", "6 - 4", "5 - 3", "4 - 2", "3 - 1", "2 - 0"};
+    public string[] resta3 = {"9 - 6", "8 - 6", "7 - 4", "6 - 3", "5 - 2", "4 - 1", "3 - 0" };
+    public string[] resta4 = {"9 - 5", "8 - 4", "7 - 3", "6 - 2", "5 - 1", "4 - 0" };
+    public string[] resta5 = {"9 - 4", "8 - 3", "7 - 2", "6 - 1", "5 - 0" };
+    public string[] resta6 = {"9 - 3", "8 - 2", "7 - 1", "6 - 0" };
+    public string[] resta7 = {"9 - 2", "8 - 1", "7 - 0" };
+    public string[] resta8 = {"9 - 1", "8 - 0" };
+    public string[] resta9 = {"9 - 0" };
 
 
     public int vocalRandomAdivinar;
@@ -87,6 +92,7 @@ abstract public class Niveles : MonoBehaviour, ConfigurationLevels
     public static string tagAdivinar;
     public static bool gameOver;
     public static bool cambi = false;
+    public static bool tutorial = false;
 
     public void init()
     {
