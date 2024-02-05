@@ -21,7 +21,7 @@ public class NivelTutorial : Niveles {
     {
         GameObject.Find("textTutorial").SetActive(true);
         Niveles.speed = 2.0f;
-
+        GameObject.Find("valorAdivinar2").GetComponent<Image>().sprite = spritesMonosilabs[20];
         Text timerText;
         timerText = GetComponent<Text>();
         timerText.text = 0.ToString("f0");
