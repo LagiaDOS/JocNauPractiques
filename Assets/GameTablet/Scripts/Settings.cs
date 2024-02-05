@@ -73,6 +73,9 @@ public class Settings : MonoBehaviour {
             case "Nivel12":
                 SceneManager.LoadScene(4);
                 break;
+            case "NivelTutorial":
+                SceneManager.LoadScene(1);
+                break;
         }
     }
 
@@ -92,6 +95,9 @@ public class Settings : MonoBehaviour {
     public void nextLevel() {
 
         ScoreScript.scoreValue = 0;
+
+        Debug.Log("nextlevel: " + PlayerPrefs.GetString("Nivel"));
+
 
         switch (PlayerPrefs.GetString("Nivel"))
         {
@@ -144,6 +150,12 @@ public class Settings : MonoBehaviour {
                 PlayerPrefs.SetString("Nivel", "Nivel1");
                 SceneManager.LoadScene(6);
                 break;
+            case "NivelTutorial":
+                //cambiar a escena de credits
+                PlayerPrefs.SetString("Nivel", "Nivel1");
+                SceneManager.LoadScene(6);
+                break;
+
 
         }
 

@@ -9,6 +9,7 @@ abstract public class Niveles : MonoBehaviour, ConfigurationLevels
     public GameObject prefabAdivinar;
     public GameObject prefabSpeedUp;
     public GameObject prefabSpeedDown;
+    public GameObject rutaTutorial;
     public Canvas canvasRender;
 
     public Sprite[] spritesNumerosLetras;
@@ -30,6 +31,7 @@ abstract public class Niveles : MonoBehaviour, ConfigurationLevels
         public int numeroRandomAdivinar;
     public int numeroGen1;
     public int numeroGen2;
+    //public int numeroGen2;
 
         //public int letraMinRandomAdivinar;  
 
@@ -87,6 +89,8 @@ abstract public class Niveles : MonoBehaviour, ConfigurationLevels
         prefabAdivinar = Resources.Load("Prefabs/prefabAdivinar") as GameObject;
         prefabSpeedUp = Resources.Load("Prefabs/prefabSpeedUp") as GameObject;
         prefabSpeedDown = Resources.Load("Prefabs/prefabSpeedDown") as GameObject;
+        rutaTutorial = Resources.Load("Prefabs/RutaTutorial") as GameObject;
+
 
         spritesMonosilabs = Resources.LoadAll<Sprite>("Sprites/MonosilabIcons");
         //spritesNumerosLetras = Resources.LoadAll<Sprite>("Sprites/LetrasNumeros/NumerosLetras");
@@ -127,16 +131,20 @@ abstract public class Niveles : MonoBehaviour, ConfigurationLevels
         numeroGen2 = UnityEngine.Random.Range(10, 20);
 
 
-        speed = 0.0f;
-        time = 999.0f;
+        //speed = 0.0f;
+        //time = 999.0f;
        
         valorAdivinar();
         gameOver = false;
         Settings.gamePause = false;
 
 
+        if (PlayerPrefs.GetString("Nivel") != "NivelTutorial") { GameObject.Find("textTutorial").SetActive(false); }
+        
+
+
     }
-    
+
     abstract public void configuration();
     abstract public void spawn();
     abstract public void valorAdivinar();

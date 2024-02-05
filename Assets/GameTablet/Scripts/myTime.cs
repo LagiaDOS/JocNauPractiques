@@ -16,6 +16,10 @@ public class myTime : MonoBehaviour {
         //depenent el nivell en el que estem, el temps disponible pot cambiar
         switch (PlayerPrefs.GetString("Nivel"))
         {
+            case "NivelTutorial":
+                meTime = 95f;
+                break;
+
             default:
                 meTime = 60f;
                 break;
