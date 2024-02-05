@@ -35,6 +35,10 @@ public class GameController : MonoBehaviour {
         //agafa el string de Nivel de PlayerPrefs, i despres carrega el scrip del nivell corresponent.
         switch (PlayerPrefs.GetString("Nivel"))
         {
+            case "NivelTutorial":
+                instance.cgl = instance.gameObject.AddComponent<NivelTutorial>();
+                audioSource.clip = audioDificil;
+                break;
             case "Nivel1":
                 instance.cgl = instance.gameObject.AddComponent<Nivel1>();
                 audioSource.clip = audioFacil;
@@ -92,11 +96,6 @@ public class GameController : MonoBehaviour {
 
             case "Nivel12":
                 instance.cgl = instance.gameObject.AddComponent<Nivel12>();
-                audioSource.clip = audioDificil;
-                break;
-
-            case "NivelTutorial":
-                instance.cgl = instance.gameObject.AddComponent<NivelTutorial>();
                 audioSource.clip = audioDificil;
                 break;
         }
