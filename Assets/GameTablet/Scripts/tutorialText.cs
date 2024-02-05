@@ -6,6 +6,8 @@ using UnityEngine.UI;
 using System.Linq;
 using System.Security.Cryptography;
 
+
+
 public class tutorialText : MonoBehaviour {
 
     private int probLletra;
@@ -16,8 +18,13 @@ public class tutorialText : MonoBehaviour {
     private Text tutorialTextComp;
     private int paso = 0;
 
+
+    public GameObject rutaTutorial;
+
     // Use this for initialization
     void Start () {
+        rutaTutorial = Resources.Load("Prefabs/RutaTutorial") as GameObject;
+
         GameObject.Find("textTutorial").GetComponent<Text>().text = "TEST";
         tutorialTextComp = GetComponent<Text>();
     }
@@ -42,7 +49,7 @@ public class tutorialText : MonoBehaviour {
         //primera linea tutorial out
         if (timePasado >= 10.0f && paso == 1)
         {
-            GameObject.Find("textTutorial").GetComponent<Text>().text = "Paso 1";
+            GameObject.Find("textTutorial").GetComponent<Text>().text = "";
             FadeTextToZeroAlpha(3f, tutorialTextComp);
             paso++;
         }
@@ -58,7 +65,7 @@ public class tutorialText : MonoBehaviour {
         //segona linea tutorial out
         if (timePasado >= 30.0f && paso == 3)
         {
-            GameObject.Find("textTutorial").GetComponent<Text>().text = "Paso 3";
+            GameObject.Find("textTutorial").GetComponent<Text>().text = "";
             paso++;
 
         }
@@ -66,7 +73,9 @@ public class tutorialText : MonoBehaviour {
         //minijoc seguir linea
         if (timePasado >= 40.0f && paso == 4)
         {
-            GameObject.Find("textTutorial").GetComponent<Text>().text = "Paso 4";
+            GameObject p = Instantiate(rutaTutorial, new Vector3(0, 5, 0), Quaternion.identity) as GameObject;
+
+            GameObject.Find("textTutorial").GetComponent<Text>().text = "";
             paso++;
 
         }
@@ -83,7 +92,7 @@ public class tutorialText : MonoBehaviour {
         //tercera linea tutorial out
         if (timePasado >= 60.0f && paso == 6)
         {
-            GameObject.Find("textTutorial").GetComponent<Text>().text = "Paso 6";
+            GameObject.Find("textTutorial").GetComponent<Text>().text = "";
             paso++;
 
         }
@@ -107,7 +116,7 @@ public class tutorialText : MonoBehaviour {
         //4ta linea tutorial out
         if (timePasado >= 90.0f && paso == 9)
         {
-            GameObject.Find("textTutorial").GetComponent<Text>().text = "Paso 9";
+            GameObject.Find("textTutorial").GetComponent<Text>().text = "";
             paso++;
 
         }

@@ -91,6 +91,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _x: 0
   _y: 0
+  canvasRend: {fileID: 0}
 --- !u!212 &212202410636622730
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -122,8 +123,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -48502057
-  m_SortingLayer: 3
+  m_SortingLayerID: 254229827
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 5e75ca94322cc8d48b07d890b8411383, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -147,15 +148,15 @@ RectTransform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1748670748900860}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 36, y: 558, z: 0}
-  m_LocalScale: {x: 20, y: 20, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 7.55, y: 601, z: 0}
+  m_LocalScale: {x: 25, y: 25, z: 34.993122}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 36, y: 558}
-  m_SizeDelta: {x: 14.8, y: 31.9}
+  m_AnchoredPosition: {x: 7.55, y: 601}
+  m_SizeDelta: {x: 3, y: 7}
   m_Pivot: {x: 0.5, y: 0.5}

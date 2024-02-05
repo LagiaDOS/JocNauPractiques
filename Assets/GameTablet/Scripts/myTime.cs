@@ -18,7 +18,7 @@ public class myTime : MonoBehaviour {
         switch (PlayerPrefs.GetString("Nivel"))
         {
             case "NivelTutorial":
-                meTime = 120f;
+                meTime = 95f;
                 break;
 
             default:
