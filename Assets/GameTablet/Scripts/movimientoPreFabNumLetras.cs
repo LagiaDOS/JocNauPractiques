@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class movimientoPreFabNumLetras : MonoBehaviour {
     public AudioClip _audioSource;
+    public AudioClip _audioCorrecte;
+    public AudioClip _audioIncorrecte;
     public float speed;
     public GameObject canvasRend;
     // Use this for initialization
@@ -40,11 +42,13 @@ public class movimientoPreFabNumLetras : MonoBehaviour {
             if (this.tag == "correcte")
             {
                 ScoreScript.scoreValue += 100;
+                //AudioSource.PlayClipAtPoint(_audioCorrecte, transform.position);
             }
             //Si no restamos 20 puntos
             else
             {
                 ScoreScript.scoreValue -= 20;
+                //AudioSource.PlayClipAtPoint(_audioIncorrecte, transform.position);
             }
             AudioSource.PlayClipAtPoint(_audioSource, transform.position);
             //Destruimos el objeto que ha colisionado con el jugador
