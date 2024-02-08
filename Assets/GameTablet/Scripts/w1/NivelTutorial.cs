@@ -50,7 +50,7 @@ public class NivelTutorial : Niveles {
         {
             //salt de linea aqui
             Debug.Log("fadein " + timePasado);
-            GameObject.Find("textTutorial").GetComponent<Text>().text = "Fes servir la A i la D per a moure la nau" + " O fes servir les fletxes";
+            GameObject.Find("textTutorial").GetComponent<Text>().text = "Per a moure la nau, fes servir la A i la D" + " o fes servir les fletxes esquerra i dreta.";
             FadeTextToFullAlpha(3f, tutorialTextComp);
             paso++;
         }
@@ -66,7 +66,7 @@ public class NivelTutorial : Niveles {
         //segona linea tutorial in
         if (timePasado >= 13.0f && paso == 2)
         {
-            GameObject.Find("textTutorial").GetComponent<Text>().text = "Segueix la linea";
+            GameObject.Find("textTutorial").GetComponent<Text>().text = "Segueix la linea!";
             paso++;
 
         }
@@ -93,7 +93,7 @@ public class NivelTutorial : Niveles {
         if (timePasado >= 55.0f && paso == 5)
         {
             //posar salt de linea
-            GameObject.Find("textTutorial").GetComponent<Text>().text = "D'adalt cauran coses." + " Tens que agafar les correctes";
+            GameObject.Find("textTutorial").GetComponent<Text>().text = "De dalt cauran les lletres i numeros." + " Has d'agafar les indicades.";
             paso++;
 
         }
@@ -101,7 +101,7 @@ public class NivelTutorial : Niveles {
         //tercera linea tutorial out
         if (timePasado >= 63.0f && paso == 6)
         {
-            GameObject.Find("textTutorial").GetComponent<Text>().text = "Adalt podras veure que tens que agafar. No t'equivoquis!";
+            GameObject.Find("textTutorial").GetComponent<Text>().text = "Assobre pots veure el teu objectiu. Vigila i no t'equivoquis!";
             paso++;
 
         }
@@ -133,7 +133,7 @@ public class NivelTutorial : Niveles {
         //4ta linea tutorial in
         if (timePasado >= 85.0f && paso == 8)
         {
-            GameObject.Find("textTutorial").GetComponent<Text>().text = "Ben fet! Ara vindra el joc real";
+            GameObject.Find("textTutorial").GetComponent<Text>().text = "Molt ben fet! Prem 'Next Level' i comença amb el joc real!";
             paso++;
 
         }
