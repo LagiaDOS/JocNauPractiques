@@ -134,7 +134,7 @@ public class Nivel3 : Niveles
 
     public override void spawn()
     {
-        GameObject p = Instantiate(prefabNumerosLetras, new Vector3(UnityEngine.Random.Range(-7.0f, 6.0f), 5, 0), Quaternion.identity) as GameObject;
+        GameObject p = Instantiate(prefabNumerosLetras, new Vector3(UnityEngine.Random.Range(-6.0f, 5.0f), 5, 0), Quaternion.identity) as GameObject;
         //p.transform.parent = canvasRender;
 
         switch (probLletra)
