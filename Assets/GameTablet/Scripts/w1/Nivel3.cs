@@ -52,6 +52,8 @@ public class Nivel3 : Niveles
             {
                 swapMonosilab();
                 changeVocal = 12f;
+                GameObject.Find("Main Camera").GetComponent<AudioSource>().Play();
+
             }
 
             if (time <= 40.0f && changeSpeed1 == false)

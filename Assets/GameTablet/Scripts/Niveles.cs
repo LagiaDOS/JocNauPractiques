@@ -11,6 +11,8 @@ abstract public class Niveles : MonoBehaviour, ConfigurationLevels
     public GameObject prefabSpeedDown;
     public GameObject rutaTutorial;
     public Canvas canvasRender;
+    public AudioClip canvi;
+
 
     public Sprite[] spritesNumerosLetras;
     public Sprite[] spritesNumerosDosUnidades;
@@ -104,6 +106,10 @@ abstract public class Niveles : MonoBehaviour, ConfigurationLevels
         prefabSpeedDown = Resources.Load("Prefabs/prefabSpeedDown") as GameObject;
         rutaTutorial = Resources.Load("Prefabs/RutaTutorial") as GameObject;
 
+        canvi = Resources.Load("Audio/complete") as AudioClip;
+
+        //audioSource = GameObject.Find("Audio Source");
+        //audioSource.GetComponent<AudioSource>() = canvi;
 
         spritesMonosilabs = Resources.LoadAll<Sprite>("Sprites/MonosilabIcons");
         //spritesNumerosLetras = Resources.LoadAll<Sprite>("Sprites/LetrasNumeros/NumerosLetras");
@@ -157,6 +163,10 @@ abstract public class Niveles : MonoBehaviour, ConfigurationLevels
 
 
     }
+
+
+
+
 
     abstract public void configuration();
     abstract public void spawn();
