@@ -39,7 +39,8 @@ public class Nivel5 : Niveles
                 change = true;
                 numeroGen1 = UnityEngine.Random.Range(1, 10); ;
                 valorAdivinar();
-                
+                GameObject.Find("Main Camera").GetComponent<AudioSource>().Play();
+
             }
 
         }

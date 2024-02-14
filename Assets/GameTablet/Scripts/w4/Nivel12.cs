@@ -41,6 +41,8 @@ public class Nivel12 : Niveles
                 nouCaracterAdivinar = Random.Range(62, 89);
                 valorAdivinar();
                 changeLetter = true;
+                GameObject.Find("Main Camera").GetComponent<AudioSource>().Play();
+
             }
 
             if (time <= 40.0f && changeSpeed1 == false)
