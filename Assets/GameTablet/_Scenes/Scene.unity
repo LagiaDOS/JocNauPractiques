@@ -1188,7 +1188,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: bf7884ccd78b7c84dbc590ff8a54391a, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.5
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -1244,7 +1244,7 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
-    m_RotationOrder: 4
+    m_RotationOrder: 0
   reverbZoneMixCustomCurve:
     serializedVersion: 2
     m_Curve:
@@ -1416,7 +1416,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1116881296}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 33.424667, z: 0}
+  m_LocalPosition: {x: 0, y: 33.1035, z: 0}
   m_LocalScale: {x: 0.99942034, y: 0.99942034, z: 0.99942034}
   m_Children: []
   m_Father: {fileID: 934686608}
@@ -1424,7 +1424,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 150, y: 226.99995}
+  m_AnchoredPosition: {x: 150, y: 226.99998}
   m_SizeDelta: {x: 258.51, y: 31.84}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1116881298
@@ -1546,7 +1546,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1140283848}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -130.6747, z: 0}
+  m_LocalPosition: {x: 0, y: -130.35352, z: 0}
   m_LocalScale: {x: 5.5705204, y: 5.570521, z: 0}
   m_Children: []
   m_Father: {fileID: 1865222019}
@@ -2610,7 +2610,7 @@ RectTransform:
   m_GameObject: {fileID: 1823641282}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.16, y: -0.92, z: 90}
-  m_LocalScale: {x: 0.03151101, y: 0.03151101, z: 0.03151101}
+  m_LocalScale: {x: 0.031574924, y: 0.031574924, z: 0.031574924}
   m_Children:
   - {fileID: 2031323593}
   - {fileID: 405363187}
@@ -2710,7 +2710,7 @@ RectTransform:
   m_GameObject: {fileID: 1865222015}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.16, y: -0.92, z: 90}
-  m_LocalScale: {x: 0.03151101, y: 0.03151101, z: 0.03151101}
+  m_LocalScale: {x: 0.031574924, y: 0.031574924, z: 0.031574924}
   m_Children:
   - {fileID: 1140283849}
   - {fileID: 676051457}
@@ -2834,7 +2834,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2031323592}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 141.90468, z: 0}
+  m_LocalPosition: {x: 0, y: 141.5835, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 160839669}

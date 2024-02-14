@@ -67,6 +67,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _audioSource: {fileID: 8300000, guid: c6ba49211ab0da540a851d76d9432e12, type: 3}
+  _audioCorrecte: {fileID: 8300000, guid: 25d763abc4d723545ae3676bd8b40a20, type: 3}
+  _audioIncorrecte: {fileID: 8300000, guid: acaf30209a4e67b4a8a7b70a5d2f21f1, type: 3}
   speed: 0
   canvasRend: {fileID: 0}
 --- !u!114 &114965989618308188
