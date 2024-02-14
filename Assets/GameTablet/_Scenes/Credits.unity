@@ -195,7 +195,7 @@ RectTransform:
   m_GameObject: {fileID: 340274271}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.16, y: -0.92, z: 90}
-  m_LocalScale: {x: 0.03230122, y: 0.03230122, z: 0.03230122}
+  m_LocalScale: {x: 0.031574924, y: 0.031574924, z: 0.031574924}
   m_Children:
   - {fileID: 842801312}
   - {fileID: 554937829}
@@ -464,12 +464,12 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Projecte original\r\n\r\nRoberto Leon\r\n\r\n\n\nDesenvolupadors\r\n\r\nPol
-    Quintana\r\nRoger Ortiz\r\n\r\n\n\nAudio\n\r\nA few jumps away - arthur vyncke\r\nAdrift
-    - Hayden Folker\r\nDystopia - Neutrin05\r\nEdelweiss - Onycs\r\nGiving Way - AER\xD8HEAD\r\n\r\n\rhttps://creatorassets.com/a/8-bit-powerup-sound-effects\n\n\n\nGrafics\r\n\r\nBreakout
+  m_Text: "Projecte original\r\n\r\nRoberto Leon\r\n\r\nDesenvolupadors\r\n\r\nPol
+    Quintana\r\nRoger Ortiz\r\n\r\nMusica\r\n\r\nA few jumps away - arthur vyncke\r\nAdrift
+    - Hayden Folker\r\nDystopia - Neutrin05\r\nEdelweiss - Onycs\r\nGiving Way - AER\xD8HEAD\r\n\r\n\r\nGrafics\r\n\r\nBreakout
     (Brick Breaker) Tile Set - Free\r\nhttps://opengameart.org/content/breakout-brick-breaker-tile-set-free\r\n\r\nCool
     Sprite Fonts!\r\nhttps://opengameart.org/content/cool-sprite-fonts\r\n\r\nStealth
-    Bomber\r\nhttps://opengameart.org/content/stealth-bomber\r"
+    Bomber\r\nhttps://opengameart.org/content/stealth-bomber\r\n\r\nEfectes de so\r\nhttps://pixabay.com/sound-effects/notification-for-game-scenes-132473/\r\nhttps://pixabay.com/sound-effects/error-when-entering-the-game-menu-132111/\r\nhttps://opengameart.org/content/ui-sounds\r\n"
 --- !u!222 &554937832
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -594,9 +594,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioSource: {fileID: 1703097153}
+  audioSourceCambi: {fileID: 0}
   audioFacil: {fileID: 8300000, guid: 6f47f43067656fe4097260e3c73daa41, type: 3}
   audioMitja: {fileID: 8300000, guid: 1758551b593a04e4da529fbaae0f46a6, type: 3}
   audioDificil: {fileID: 8300000, guid: 0c95f11f1afe7b744b42cb101dba7b19, type: 3}
+  audioCambi: {fileID: 0}
 --- !u!4 &1314458798
 Transform:
   m_ObjectHideFlags: 0

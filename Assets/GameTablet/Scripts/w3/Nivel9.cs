@@ -40,6 +40,8 @@ public class Nivel9 : Niveles
                 nouColorAdivinar = Random.Range(90, 96);
                 valorAdivinar();
                 changeLetter = true;
+                GameObject.Find("Main Camera").GetComponent<AudioSource>().Play();
+
             }
 
             if (time <= 40.0f && changeSpeed1 == false)

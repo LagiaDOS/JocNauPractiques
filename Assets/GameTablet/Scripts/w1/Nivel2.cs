@@ -37,14 +37,18 @@ public class Nivel2 : Niveles
 
             if (spawnPowerUp <= 0.0f)
             {
+
                 spawnPowerup();
                 spawnPowerUp = 15f;
             }
 
             if (changeVocal <= 0.0f)
             {
+
                 swapMonosilab();
                 changeVocal = 12f;
+                GameObject.Find("Main Camera").GetComponent<AudioSource>().Play();
+
             }
         }
     }
