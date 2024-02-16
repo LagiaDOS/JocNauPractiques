@@ -103,7 +103,7 @@ public class Settings : MonoBehaviour
 
         switch (PlayerPrefs.GetString("Nivel"))
         {
-            case "Nivel1":
+                case "Nivel1":
                 PlayerPrefs.SetString("Nivel", "Nivel2");
                 SceneManager.LoadScene(5);
                 break;
@@ -123,9 +123,9 @@ public class Settings : MonoBehaviour
                 PlayerPrefs.SetString("Nivel", "Nivel6");
                 SceneManager.LoadScene(5);
                 break;
-            case "Nivel6":
-                PlayerPrefs.SetString("Nivel", "Nivel7");
-                SceneManager.LoadScene(5);
+            case "Nivel6"://cambiar a nivel 7 quant estigui acabat
+                PlayerPrefs.SetString("Nivel", "NivelCredits");
+                SceneManager.LoadScene(6);
                 break;
             case "Nivel7":
                 PlayerPrefs.SetString("Nivel", "Nivel8");
@@ -149,7 +149,7 @@ public class Settings : MonoBehaviour
                 break;
             case "Nivel12":
                 //cambiar a escena de credits
-                PlayerPrefs.SetString("Nivel", "Credits");
+                PlayerPrefs.SetString("Nivel", "NivelCredits");
                 SceneManager.LoadScene(6);
                 break;
             case "NivelTutorial":
