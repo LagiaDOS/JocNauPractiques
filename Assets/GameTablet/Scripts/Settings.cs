@@ -149,7 +149,7 @@ public class Settings : MonoBehaviour
                 break;
             case "Nivel12":
                 //cambiar a escena de credits
-                PlayerPrefs.SetString("Nivel", "Nivel1");
+                PlayerPrefs.SetString("Nivel", "Credits");
                 SceneManager.LoadScene(6);
                 break;
             case "NivelTutorial":

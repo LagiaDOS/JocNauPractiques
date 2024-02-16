@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class Credits : MonoBehaviour {
@@ -19,6 +20,13 @@ public class Credits : MonoBehaviour {
 	void Update () {
 
         transform.Translate(Vector3.up * 1.1f * Time.deltaTime);
+        Tiemporestante -= Time.deltaTime;
+
+
+        if (Tiemporestante <= 0.0f)
+        {
+            SceneManager.LoadScene(0);
+        }
 
     }
 }
