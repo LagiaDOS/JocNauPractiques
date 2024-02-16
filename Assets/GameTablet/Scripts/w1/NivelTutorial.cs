@@ -50,7 +50,7 @@ public class NivelTutorial : Niveles {
         {
             //salt de linea aqui
             Debug.Log("fadein " + timePasado);
-            GameObject.Find("textTutorial").GetComponent<Text>().text = "Per a moure la nau, fes servir la A i la D" + " o fes servir les fletxes esquerra i dreta.";
+            GameObject.Find("textTutorial").GetComponent<Text>().text = "Per a moure la nau, fes servir la A i la D" + " o les fletxes esquerra i dreta.";
             FadeTextToFullAlpha(3f, tutorialTextComp);
             paso++;
         }
@@ -133,7 +133,7 @@ public class NivelTutorial : Niveles {
         //4ta linea tutorial in
         if (timePasado >= 85.0f && paso == 8)
         {
-            GameObject.Find("textTutorial").GetComponent<Text>().text = "Molt ben fet! Prem 'Next Level' i comença amb el joc real!";
+            GameObject.Find("textTutorial").GetComponent<Text>().text = "Molt ben fet! Prem 'Next Level' i inicia amb el joc real!";
             paso++;
 
         }
