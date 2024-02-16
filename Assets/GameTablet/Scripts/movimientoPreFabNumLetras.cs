@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class movimientoPreFabNumLetras : MonoBehaviour {
     public AudioClip _audioSource;
@@ -43,12 +44,18 @@ public class movimientoPreFabNumLetras : MonoBehaviour {
             {
                 ScoreScript.scoreValue += 100;
                 AudioSource.PlayClipAtPoint(_audioCorrecte, transform.position);
+
+                GameObject p = Instantiate(Niveles.correcteIncorrecte, new Vector3(transform.position.x, transform.position.y, transform.position.z), Quaternion.identity) as GameObject;
+                p.GetComponent<Text>().text = "+100";
+
             }
             //Si no restamos 20 puntos
             else
             {
                 ScoreScript.scoreValue -= 20;
                 AudioSource.PlayClipAtPoint(_audioIncorrecte, transform.position);
+                GameObject p = Instantiate(Niveles.correcteIncorrecte, new Vector3(transform.position.x, transform.position.y, transform.position.z), Quaternion.identity) as GameObject;
+                p.GetComponent<Text>().text = "-20";
             }
             //AudioSource.PlayClipAtPoint(_audioSource, transform.position);
             //Destruimos el objeto que ha colisionado con el jugador

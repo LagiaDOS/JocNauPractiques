@@ -10,6 +10,7 @@ abstract public class Niveles : MonoBehaviour, ConfigurationLevels
     public GameObject prefabSpeedUp;
     public GameObject prefabSpeedDown;
     public GameObject rutaTutorial;
+    public static GameObject correcteIncorrecte;
     public Canvas canvasRender;
     public AudioClip canvi;
 
@@ -105,6 +106,7 @@ abstract public class Niveles : MonoBehaviour, ConfigurationLevels
         prefabSpeedUp = Resources.Load("Prefabs/prefabSpeedUp") as GameObject;
         prefabSpeedDown = Resources.Load("Prefabs/prefabSpeedDown") as GameObject;
         rutaTutorial = Resources.Load("Prefabs/RutaTutorial") as GameObject;
+        correcteIncorrecte = Resources.Load("Prefabs/prefabCorrecteIncorrecte") as GameObject;
 
         canvi = Resources.Load("Audio/complete") as AudioClip;
 
