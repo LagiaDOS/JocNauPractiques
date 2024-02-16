@@ -923,7 +923,7 @@ RectTransform:
   m_GameObject: {fileID: 1083923686}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 90}
-  m_LocalScale: {x: 0.031804282, y: 0.031804282, z: 0.031804282}
+  m_LocalScale: {x: 0.029649597, y: 0.029649597, z: 0.029649597}
   m_Children:
   - {fileID: 1537328416}
   - {fileID: 1117741544}
@@ -1265,7 +1265,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1663623056}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 109.21153, z: 0}
+  m_LocalPosition: {x: -18, y: 92.63635, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1083923690}
@@ -1273,7 +1273,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: -48}
+  m_AnchoredPosition: {x: -18, y: -76}
   m_SizeDelta: {x: 160.7, y: 30.1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1663623058
@@ -1297,7 +1297,7 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 12800000, guid: 9634da1430df5f64abf6583176ddb97e, type: 3}
-    m_FontSize: 65
+    m_FontSize: 35
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
@@ -1308,7 +1308,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: GAME
+  m_Text: 'COLLECTER
+
+    SCROLLER'
 --- !u!222 &1663623059
 CanvasRenderer:
   m_ObjectHideFlags: 0
